@@ -1,0 +1,64 @@
+/* 1. Usar un modelo de caja más intuitivo (border-box). */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Eliminar el margen por defecto en todos los elementos. */
+/* Esto es más simple que resetear cada elemento individualmente. */
+* {
+  margin: 0;
+}
+
+/* 3. Permitir que los elementos de tipo bloque ocupen toda la altura disponible. */
+/* html y body suelen ser los únicos con altura al 100%. */
+html,
+body {
+  height: 100%;
+}
+
+/* 4. Estilos base del body y suavizado de fuentes. */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Comportamiento de imágenes y medios por defecto. */
+/* Hace que las imágenes sean responsive por defecto. */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Eliminar la herencia de fuentes en inputs y botones. */
+/* Asegura que usen la fuente definida en el body. */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Eliminar el desbordamiento de texto (text-wrapping) molesto. */
+/* Ayuda a prevenir el desbordamiento horizontal. */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Crear un contexto de apilamiento raíz (stacking context). */
+/* Opcional pero recomendado para controlar 'z-index' más fácilmente. */
+#root,
+#__next {
+  isolation: isolate;
+}

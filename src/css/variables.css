@@ -1,0 +1,104 @@
+/*
+ * ============================================
+ * ARCHIVO DE VARIABLES GLOBALES
+ * ============================================
+ * Definimos un sistema fluido para tipografía
+ * y espaciado usando clamp().
+ * Las medidas en 'rem' están basadas en 1rem = 16px.
+ * ============================================
+ */
+
+:root {
+  /* --- 1. Fuentes (Tipografía) --- */
+  /* Define las familias de fuentes */
+  --font-family-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-heading: "Helvetica Neue", "Helvetica", Arial, sans-serif; /* O una fuente personalizada */
+
+  /* Define los pesos de fuente */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Define las alturas de línea (unitless) */
+  --line-height-body: 1.65;  /* Para texto de párrafo */
+  --line-height-heading: 1.2; /* Para títulos */
+
+  /*Define colores base*/
+    --color-text-body: #333333; /* (Gris oscuro, no negro puro) */
+    --color-text-heading: #111111; /* (Casi negro) */
+    --color-background: #ffffff; /* (Blanco) */
+    --color-primario-hover: #0056b3; /* (Un tono más oscuro) */
+
+  /* --- 2. Escala de Fuente Fluida (Typographic Scale) --- */
+  /* * Usamos clamp(MIN, PREFERIDO, MAX)
+   * MIN = Tamaño en móvil (ej. 320px)
+   * MAX = Tamaño en desktop (ej. 1440px)
+   */
+
+  /* Texto pequeño (ej. 'legal', 'caption') */
+  --font-size--1: clamp(0.875rem, 0.5vw + 0.75rem, 0.9375rem); /* 14px -> 15px */
+
+  /* Texto base (Párrafos) */
+  --font-size-0: clamp(1rem, 1vw + 0.75rem, 1.125rem);      /* 16px -> 18px */
+
+  /* Títulos pequeños (ej. H3, H4) */
+  --font-size-1: clamp(1.25rem, 1.5vw + 0.9rem, 1.5rem);       /* 20px -> 24px */
+
+  /* Títulos medianos (ej. H2) */
+  --font-size-2: clamp(1.563rem, 2.5vw + 1rem, 2.25rem);     /* 25px -> 36px */
+
+  /* Títulos grandes (ej. H1) */
+  --font-size-3: clamp(2.441rem, 5vw + 1.2rem, 3.75rem);      /* 39px -> 60px */
+
+  /* Títulos de Héroe (Display) */
+  --font-size-4: clamp(3.052rem, 7vw + 1.5rem, 5.625rem);     /* 49px -> 90px */
+
+
+  /* --- 3. Escala de Espaciado Fluido (Spacing Scale) --- */
+  /* * Un sistema para 'padding', 'margin', 'gap'.
+   * Usa los mismos principios de clamp()
+   */
+
+  /* x-small (ej. 8px -> 12px) */
+  --space-xs: clamp(0.5rem, 1vw + 0.25rem, 0.75rem);
+
+  /* small (ej. 12px -> 16px) */
+  --space-s: clamp(0.75rem, 1vw + 0.5rem, 1rem);
+
+  /* medium (ej. 16px -> 24px) */
+  --space-m: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+
+  /* large (ej. 24px -> 32px) */
+  --space-l: clamp(1.5rem, 2vw + 1rem, 2rem);
+
+  /* x-large (ej. 32px -> 48px) */
+  --space-xl: clamp(2rem, 3vw + 1rem, 3rem);
+
+  /* 2x-large (ej. 48px -> 64px) */
+  --space-2xl: clamp(3rem, 4vw + 1.5rem, 4rem);
+
+  /* (Opcional) Espaciado de sección (ej. 64px -> 128px) */
+  --space-section: clamp(4rem, 8vw + 2rem, 8rem);
+
+
+  /* --- 4. Maquetación (Layout) --- */
+
+  /* Ancho máximo de la columna de contenido */
+  --content-max-width: 1200px;
+  
+  /* Márgenes laterales (gutter) mínimos en móvil */
+  --page-gutter-min: var(--space-m, 1rem); /* 1rem o 1.5rem suele ser bueno */
+
+
+  /* --- 5. Misceláneos --- */
+
+  /* Radio de borde */
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
+  --border-radius-circle: 50%;
+
+  /* Transiciones */
+  --transition-fast: all 0.2s ease-out;
+  --transition-medium: all 0.3s ease-out;
+}
