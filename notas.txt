@@ -1,0 +1,72 @@
+CSS
+
+.card-grid-magico {
+display: grid;
+gap: var(--space-m); /_ El espacio entre las cards _/
+
+/\* _ ¡ESTA ES LA LÍNEA MÁGICA!
+_/
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+🧐 ¿Cómo funciona esta línea mágica?
+repeat(auto-fit, minmax(300px, 1fr))
+
+
+
+minmax(300px, 1fr): Le dice a cada columna (cada card):
+
+MIN (300px): Tu tamaño mínimo absoluto es 300px. No puedes ser más pequeño que esto.
+
+MAX (1fr): Si hay espacio extra en la fila, repártelo (crece) para ocuparlo.
+
+auto-fit: Le dice al contenedor (.card-grid-magico):
+
+"Mira tu ancho total. ¿Cuántas columnas de 300px (mínimo) caben?"
+
+El resultado en la práctica:
+
+🖥️ En un Desktop (ej. 1300px de ancho):
+
+El navegador piensa: "1300px / 300px ≈ 4.3".
+
+"Puedo meter 4 columnas." (Las 4 crecen a 1fr para ocupar todo el espacio).
+
+💻 En una Tablet (ej. 700px de ancho):
+
+El navegador piensa: "700px / 300px ≈ 2.3".
+
+"Solo puedo meter 2 columnas." (Las 2 crecen a 1fr).
+
+📱 En un Móvil (ej. 400px de ancho):
+
+El navegador piensa: "400px / 300px ≈ 1.3".
+
+"Solo puedo meter 1 columna." (Esa columna crece a 1fr y ocupa el 100% del ancho).
+
+Con una sola línea de CSS, has creado un layout perfectamente responsivo para tus cards.
+
+
+
+¿Y con Flexbox?
+También se puede (es el "truco" más antiguo), pero Grid es mejor. Con Flexbox, harías que los hijos tuvieran un flex-basis.
+
+CSS
+
+.card-flex-wrapper {
+display: flex;
+flex-wrap: wrap; /_ Permite que los items bajen de fila _/
+gap: var(--space-m);
+}
+
+.card-flex-wrapper > .card-item {
+/\* \* El 'basis' es el tamaño mínimo, 'grow' permite que
+
+- crezca para llenar huecos.
+  \*/
+  flex-basis: 300px;
+  flex-grow: 1;
+  }
+
+  Por qué Grid es mejor para esto: Flexbox puede dejar "huérfanos". Si tienes 5 items, la fila de arriba tendrá 3 y la de abajo 2. 
+  Esos 2 crecerán para ocupar el espacio de 3, viéndose más anchos (a veces no es lo que quieres). 
+  Grid (auto-fit) maneja esto de forma más elegante.

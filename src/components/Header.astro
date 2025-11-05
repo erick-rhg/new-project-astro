@@ -1,0 +1,53 @@
+---
+---
+
+<header class="grid-layout">
+    <nav class="full-bleed">
+        <div class="inner-content nav-container">
+        <a href="#" class="logo">
+            <img src="" alt="">
+        </a>
+        <ul class="nav-list">
+            <li><a href="/inicio">INICIO</a></li>
+            <li><a href="/quienes-somos">QUIENES SOMOS</a></li>
+            <li><a href="/alianzas">ALIANZAS</a></li>
+            <li><a href="/soluciones-y-servicios">SOLUCIONES Y SERVICIOS</a></li>
+            <li><a href="/clientes">CLIENTES</a></li>
+            <li><a href="/contacto">CONTACTO</a></li>
+        </ul>
+        </div>
+    </nav>
+</header>
+
+<style>
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px; /* Altura del header */
+  }
+
+  .logo {
+    display: block; 
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: var(--space-m, 1.5rem);
+    list-style: none; 
+    padding: 0;
+    margin: 0; 
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-heading);
+    padding: 0.5rem;
+    border-radius: var(--border-radius-small);
+  }
+  
+  .nav-list a:hover {
+    background-color: #eee;
+  }
+</style>

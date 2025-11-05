@@ -107,3 +107,30 @@ ul, ol {
 li {
   margin-bottom: var(--space-xs);
 }
+
+/*---LAYOUT PRINCIPAL---*/
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 
+    [full-start] minmax(var(--page-gutter-min), 1fr) 
+    [content-start] minmax(0, var(--content-max-width)) [content-end] 
+    [full-start] minmax(var(--page-gutter-min), 1fr);
+}
+
+.grid-layout > * {
+  grid-column: content;
+}
+
+.grid-layout > .full-bleed {
+  grid-column: full;
+}
+
+/* 4. El contenido interno del full-bleed */
+.full-bleed .inner-content {
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+  padding-inline: var(--page-gutter-min);
+}
+
+
