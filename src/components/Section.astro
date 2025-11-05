@@ -1,0 +1,10 @@
+---
+import Cards from "@components/Cards.astro";
+
+const { card_data, image_data, } = Astro.props;
+const { settings } = Astro.props;
+---
+
+<div class:list={[settings?.layout_class, settings?.costum_class]}>
+    {card_data && <Cards cards = { card_data }></Cards>}
+</div>

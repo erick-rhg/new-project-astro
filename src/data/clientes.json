@@ -1,0 +1,76 @@
+[
+    {
+        "id": "seccion-alianza-1",
+        "component": "Section",
+        "settings": {
+            "layout_class": "2-col"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "titulo 1",
+                    "descriptio": "description 1",
+                    "img": "url/img1.jpg"
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "src/img-col-1.jpg",
+                    "description": "desc img 1"
+                }
+            ]
+        }
+    },
+    {
+        "id": "seccion-alianza-2",
+        "component": "Section",
+        "settings": {
+            "layout_class": "3-col"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "titulo 2",
+                    "descriptio": "description 2",
+                    "img": "url/img2.jpg"
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "src/img-col-2.jpg",
+                    "description": "desc img 2"
+                },
+                {
+                    "img": "src/img-col-3.jpg",
+                    "description": "desc img 3"
+                }
+            ]
+        }
+    },
+    {
+        "id": "seccion-alianza-3-especial",
+        "component": "Section",
+        "settings": {
+            "layout_class": "2-col",
+            "custom_class": "section-highlighted"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Card con Botones (Caso Especial)",
+                    "descriptio": "Esta card tiene botones gracias al JSON.",
+                    "img": "url/img-especial.jpg",
+                    "custom_class": "card-con-borde-rojo",
+                    "botones": [
+                        {
+                            "texto": "Click Aquí",
+                            "url": "/link",
+                            "clase": "btn-primario"
+                        }
+                    ]
+                }
+            ],
+            "image_data": []
+        }
+    }
+]

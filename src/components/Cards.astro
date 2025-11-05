@@ -1,0 +1,10 @@
+---
+import Card from "@components/Card.astro";
+const { cards } = Astro.props;
+---
+
+<article >
+    {cards.map(cardItem => {
+        return <Card {...cardItem}></Card>
+    })}
+</article>

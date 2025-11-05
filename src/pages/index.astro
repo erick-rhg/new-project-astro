@@ -1,8 +1,13 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
 import HeroBanner from "@components/HeroBanner.astro";
+import PageBuilder from "@components/PageBuilder.astro";
+import dataJson from "@data/clientes.json";
 ---
 
 <BaseLayout title="Inicio">
     <HeroBanner/>
+
+    <PageBuilder dataJson = {dataJson}/>
+
 </BaseLayout>

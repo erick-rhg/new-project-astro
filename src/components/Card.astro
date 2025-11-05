@@ -1,0 +1,10 @@
+---
+const {title, subtitle, description, img} = Astro.props
+---
+
+<Card>
+    {img && <img src={img} alt=""/>}
+    {title && <h2>{title}</h2>}
+    {subtitle && <h4>{subtitle}</h4>}
+    {description && <p>{description}</p>}
+</Card>

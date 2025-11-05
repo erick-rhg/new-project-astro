@@ -1,0 +1,23 @@
+---
+import Section from "@components/Section.astro";
+const { dataJson } = Astro.props;
+const components = {
+  Section: Section,
+};
+---
+
+{
+  dataJson.map((data) => {
+    const Component = components[data.component];
+
+    if (!Component) {
+      return null;
+    }
+
+    return  (
+    <section>/* grid=content */
+        <Component {...data.props} settings={data.settings} /> 
+    </section>
+    )
+  })
+}
