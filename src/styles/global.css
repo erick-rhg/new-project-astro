@@ -115,7 +115,7 @@ li {
   grid-template-columns: 
     [full-start] minmax(var(--page-gutter-min), 1fr) 
     [content-start] minmax(0, var(--content-max-width)) [content-end] 
-    [full-start] minmax(var(--page-gutter-min), 1fr);
+    minmax(var(--page-gutter-min), 1fr) [full-end]; /* <-- ¡Arreglado! */
 }
 
 .grid-layout > * {
@@ -134,3 +134,11 @@ li {
 }
 
 
+* {
+  outline: 1px solid red;
+}
+
+body {
+  height: 5000px;
+  background-color: #333;
+}

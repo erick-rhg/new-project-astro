@@ -35,23 +35,25 @@
    * MAX = Tamaño en desktop (ej. 1440px)
    */
 
-  /* Texto pequeño (ej. 'legal', 'caption') */
-  --font-size--1: clamp(0.875rem, 0.5vw + 0.75rem, 0.9375rem); /* 14px -> 15px */
+ /* --- Escala de Fuente Fluida (Ajustada a ~1000px) --- */
 
-  /* Texto base (Párrafos) */
-  --font-size-0: clamp(1rem, 1vw + 0.75rem, 1.125rem);      /* 16px -> 18px */
+/* Texto pequeño (ej. 'legal', 'caption') */
+--font-size--1: clamp(0.875rem, 0.15vw + 0.84rem, 0.9375rem);
 
-  /* Títulos pequeños (ej. H3, H4) */
-  --font-size-1: clamp(1.25rem, 1.5vw + 0.9rem, 1.5rem);       /* 20px -> 24px */
+/* Texto base (Párrafos) */
+--font-size-0: clamp(1rem, 0.29vw + 0.94rem, 1.125rem);
 
-  /* Títulos medianos (ej. H2) */
-  --font-size-2: clamp(1.563rem, 2.5vw + 1rem, 2.25rem);     /* 25px -> 36px */
+/* Títulos pequeños (ej. H3, H4) */
+--font-size-1: clamp(1.25rem, 0.59vw + 1.13rem, 1.5rem);
 
-  /* Títulos grandes (ej. H1) */
-  --font-size-3: clamp(2.441rem, 5vw + 1.2rem, 3.75rem);      /* 39px -> 60px */
+/* Títulos medianos (ej. H2) */
+--font-size-2: clamp(1.563rem, 1.62vw + 1.24rem, 2.25rem);
 
-  /* Títulos de Héroe (Display) */
-  --font-size-4: clamp(3.052rem, 7vw + 1.5rem, 5.625rem);     /* 49px -> 90px */
+/* Títulos grandes (ej. H1) */
+--font-size-3: clamp(2.441rem, 3.08vw + 1.82rem, 3.75rem);
+
+/* Títulos de Héroe (Display) */
+--font-size-4: clamp(3.052rem, 6.05vw + 1.84rem, 5.625rem);
 
 
   /* --- 3. Escala de Espaciado Fluido (Spacing Scale) --- */
