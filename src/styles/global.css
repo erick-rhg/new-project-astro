@@ -132,13 +132,3 @@ li {
   margin-inline: auto;
   padding-inline: var(--page-gutter-min);
 }
-
-
-* {
-  outline: 1px solid red;
-}
-
-body {
-  height: 5000px;
-  background-color: #333;
-}
