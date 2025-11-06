@@ -1,9 +1,10 @@
 ---
-const { img, description, custom_img } = Astro.props;
+const { img, description, subtitle, custom_img } = Astro.props;
 ---
 
 <div class:list={[custom_img]}>
   {img && <img src={img} alt="" />}
+  {subtitle && <h4>{subtitle}</h4>}
   {description && <p>{description}</p>}
 </div>
 

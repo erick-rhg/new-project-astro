@@ -3,7 +3,7 @@ import Image from "@components/Image.astro";
 const { images, settings } = Astro.props;
 ---
 
-<div class:list={["collection-img-default", settings?.custom_article, settings?.special_class]}>
+<div class:list={["collection-img-default", settings?.custom_container_img, settings?.special_class]}>
   {
     settings?.special_class ? (
       <div class:list={[settings.special_class + "_group"]}>
@@ -77,6 +77,18 @@ const { images, settings } = Astro.props;
     to {translate: -100%;}
   }
 
+  .servicios-grid-logos {
+    justify-content: center;
+    row-gap: var(--space-xxl);
+    justify-items: center;
+    text-align: center;
+  }
+
+  :global(.servicios-grid-logos img) {
+    margin-inline: auto;
+  }
+
+  /*================================================ */
   @media (min-width: 990px)  {
 
       :global(.carousel_group>div) {
@@ -95,6 +107,18 @@ const { images, settings } = Astro.props;
 
     .carousel > .carousel_group:nth-of-type(2):not(:has(> div:nth-of-type(4))) {
   display: none;
+}
+
+.servicios-grid-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:baseline;
+}
+
+:global(.servicios-grid-logos div){
+  flex: 0 0 300px;
+  font-size: var(--font-size--1);
 }
   }
 </style>
