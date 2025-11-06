@@ -5,9 +5,12 @@ import PageBuilder from "@components/PageBuilder.astro";
 import dataJson from "@data/home-json.json";
 ---
 
-<BaseLayout title="Inicio">
-    <HeroBanner/>
+<BaseLayout title="Keytron S.A. - Consultoría tecnológica">
+  <HeroBanner
+    button="¡Descubre Keytron!"
+    title="Nuestro compromiso, tu éxito"
+    subtitle="Conoce cómo podemos ayudarte con nuestras soluciones"
+  />
 
-    <PageBuilder dataJson = {dataJson}/>
-
+  <PageBuilder dataJson={dataJson} />
 </BaseLayout>

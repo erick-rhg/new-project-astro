@@ -5,19 +5,20 @@ import PageBuilder from "@components/PageBuilder.astro";
 import dataJson from "@data/soluciones-y-servicios-json.json";
 ---
 
-<BaseLayout title="Inicio">
-    <HeroBanner/>
+<BaseLayout title="Soluciones y servicios  - Keytron S.A.">
+  <HeroBanner
+    title="Soluciones y servicios"
+    subtitle="Orientados a tus necesidades reales"
+  />
 
-    <PageBuilder dataJson = {dataJson}/>
-
+  <PageBuilder dataJson={dataJson} />
 </BaseLayout>
 
 <style is:global>
-    
-    @media(min-width: 990px){
-        .article-default {
-            width: 75vw;
-            margin-inline: auto;
-        }
+  @media (min-width: 990px) {
+    .article-default {
+      width: 75vw;
+      margin-inline: auto;
     }
+  }
 </style>

@@ -1,14 +1,14 @@
 ---
-
+const { title, subtitle , button} = Astro.props;
 ---
 
 <section class="grid-layout">
   <div class="full-bleed">
     <img src="/img/bannerHome.svg" alt="" class="banner-img" />
     <div class="inner-content banner-content">
-      <h1>Nuestro compromiso, tu éxito</h1>
-      <h3>Conoce cómo podemos ayudarte con nuestras soluciones</h3>
-      <a href="" class="button-a btn-cta">¡Descubre Keytron!</a>
+      <h1>{title}</h1>
+      <h3>{subtitle}</h3>
+      {button && <a href="" class="button-a btn-cta">{button}</a>}
     </div>
   </div>
 </section>
