@@ -27,7 +27,12 @@ const { images, settings } = Astro.props;
 <style>
   .collection-img-default {
     display: grid;
-    gap: var(--space-l);
+    gap: var(--space-xxl);
+    justify-content: center;
+  }
+  :global(.collection-img-default>div) {
+    align-content: center;
+    justify-items: center;
   }
 
   .carousel {
@@ -91,6 +96,15 @@ const { images, settings } = Astro.props;
   /*================================================ */
   @media (min-width: 990px)  {
 
+    .collection-img-default {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    :global(.collection-img-default>div) {
+       flex: 0 0 18.76rem;
+    }
+
       :global(.carousel_group>div) {
     flex: 0 0 15.6rem;
   }
@@ -117,7 +131,7 @@ const { images, settings } = Astro.props;
 }
 
 :global(.servicios-grid-logos div){
-  flex: 0 0 300px;
+  flex: 0 0 18.76rem;
   font-size: var(--font-size--1);
 }
   }

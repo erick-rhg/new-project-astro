@@ -1,0 +1,130 @@
+[
+    {
+        "component": "Section",
+        "settings": {},
+        "props": {
+            "card_data": [
+                {
+                    "title": "Clientes",
+                    "subtitle": "Nuestro objetivo se centra en la satisfacción de nuestros clientes, nuestro compromiso es garantizar dicha satisfacción a través de la mejora continua",
+                    "description": "<strong>Llevamos más de 28 años</strong> construyendo la relación con nuestros clientes, fidelizandolos año tras año. Nuestro portfolio nos permite proporcionar soluciones específicas en diferentes sectores: <span>Público</span> (Administración central, Sanidad, Educación…),<span> Privado</span> (Industria, Ingeniería, Banca, Retail, Alimentación…), <span>Operadores de telefonía móvil, fija y virtuales…</span>",
+                    "img": "/img/home/clientes.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Sector Público",
+                    "subtitle": "",
+                    "description": "",
+                    "img": "",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "subtitle": "Administración central",
+                    "img": "img/clientes-img/logos/central.png"
+                },
+                {
+                    "subtitle": "Administraciones autonómicas",
+                    "img": "img/clientes-img/logos/local.png"
+                },
+                {
+                    "subtitle": "Sanidad",
+                    "img": "img/clientes-img/logos/sanidad.png"
+                },
+                {
+                    "subtitle": "Educación",
+                    "img": "img/clientes-img/logos/educacion.png"
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Sector Privado",
+                    "subtitle": "",
+                    "description": "",
+                    "img": "",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "subtitle": "Industria",
+                    "img": "img/clientes-img/logos/industria.png"
+                },
+                {
+                    "subtitle": "Ingeniería",
+                    "img": "img/clientes-img/logos/ingenieria.png"
+                },
+                {
+                    "subtitle": "Banca y finanzas",
+                    "img": "img/clientes-img/logos/finanzas.png"
+                },
+                {
+                    "subtitle": "Alimentación",
+                    "img": "img/clientes-img/logos/tienda.png"
+                },
+                {
+                    "subtitle": "Retail",
+                    "img": "img/clientes-img/logos/retail.png"
+                },
+                {
+                    "subtitle": "Educación",
+                    "img": "img/clientes-img/logos/educacion.png"
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Operadores",
+                    "subtitle": "",
+                    "description": "",
+                    "img": "",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "subtitle": "Operadores móviles",
+                    "img": "img/clientes-img/logos/movil.png"
+                },
+                {
+                    "subtitle": "Operadores fijos",
+                    "img": "img/clientes-img/logos/fijo.png"
+                },
+                {
+                    "subtitle": "OMV",
+                    "img": "img/clientes-img/logos/omv.png"
+                },
+                {
+                    "subtitle": "ISP",
+                    "img": "img/clientes-img/logos/isp.png"
+                }
+            ]
+        }
+    }
+]

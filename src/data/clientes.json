@@ -1,76 +1,111 @@
-[
+{
+  "clientes": [
     {
-        "id": "seccion-alianza-1",
-        "component": "Section",
-        "settings": {
-            "layout_class": "2-col"
-        },
-        "props": {
-            "card_data": [
-                {
-                    "title": "titulo 1",
-                    "description": "description 1",
-                    "img": "url/img1.jpg"
-                }
-            ],
-            "image_data": [
-                {
-                    "img": "src/img-col-1.jpg",
-                    "description": "desc img 1"
-                }
-            ]
-        }
+      "logoId": "",
+      "title": "Clientes",
+      "subtitle": "Nuestro objetivo se centra en la satisfacción de nuestros clientes, nuestro compromiso es garantizar dicha satisfacción a través de la mejora continua",
+      "description": "<strong>Llevamos más de 28 años</strong> construyendo la relación con nuestros clientes, fidelizandolos año tras año. Nuestro portfolio nos permite proporcionar soluciones específicas en diferentes sectores: <span>Público</span> (Administración central, Sanidad, Educación…),<span> Privado</span> (Industria, Ingeniería, Banca, Retail, Alimentación…), <span>Operadores de telefonía móvil, fija y virtuales…</span>",
+      "imgSrc": "img/clientes.png"
     },
     {
-        "id": "seccion-alianza-2",
-        "component": "Section",
-        "settings": {
-            "layout_class": "3-col"
-        },
-        "props": {
-            "card_data": [
-                {
-                    "title": "titulo 2",
-                    "description": "description 2",
-                    "img": "url/img2.jpg"
-                }
-            ],
-            "image_data": [
-                {
-                    "img": "src/img-col-2.jpg",
-                    "description": "desc img 2"
-                },
-                {
-                    "img": "src/img-col-3.jpg",
-                    "description": "desc img 3"
-                }
-            ]
-        }
+      "logoId": "sectorPublico",
+      "title": "Sector Público",
+      "subtitle": "",
+      "description": "",
+      "imgSrc": ""
     },
     {
-        "id": "seccion-alianza-3-especial",
-        "component": "Section",
-        "settings": {
-            "layout_class": "2-col",
-            "custom_class": "section-highlighted"
-        },
-        "props": {
-            "card_data": [
-                {
-                    "title": "Card con Botones (Caso Especial)",
-                    "description": "Esta card tiene botones gracias al JSON.",
-                    "img": "url/img-especial.jpg",
-                    "custom_class": "card-con-borde-rojo",
-                    "botones": [
-                        {
-                            "texto": "Click Aquí",
-                            "url": "/link",
-                            "clase": "btn-primario"
-                        }
-                    ]
-                }
-            ],
-            "image_data": []
-        }
+      "logoId": "sectorPrivado",
+      "title": "Sector Privado",
+      "subtitle": "",
+      "description": "",
+      "imgSrc": ""
+    },
+    {
+      "logoId": "operadores",
+      "title": "Operadores",
+      "subtitle": "",
+      "description": "",
+      "imgSrc": ""
     }
-]
+  ],
+  "sectorPublico": [
+    {
+      "subtitle": "Administración central",
+      "imgSrc": "img/clientes-img/logos/central.png"
+    },
+    {
+      "subtitle": "Administraciones autonómicas",
+      "imgSrc": "img/clientes-img/logos/local.png"
+    },
+    {
+      "subtitle": "Sanidad",
+      "imgSrc": "img/clientes-img/logos/sanidad.png"
+    },
+    {
+      "subtitle": "Educación",
+      "imgSrc": "img/clientes-img/logos/educacion.png"
+    }
+  ],
+  "sectorPrivado": [
+    {
+      "subtitle": "Industria",
+      "imgSrc": "img/clientes-img/logos/industria.png"
+    },
+    {
+      "subtitle": "Ingeniería",
+      "imgSrc": "img/clientes-img/logos/ingenieria.png"
+    },
+    {
+      "subtitle": "Banca y finanzas",
+      "imgSrc": "img/clientes-img/logos/finanzas.png"
+    },
+    {
+      "subtitle": "Alimentación",
+      "imgSrc": "img/clientes-img/logos/tienda.png"
+    },
+    {
+      "subtitle": "Retail",
+      "imgSrc": "img/clientes-img/logos/retail.png"
+    },
+    {
+      "subtitle": "Educación",
+      "imgSrc": "img/clientes-img/logos/educacion.png"
+    }
+  ],
+  "operadores": [
+    {
+      "subtitle": "Operadores móviles",
+      "imgSrc": "img/clientes-img/logos/movil.png"
+    },
+    {
+      "subtitle": "Operadores fijos",
+      "imgSrc": "img/clientes-img/logos/fijo.png"
+    },
+    {
+      "subtitle": "OMV",
+      "imgSrc": "img/clientes-img/logos/omv.png"
+    },
+    {
+      "subtitle": "ISP",
+      "imgSrc": "img/clientes-img/logos/isp.png"
+    }
+  ]
+},
+[
+  {
+    "card"[
+      {
+        "title": "titulo",
+        "descriptio": "description",
+        "img": "url"
+      }
+    ],
+    "collectionImg": [
+      {
+        "img": "src",
+        "description": "desc"
+      }
+    ]
+  }
+
