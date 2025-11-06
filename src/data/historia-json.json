@@ -1,0 +1,41 @@
+[
+    {
+        "component": "Section",
+        "settings": {},
+        "props": {
+            "card_data": [
+                {
+                    "title": "Así somos",
+                    "subtitle": "Keytron a la vanguardia tecnológica desde 1988",
+                    "description": "Con una dilatada experiencia y un demostrado compromiso, <strong>Keytron</strong> es tu socio de confianza para las Tecnologías de la Información. Nuestra estrategia claramente definida es el punto de partida ideal para la implementación de un sistema seguro. Creemos en la tecnología y en la innovación como apoyo a las necesidades de su negocio y como tal deben resolver las necesidades específicas de tu empresa.",
+                    "img": "/img/historia/people.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-col-right"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "",
+                    "subtitle": "",
+                    "description": "<p><strong>Keytron S.A se constituye el 28 de Julio de 1988,</strong> comenzando su actividad a principios del año 1989. <span>Llevamos 30 años en el sector</span> creciendo con nuestros clientes.</p> <p>Keytron es la consultoría TIC que ofrece un servicio integral, con una dilatada experiencia y un demostrado compromiso, es el socio de confianza para las Tecnologías de la Información.</p> <p>Compuesto por un grupo de profesionales con una amplia experiencia y altamente cualificados. Nuestro equipo directivo, con una dilatada experiencia, ha permitido afianzar la estrategia y liderar el crecimiento de la empresa a lo largo de los años.</p> <p><span class=redText>Nuestra trayectoria nos avala, la fidelidad con y de nuestros clientes y proveedores se alinea con nuestra filosofía por el trabajo bien hecho.</span></p>",
+                    "img": "",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/historia/cohete.png",
+                    "description": "",
+                    "custom_img": "mobile-hide"
+                }
+            ]
+        }
+    }
+]
