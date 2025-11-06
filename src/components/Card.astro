@@ -1,10 +1,31 @@
 ---
-const {title, subtitle, description, img} = Astro.props
+const { title, subtitle, description, img } = Astro.props;
 ---
 
-<Card>
-    {img && <img src={img} alt=""/>}
-    {title && <h2>{title}</h2>}
-    {subtitle && <h4>{subtitle}</h4>}
-    {description && <p>{description}</p>}
-</Card>
+<div class="card-default">
+  {img && <img src={img} alt="" />}
+  {title && <h2>{title}</h2>}
+  {subtitle && <h4>{subtitle}</h4>}
+  {description && <p>{description}</p>}
+</div>
+
+<style>
+  .card-default {
+    display: grid;
+    justify-items: center;
+
+    text-align: center;
+  }
+  .card-default h4 {
+    color: var(--color-cta);
+  }
+
+/*   .card-default p {
+    white-space: pre-wrap; para que respete \n en JSON
+  } */
+  @media (min-width: 990px) {
+    .card-default {
+      width: 50vw;
+    }
+  }
+</style>

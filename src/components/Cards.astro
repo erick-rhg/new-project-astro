@@ -1,10 +1,35 @@
 ---
 import Card from "@components/Card.astro";
-const { cards } = Astro.props;
+import Buttons from "@components/Buttons.astro";
+const { cards, settings } = Astro.props;
 ---
 
-<article >
-    {cards.map(cardItem => {
-        return <Card {...cardItem}></Card>
-    })}
+<article class:list={["article-default", settings?.custom_article]}>
+  {
+    cards.map((cardItem) => {
+      return (
+        <>
+          <Card {...cardItem} />
+          {cardItem.buttons ? <Buttons buttons={cardItem.buttons} /> : null}
+        </>
+      );
+    })
+  }
 </article>
+
+<style>
+  .article-default {
+    display: grid;
+    justify-content: center;
+    row-gap: var(--space-xl);
+  }
+  :global(.article-left .card-default) {
+    justify-items: flex-start;
+    text-align: left;
+  }
+  .article-left {
+    justify-content: flex-start;
+  }
+  @media (min-width: 990px) {
+  }
+</style>

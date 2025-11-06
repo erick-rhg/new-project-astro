@@ -9,7 +9,7 @@
             "card_data": [
                 {
                     "title": "titulo 1",
-                    "descriptio": "description 1",
+                    "description": "description 1",
                     "img": "url/img1.jpg"
                 }
             ],
@@ -31,7 +31,7 @@
             "card_data": [
                 {
                     "title": "titulo 2",
-                    "descriptio": "description 2",
+                    "description": "description 2",
                     "img": "url/img2.jpg"
                 }
             ],
@@ -58,7 +58,7 @@
             "card_data": [
                 {
                     "title": "Card con Botones (Caso Especial)",
-                    "descriptio": "Esta card tiene botones gracias al JSON.",
+                    "description": "Esta card tiene botones gracias al JSON.",
                     "img": "url/img-especial.jpg",
                     "custom_class": "card-con-borde-rojo",
                     "botones": [

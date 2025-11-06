@@ -1,0 +1,113 @@
+[
+    {
+        "component": "Section",
+        "settings": {},
+        "props": {
+            "card_data": [
+                {
+                    "title": "Descubre Keytron",
+                    "subtitle": "Keytron es la consultora TIC que ofrece un servicio integral garantizado",
+                    "description": "Con una dilatada experiencia y un demostrado compromiso, Keytron es tu socio de confianza para las Tecnologías de la Información. Nuestra estrategia claramente definida es el punto de partida ideal para la implementación de un Sistema seguro. Creemos en la tecnología y en la innovación como apoyo a las necesidades de tu negocio y como tal deben resolver las necesidades específicas de tu empresa. Conoce cómo podemos ayudarte con nuestras soluciones hechas a medida",
+                    "img": "/img/home/descubre.png",
+                    "buttons": [
+                        {
+                            "text": "Quiénes somos",
+                            "url": "",
+                            "class_name": "btn-primary"
+                        },
+                        {
+                            "text": "Contáctanos",
+                            "url": "",
+                            "class_name": "btn-cta"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-col-left"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Soluciones y servicios",
+                    "subtitle": "Te ofrecemos las soluciones y servicios más avanzados y de los fabricantes más innovadores",
+                    "description": "Nuestro equipo de profesionales destaca por la ilusión, esfuerzo y compromiso que ponen en todo lo que hacen. Unas cualidades que están en la base de nuestra cultura corporativa. Apostamos por el talento, la motivación y la progresión de los profesionales a través de una gestión de Recursos Humanos centrada en el desarrollo profesional y personal.",
+                    "img": "/img/home/servicios.png",
+                    "buttons": [
+                        {
+                            "text": "Más información",
+                            "url": "",
+                            "class_name": "btn-primary"
+                        }
+                    ]
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/home/lagarto.png",
+                    "description": "",
+                    "custom_img": "mobile-hide"
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-col-right"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Clientes",
+                    "subtitle": "Nuestro objetivo se centra en la satisfacción de nuestros clientes. Nuestro compromiso es garantizar dicha satisfacción a través de la mejora continua",
+                    "description": "Llevamos más de 30 años construyendo la relación con nuestros clientes, fidelizándolos año tras año. Nuestro portfolio nos permite proporcionar soluciones específicas en diferentes sectores: Público (Administración central, Sanidad, Educación, etc.) y Privado (Industria, Ingeniería, Banca, Retail, Alimentación, etc.)",
+                    "img": "/img/home/clientes.png",
+                    "buttons": [
+                        {
+                            "text": "Más información",
+                            "url": "",
+                            "class_name": "btn-primary"
+                        }
+                    ]
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/home/lagarto.png",
+                    "description": "",
+                    "custom_img": "mobile-hide"
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "layout_class": "full-bleed",
+            "custom_article": "article-left"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Contacto",
+                    "subtitle": "Queremos trabajar contigo",
+                    "description": "Si deseas solicitar más información acerca de nuestros servicios y proyectos, por favor, ponte en contacto con nosotros.",
+                    "img": "",
+                    "buttons": [
+                        {
+                            "text":"Contáctanos",
+                            "url": "",
+                            "class_name": "btn-cta",
+                            "custom_button": "button-left"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

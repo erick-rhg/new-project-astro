@@ -34,8 +34,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-text-heading, #111);
   
   /* El reset quitó los márgenes, los añadimos de nuevo */
-  margin-top: var(--space-xl);
-  margin-bottom: var(--space-m);
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-s);
 }
 
 /* Tamaños de fuente fluidos específicos */
@@ -116,6 +116,8 @@ li {
     [full-start] minmax(var(--page-gutter-min), 1fr) 
     [content-start] minmax(0, var(--content-max-width)) [content-end] 
     minmax(var(--page-gutter-min), 1fr) [full-end]; /* <-- ¡Arreglado! */
+
+    row-gap:var(--space-section);
 }
 
 .grid-layout > * {

@@ -1,10 +1,36 @@
 ---
 import Cards from "@components/Cards.astro";
+import Images from "@components/Images.astro";
 
-const { card_data, image_data, } = Astro.props;
+const { card_data, image_data } = Astro.props;
 const { settings } = Astro.props;
+const fullBleed = settings?.layout_class === "full-bleed";
 ---
 
-<div class:list={[settings?.layout_class, settings?.costum_class]}>
-    {card_data && <Cards cards = { card_data }></Cards>}
+<div class:list={[fullBleed && "inner-content", settings?.grid_section]}>
+  {card_data && <Cards cards={card_data} settings={settings} />}
+  {image_data && <Images images={image_data} settings={settings} />}
 </div>
+
+<style>
+    .g2-col-left,
+    .g2-col-right {
+      display: grid;
+    }
+
+  @media (min-width: 990px) {
+    .g2-col-left,
+    .g2-col-right {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    :global(.g2-col-right .article-default) {
+      order: 1;
+    }
+
+    :global(.g2-col-left .card-default, .g2-col-right .card-default) {
+      width: auto;
+    }
+  }
+</style>

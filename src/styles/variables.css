@@ -11,7 +11,8 @@
 :root {
   /* --- 1. Fuentes (Tipografía) --- */
   /* Define las familias de fuentes */
-  --font-family-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-body: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   --font-family-heading: "Helvetica Neue", "Helvetica", Arial, sans-serif; /* O una fuente personalizada */
 
   /* Define los pesos de fuente */
@@ -20,14 +21,22 @@
   --font-weight-bold: 700;
 
   /* Define las alturas de línea (unitless) */
-  --line-height-body: 1.65;  /* Para texto de párrafo */
+  --line-height-body: 1.65; /* Para texto de párrafo */
   --line-height-heading: 1.2; /* Para títulos */
 
   /*Define colores base*/
-    --color-text-body: #333333; /* (Gris oscuro, no negro puro) */
-    --color-text-heading: #111111; /* (Casi negro) */
-    --color-background: #ffffff; /* (Blanco) */
-    --color-primario-hover: #0056b3; /* (Un tono más oscuro) */
+  --color-text-body: #333333; /* (Gris oscuro, no negro puro) */
+  --color-text-heading: #111111; /* (Casi negro) */
+  --color-background: #ffffff; /* (Blanco) */
+  --color-primario-hover: #0056b3; /* (Un tono más oscuro) */
+  --color-keytron-navy: #0a2b4c;
+  --color-trust-blue: #1e88e5;
+  --color-neutral-gray: #f5f7fa;
+  --color-light-border: #e0e0e0;
+  --color-cta: #b21b52;
+  --color-alert-orange: #fb8c00;
+  --color-error-red: #e53935;
+  --color-light: #fff;
 
   /* --- 2. Escala de Fuente Fluida (Typographic Scale) --- */
   /* * Usamos clamp(MIN, PREFERIDO, MAX)
@@ -35,62 +44,59 @@
    * MAX = Tamaño en desktop (ej. 1440px)
    */
 
- /* --- Escala de Fuente Fluida (Ajustada a ~1000px) --- */
+  /* --- Escala de Fuente Fluida (Ajustada a ~1000px) --- */
 
-/* Texto pequeño (ej. 'legal', 'caption') */
---font-size--1: clamp(0.875rem, 0.15vw + 0.84rem, 0.9375rem);
+  /* Texto pequeño (ej. 'legal', 'caption') */
+  --font-size--1: clamp(0.875rem, 0.15vw + 0.84rem, 0.9375rem);
 
-/* Texto base (Párrafos) */
---font-size-0: clamp(1rem, 0.29vw + 0.94rem, 1.125rem);
+  /* Texto base (Párrafos) */
+  --font-size-0: clamp(1rem, 0.29vw + 0.94rem, 1.125rem);
 
-/* Títulos pequeños (ej. H3, H4) */
---font-size-1: clamp(1.25rem, 0.59vw + 1.13rem, 1.5rem);
+  /* Títulos pequeños (ej. H3, H4) */
+  --font-size-1: clamp(1.25rem, 0.59vw + 1.13rem, 1.5rem);
 
-/* Títulos medianos (ej. H2) */
---font-size-2: clamp(1.563rem, 1.62vw + 1.24rem, 2.25rem);
+  /* Títulos medianos (ej. H2) */
+  --font-size-2: clamp(1.563rem, 1.62vw + 1.24rem, 2.25rem);
 
-/* Títulos grandes (ej. H1) */
---font-size-3: clamp(2.441rem, 3.08vw + 1.82rem, 3.75rem);
+  /* Títulos grandes (ej. H1) */
+  --font-size-3: clamp(2.441rem, 3.08vw + 1.82rem, 3.75rem);
 
-/* Títulos de Héroe (Display) */
---font-size-4: clamp(3.052rem, 6.05vw + 1.84rem, 5.625rem);
-
+  /* Títulos de Héroe (Display) */
+  --font-size-4: clamp(3.052rem, 6.05vw + 1.84rem, 5.625rem);
 
   /* --- 3. Escala de Espaciado Fluido (Spacing Scale) --- */
   /* * Un sistema para 'padding', 'margin', 'gap'.
    * Usa los mismos principios de clamp()
    */
 
- /* x-small (0.5rem -> 0.75rem) */
---space-xs: clamp(0.5rem, 0.58vw + 0.38rem, 0.75rem);
+  /* x-small (0.5rem -> 0.75rem) */
+  --space-xs: clamp(0.5rem, 0.58vw + 0.38rem, 0.75rem);
 
-/* small (0.75rem -> 1rem) */
---space-s: clamp(0.75rem, 0.58vw + 0.63rem, 1rem);
+  /* small (0.75rem -> 1rem) */
+  --space-s: clamp(0.75rem, 0.58vw + 0.63rem, 1rem);
 
-/* medium (1rem -> 1.5rem) */
---space-m: clamp(1rem, 1.16vw + 0.76rem, 1.5rem);
+  /* medium (1rem -> 1.5rem) */
+  --space-m: clamp(1rem, 1.16vw + 0.76rem, 1.5rem);
 
-/* large (1.5rem -> 2rem) */
---space-l: clamp(1.5rem, 1.16vw + 1.26rem, 2rem);
+  /* large (1.5rem -> 2rem) */
+  --space-l: clamp(1.5rem, 1.16vw + 1.26rem, 2rem);
 
-/* x-large (2rem -> 3rem) */
---space-xl: clamp(2rem, 2.32vw + 1.52rem, 3rem);
+  /* x-large (2rem -> 3rem) */
+  --space-xl: clamp(2rem, 2.32vw + 1.52rem, 3rem);
 
-/* 2x-large (3rem -> 4rem) */
---space-2xl: clamp(3rem, 2.32vw + 2.52rem, 4rem);
+  /* 2x-large (3rem -> 4rem) */
+  --space-xxl: clamp(3rem, 2.32vw + 2.52rem, 4rem);
 
-/* (Opcional) Espaciado de sección (4rem -> 8rem) */
---space-section: clamp(4rem, 9.28vw + 2.08rem, 8rem);
-
+  /* (Opcional) Espaciado de sección (4rem -> 8rem) */
+  --space-section: clamp(4rem, 9.28vw + 2.08rem, 8rem);
 
   /* --- 4. Maquetación (Layout) --- */
 
   /* Ancho máximo de la columna de contenido */
   --content-max-width: 1200px;
-  
+
   /* Márgenes laterales (gutter) mínimos en móvil */
   --page-gutter-min: var(--space-m, 1rem); /* 1rem o 1.5rem suele ser bueno */
-
 
   /* --- 5. Misceláneos --- */
 

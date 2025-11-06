@@ -1,0 +1,10 @@
+---
+import Image from "@components/Image.astro";
+const {images, settings} = Astro.props;
+---
+
+<div>
+    {images.map(imgItem => {
+        return <Image { ...imgItem }></Image>
+    })}
+</div>

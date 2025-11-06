@@ -1,0 +1,20 @@
+---
+const { img, description, custom_img } = Astro.props;
+---
+
+<div class:list={[custom_img]}>
+  {img && <img src={img} alt="" />}
+  {description && <p>{description}</p>}
+</div>
+
+<style>
+  .mobile-hide {
+    display: none;
+  }
+
+  @media (min-width: 990px) {
+    .mobile-hide {
+      display: block;
+    }
+  }
+</style>

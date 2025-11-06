@@ -1,0 +1,15 @@
+---
+const { text, url, class_name, custom_button} = Astro.props;
+---
+
+<button class:list= {[class_name, custom_button]}>{text}</button>
+
+<style>
+    button {
+        
+    }
+
+    .button-left {
+        margin-right: auto;
+    }
+</style>

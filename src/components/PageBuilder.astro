@@ -15,7 +15,7 @@ const components = {
     }
 
     return  (
-    <section>/* grid=content */
+    <section class:list= {[data.settings?.layout_class]}> {/* grid-content */}
         <Component {...data.props} settings={data.settings} /> 
     </section>
     )

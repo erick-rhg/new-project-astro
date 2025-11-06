@@ -1,0 +1,26 @@
+---
+import Button from "@components/Button.astro";
+const { buttons } = Astro.props;
+---
+
+<div>
+  {
+    buttons.map((buttonItem) => {
+      return <Button {...buttonItem} />;
+    })
+  }
+</div>
+
+<style>
+  div {
+    display: grid;
+    row-gap: var(--space-xl);
+    justify-items: center;
+  }
+  @media (min-width: 990px) {
+    div {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+</style>
