@@ -6,7 +6,7 @@ const { title, subtitle, description, img } = Astro.props;
   {img && <img src={img} alt="" />}
   {title && <h2>{title}</h2>}
   {subtitle && <h4>{subtitle}</h4>}
-  {description && <p>{description}</p>}
+  {description && <p set:html={description}></p>}
 </div>
 
 <style>
@@ -18,6 +18,10 @@ const { title, subtitle, description, img } = Astro.props;
   }
   .card-default h4 {
     color: var(--color-cta);
+  }
+
+  :global(.card-default span) {
+    color:var(--color-cta);
   }
 
 /*   .card-default p {

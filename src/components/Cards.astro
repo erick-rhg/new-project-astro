@@ -10,7 +10,7 @@ const { cards, settings } = Astro.props;
       return (
         <>
           <Card {...cardItem} />
-          {cardItem.buttons ? <Buttons buttons={cardItem.buttons} /> : null}
+          {cardItem.buttons && <Buttons buttons={cardItem.buttons} />}
         </>
       );
     })
@@ -25,7 +25,8 @@ const { cards, settings } = Astro.props;
 
     background-color: #ffffff65;
     border-radius: 20px;
-    padding: 20px;
+    padding-inline: 1.5rem;
+    padding-block: 3rem;
     box-shadow:
       7px 20px 75px #bebebe,
       -7px -7px 14px #ffffff;
@@ -38,5 +39,9 @@ const { cards, settings } = Astro.props;
     justify-content: flex-start;
   }
   @media (min-width: 990px) {
+     .article-default {
+
+     }
+
   }
 </style>

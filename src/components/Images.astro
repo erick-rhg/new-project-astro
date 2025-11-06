@@ -1,10 +1,100 @@
 ---
 import Image from "@components/Image.astro";
-const {images, settings} = Astro.props;
+const { images, settings } = Astro.props;
 ---
 
-<div>
-    {images.map(imgItem => {
-        return <Image { ...imgItem }></Image>
-    })}
+<div class:list={["collection-img-default", settings?.custom_article, settings?.special_class]}>
+  {
+    settings?.special_class ? (
+      <div class:list={[settings.special_class + "_group"]}>
+        {images.map((imgItem) => {
+          return <Image {...imgItem} />;
+        })}
+      </div>
+            <div aria-hidden class:list={[settings.special_class + "_group"]}>
+        {images.map((imgItem) => {
+          return <Image {...imgItem} />;
+        })}
+      </div>
+    ) : (
+      images.map((imgItem) => {
+        return <Image {...imgItem} />;
+      })
+    )
+  }
 </div>
+
+<style>
+  .collection-img-default {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  .carousel {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: 250px;
+    justify-items: stretch;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .carousel_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    animation: spin 7s infinite linear;
+    padding-right: 2rem;
+    margin-inline: auto;
+  }
+
+  .carousel_group:has(> div:nth-of-type(9)) {
+    animation: spin 12s infinite linear;
+  }
+
+    .carousel_group:not(:has(> div:nth-of-type(7))){
+    animation: spin 5s infinite linear;
+  }
+
+      .carousel_group:not(:has(> div:nth-of-type(4))){
+    animation: spin 3s infinite linear;
+  }
+
+  :global(.carousel_group>div) {
+    flex: 0 0 9.375rem;
+    height: 12rem;
+    align-content: center;
+    justify-items: center;
+  }
+
+  @keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+  }
+
+  @media (min-width: 990px)  {
+
+      :global(.carousel_group>div) {
+    flex: 0 0 15.6rem;
+  }
+
+    .carousel_group {
+        gap: 1rem;
+        animation: spin 8s infinite linear;
+        padding-right: 1.5rem;
+    }
+
+    .carousel_group:not(:has(> div:nth-of-type(4))){
+    animation: none;
+  }
+
+    .carousel > .carousel_group:nth-of-type(2):not(:has(> div:nth-of-type(4))) {
+  display: none;
+}
+  }
+</style>

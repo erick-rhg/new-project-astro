@@ -1,0 +1,337 @@
+[
+    {
+        "component": "Section",
+        "settings": {},
+        "props": {
+            "card_data": [
+                {
+                    "title": "Alianzas",
+                    "subtitle": "Nos adaptamos a tus necesidades",
+                    "description": "<strong>Keytron</strong> apuestaz por fabricantes de primer nivel para cada una de las soluciones de su portfolio. Nos adaptamos a tus necesidades y requisitos ofreciéndote la mejor solución.",
+                    "img": "img/alianzas-img/alianzas.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row",
+            "special_class": "carousel"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Sistemas",
+                    "subtitle": "",
+                    "description": "Nos adaptamos a tus necesidades, ofreciendo optimización y maximizando el rendimiento: <span class='redText'>Servidores</span> (En la nube, Gestión, IOT),<span> Cliente / Servidor, Storage, Virtualización,</span> etc...",
+                    "img": "/img/alianzas-img/sistemas.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/alianzas-img/logos/hp.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/hpenter.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/acronis.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/vmware.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/microsoft.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/syneto.png",
+                    "description": "",
+                    "custom_img": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row",
+            "special_class": "carousel"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Networking",
+                    "subtitle": "",
+                    "description": "Creamos soluciones en entorno de redes adecuadas a tu negocio: <span>Tecnologías de 1 a 100G, Wifi</span> (Bajo demanda), <span>Soluciones Cloud,</span> etc...",
+                    "img": "img/alianzas-img/networking.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/meraki.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/extreme.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/hpenter.png",
+                    "description": "",
+                    "custom_img": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row",
+            "special_class": "carousel"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Seguridad",
+                    "subtitle": "",
+                    "description": "Nuestro objetivo es proteger y securizar para minimizar riesgos:<span> Protección perimetral, Seguridad de contenidos, Protección ante amenazas, Seguridad de red, Soluciones en Cloud, </span>etc...",
+                    "img": "img/alianzas-img/seguridad.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/alianzas-img/logos/storm.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/a10.jpg",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/forcep.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/extreme.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/mcafee.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/checkp.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/okta.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/meraki.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/sophos.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/yubico.png",
+                    "description": "",
+                    "custom_img": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row",
+            "special_class": "carousel"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Storage",
+                    "subtitle": "",
+                    "description": "Ofrecemos soluciones de almacenamiento que se adaptan a tus requisitos: <span>Almacenamiento bajo demanda, Backup,</span> etc...",
+                    "img": "img/alianzas-img/storage.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/alianzas-img/logos/veeam.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/hpenter.png",
+                    "description": "",
+                    "custom_img": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row",
+            "special_class": "carousel"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Gestión / Monitorización",
+                    "subtitle": "",
+                    "description": "Proporcionamos soluciones que permiten gestionar, controlar y optimizar el rendimiento y el uso: <span>Gestión de red, gestión de usuarios, gestión de aplicaciones,</span> etc...",
+                    "img": "img/alianzas-img/usuarios.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/alianzas-img/logos/manage.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/extreme.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/viewtinet.jpg",
+                    "description": "",
+                    "custom_img": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row",
+            "special_class": "carousel"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Infraestructura CPD/Redes",
+                    "subtitle": "",
+                    "description": "Ofrecemos toda la infraestructura para CPD, así como las instalaciones de cableado, de acuerdo a los estándares y normativa aplicables: <span>Redes LAN/WAN/RMS, Redes Campus, proyectos de cableado estructurado y fibra óptica, diseño eléctrico, seguridad física,</span> etc...",
+                    "img": "img/alianzas-img/redes.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/alianzas-img/logos/excel.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/apc.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/panduit.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/delta.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/brandrex.png",
+                    "description": "",
+                    "custom_img": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row",
+            "special_class": "carousel"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Voz / Vídeo",
+                    "subtitle": "",
+                    "description": "Ofrecemos soluciones para voz y video, flexibles, interoperables y escalables, que te permiten ahorrar costes: <span>Comunicaciones unificadas, telepresencia, herramientas colaborativas, soluciones en Cloud, </span>etc...",
+                    "img": "img/alianzas-img/voz.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "/img/alianzas-img/logos/yealink.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/microsoft.png",
+                    "description": "",
+                    "custom_img": ""
+                },
+                {
+                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "description": "",
+                    "custom_img": ""
+                }
+            ]
+        }
+    }
+]
