@@ -105,7 +105,7 @@ ul, ol {
 }
 
 li {
-  margin-bottom: var(--space-xs);
+  /* margin-bottom: var(--space-xs); */
 }
 
 /*---LAYOUT PRINCIPAL---*/

@@ -1,49 +1,50 @@
 ---
+
 ---
 
 <header class="grid-layout">
-    <nav class="full-bleed">
-        <div class="inner-content nav-container">
-            <a href="#" class="logo">
-                <img src="" alt="Logo">
-            </a>
-            
-            <button 
-                class="menu-toggle" 
-                aria-label="Toggle menu" 
-                aria-expanded="false"
-                aria-controls="main-menu"
-            >
-                <span class="hamburger">
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                    <span class="hamburger-line"></span>
-                </span>
-            </button>
+  <nav class="full-bleed">
+    <div class="inner-content nav-container">
+      <a href="#" class="logo">
+        <img src="/img/logokeytron.png" alt="Logo" />
+      </a>
 
-            <div class="nav-wrapper" id="main-menu">
-                <ul class="nav-list">
-                    <li><a href="/inicio">INICIO</a></li>
-                    <li class="has-submenu">
-                        <a href="/quienes-somos" aria-haspopup="true">QUIENES SOMOS</a>
-                        <ul class="submenu">
-                            <li><a href="/quienes-somos/historia">Historia</a></li>
-                            <li><a href="/quienes-somos/equipo">Equipo</a></li>
-                            <li><a href="/quienes-somos/valores">Valores</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/alianzas">ALIANZAS</a></li>
-                    <li><a href="/soluciones-y-servicios">SOLUCIONES Y SERVICIOS</a></li>
-                    <li><a href="/clientes">CLIENTES</a></li>
-                    <li><a href="/contacto">CONTACTO</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+      <button
+        class="menu-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="main-menu"
+      >
+        <span class="hamburger">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+
+      <div class="nav-wrapper" id="main-menu">
+        <ul class="nav-list">
+          <li><a href="/inicio">INICIO</a></li>
+          <li class="has-submenu">
+            <a href="/quienes-somos" aria-haspopup="true">QUIENES SOMOS</a>
+            <ul class="submenu">
+              <li><a href="/quienes-somos/historia">Historia</a></li>
+              <li><a href="/quienes-somos/equipo">Equipo</a></li>
+              <li><a href="/quienes-somos/valores">Valores</a></li>
+            </ul>
+          </li>
+          <li><a href="/alianzas">ALIANZAS</a></li>
+          <li><a href="/soluciones-y-servicios">SOLUCIONES Y SERVICIOS</a></li>
+          <li><a href="/clientes">CLIENTES</a></li>
+          <li><a href="/contacto">CONTACTO</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <style>
-.nav-container {
+  .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,16 +54,23 @@
     left: 0;
     right: 0;
     z-index: 1000;
-   /*  backdrop-filter: blur(10px); *//*quitar si quiero un header sticky */
+    backdrop-filter: blur(7px);
+    padding-block: 10px;
+    padding-inline: 40px;
+    border-radius: 0 0 15px 15px;
+    border-bottom: 2px solid #e3e3e33d;;
+  }
 
-}
-
-.logo {
+  .logo {
     display: block;
     z-index: 1001;
-}
+  }
 
-.menu-toggle {
+  .logo img {
+    width: 100px;
+  }
+
+  .menu-toggle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,37 +81,37 @@
     cursor: pointer;
     padding: 0;
     z-index: 1001;
-}
+  }
 
-.hamburger {
+  .hamburger {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 24px;
     height: 20px;
-}
+  }
 
-.hamburger-line {
+  .hamburger-line {
     width: 100%;
     height: 2px;
     background-color: var(--color-text-heading);
     transition: var(--transition-medium);
-}
+  }
 
-.menu-toggle.is-active .hamburger-line:nth-child(1) {
+  .menu-toggle.is-active .hamburger-line:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
-}
+  }
 
-.menu-toggle.is-active .hamburger-line:nth-child(2) {
+  .menu-toggle.is-active .hamburger-line:nth-child(2) {
     opacity: 0;
-}
+  }
 
-.menu-toggle.is-active .hamburger-line:nth-child(3) {
+  .menu-toggle.is-active .hamburger-line:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
-}
+  }
 
-.nav-wrapper {
+  .nav-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -114,150 +122,155 @@
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
     overflow-y: auto;
-}
+  }
 
-.nav-wrapper.is-active {
+  .nav-wrapper.is-active {
     transform: translateX(0);
-}
+  }
 
-.nav-list {
+  .nav-list {
     display: flex;
     flex-direction: column;
-    gap: var(--space-xs, 1rem);
     list-style: none;
     padding: var(--space-m);
     margin: 0;
-}
+    font-family: var(--font-family-heading);
+  }
 
-.nav-list a {
+  .nav-list a {
     display: block;
     text-decoration: none;
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-heading);
-    padding: var(--space-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-keytron-navy);
+    padding: var(--space-s);
     border-radius: var(--border-radius-small);
     transition: var(--transition-fast);
-}
+    font-size: var(--font-size-1);
+  }
 
-.nav-list a:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-}
+  .nav-list a:hover {
+    background-color: #579fe785;
+  }
 
-.submenu {
+  .submenu {
     display: none;
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.02);
+    background-color: rgba(255, 255, 255, 0.956);
     border-radius: var(--border-radius-small);
-}
+  }
 
-.submenu a {
+  .submenu a {
     padding-left: var(--space-l);
     font-size: 0.95em;
-}
+  }
 
-.has-submenu.submenu-active .submenu {
+  .has-submenu.submenu-active .submenu {
     display: block;
-}
+  }
 
-@media (min-width: 990px) {
+  @media (min-width: 990px) {
+    .nav-container {
+      margin-top: 15px;
+      border-radius: 40px;
+      border: 2px solid #e3e3e323;
+    }
+
     .menu-toggle {
-        display: none;
+      display: none;
     }
 
     .nav-wrapper {
       position: static;
-        height: auto;
-        padding-top: 0;
-        transform: none;
-        background-color: transparent;
-        overflow-y: visible;
-        width: auto;
+      height: auto;
+      padding-top: 0;
+      transform: none;
+      background-color: transparent;
+      overflow-y: visible;
+      width: auto;
     }
 
     .nav-list {
-        flex-direction: row;
-        padding: 0;
-        align-items: center;
+      flex-direction: row;
+      padding: 0;
+      align-items: center;
     }
 
     .nav-list a {
       font-size: var(--font-size--1);
+      padding: var(--space-xs);
     }
 
     .has-submenu {
-        position: relative;
+      position: relative;
     }
 
     .submenu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        min-width: 200px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        border-radius: var(--border-radius-small);
-        padding: var(--space-xs);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: var(--border-radius-small);
+      padding: var(--space-xs);
     }
 
     .has-submenu.submenu-active .submenu {
-        display: block;
-        animation: fadeIn 0.2s ease-out;
+      display: block;
+      animation: fadeIn 0.2s ease-out;
     }
 
     @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
-}
+  }
 </style>
 
 <script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navWrapper = document.querySelector(".nav-wrapper");
+  const hasSubmenuItems = document.querySelectorAll(".has-submenu");
 
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navWrapper = document.querySelector('.nav-wrapper');
-    const hasSubmenuItems = document.querySelectorAll('.has-submenu');
-
-    if (menuToggle && navWrapper) {
-        menuToggle.addEventListener('click', () => {
-            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-            menuToggle.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
-            navWrapper.classList.toggle('is-active');
-            menuToggle.classList.toggle('is-active');
-        });
-    }
-
-
-    hasSubmenuItems.forEach(item => {
-        const link = item.querySelector('a');
-        const submenu = item.querySelector('.submenu');
-
-        if (link && submenu) {
-            link.addEventListener('click', (e) => {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    item.classList.toggle('submenu-active');
-                }
-            });
-
-
-            item.addEventListener('mouseenter', () => {
-                if (window.innerWidth > 768) {
-                    item.classList.add('submenu-active');
-                }
-            });
-
-            item.addEventListener('mouseleave', () => {
-                if (window.innerWidth > 768) {
-                    item.classList.remove('submenu-active');
-                }
-            });
-        }
+  if (menuToggle && navWrapper) {
+    menuToggle.addEventListener("click", () => {
+      const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", isExpanded ? "false" : "true");
+      navWrapper.classList.toggle("is-active");
+      menuToggle.classList.toggle("is-active");
     });
+  }
+
+  hasSubmenuItems.forEach((item) => {
+    const link = item.querySelector("a");
+    const submenu = item.querySelector(".submenu");
+
+    if (link && submenu) {
+      link.addEventListener("click", (e) => {
+        if (window.innerWidth <= 768) {
+          e.preventDefault();
+          item.classList.toggle("submenu-active");
+        }
+      });
+
+      item.addEventListener("mouseenter", () => {
+        if (window.innerWidth > 768) {
+          item.classList.add("submenu-active");
+        }
+      });
+
+      item.addEventListener("mouseleave", () => {
+        if (window.innerWidth > 768) {
+          item.classList.remove("submenu-active");
+        }
+      });
+    }
+  });
 </script>

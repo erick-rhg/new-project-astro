@@ -1,37 +1,99 @@
 ---
+
 ---
 
 <section class="grid-layout">
-    <div class="full-bleed">
-        <img src="/img/bannerHome.jpg" alt="" class="banner-img">
-        <div class="inner-content banner-content">
-            <h1>
-                Nuestro compromiso, tu éxito
-            </h1>
-            <h3>
-                Nuestro compromiso, tu éxito
-            </h3>
-            <a href="" class="button-a">¡Descuber Keytron!</a>
-        </div>
+  <div class="full-bleed">
+    <img src="/img/bannerHome.svg" alt="" class="banner-img" />
+    <div class="inner-content banner-content">
+      <h1>Nuestro compromiso, tu éxito</h1>
+      <h3>Conoce cómo podemos ayudarte con nuestras soluciones</h3>
+      <a href="" class="button-a btn-cta">¡Descubre Keytron!</a>
     </div>
+  </div>
 </section>
 
 <style>
-    .banner-img {
-        width: 100vw;
-        height: 100dvh;
-        object-fit: cover;
-        object-position: center;
-        position: absolute;
-        inset: 0;
-        z-index: 1;
+  section.grid-layout {
+    height: 100dvh;
+    align-items: center;
+  }
+
+  .banner-img {
+    width: 100vw;
+    height: 100dvh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  .banner-content {
+    display: grid;
+    align-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: #ffffff65;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow:
+      7px 7px 14px #bebebe,
+      -7px -7px 14px #ffffff;
+  }
+
+  h1 {
+    font-size: var(--font-size-3);
+    color: var(--color-primario-hover);
+  }
+
+  h3 {
+    color: var(--color-text-body);
+  }
+
+  .btn-cta {
+    margin-block-start: var(--space-s);
+    width: 220px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-cta:hover {
+    color: #fff;
+    background-color: #fd0101;
+    border-color: #b31c5355;
+  }
+  .button-a::before {
+    content: "";
+    width: 0;
+    height: 3em;
+    border-radius: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+      to right,
+      #d2cdce34 0%,
+      rgba(242, 92, 92, 0.809) 100%
+    );
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+  }
+
+  .button-a:hover::before {
+    height: 3em;
+    width: 225px;
+  }
+
+  @media (min-width: 990px) {
+    .banner-content {
+      padding: 50px;
     }
 
-    .banner-content {
-        height: 100dvh;
-        display: grid;
-        align-content: center;
-        position: relative;
-        z-index: 2;
+    h1 {
+      font-size: var(--font-size-3);
     }
+  }
 </style>

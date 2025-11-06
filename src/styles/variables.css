@@ -11,9 +11,8 @@
 :root {
   /* --- 1. Fuentes (Tipografía) --- */
   /* Define las familias de fuentes */
-  --font-family-body: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  --font-family-heading: "Helvetica Neue", "Helvetica", Arial, sans-serif; /* O una fuente personalizada */
+  --font-family-body: 'Lato', sans-serif;
+  --font-family-heading: 'Montserrat', sans-serif; /* O una fuente personalizada */
 
   /* Define los pesos de fuente */
   --font-weight-regular: 400;
@@ -30,7 +29,7 @@
   --color-background: #ffffff; /* (Blanco) */
   --color-primario-hover: #0056b3; /* (Un tono más oscuro) */
   --color-keytron-navy: #0a2b4c;
-  --color-trust-blue: #1e88e5;
+  --color-trust-blue: #1f89e5;
   --color-neutral-gray: #f5f7fa;
   --color-light-border: #e0e0e0;
   --color-cta: #b21b52;
@@ -59,7 +58,7 @@
   --font-size-2: clamp(1.563rem, 1.62vw + 1.24rem, 2.25rem);
 
   /* Títulos grandes (ej. H1) */
-  --font-size-3: clamp(2.441rem, 3.08vw + 1.82rem, 3.75rem);
+  --font-size-3: clamp(2.112rem, 3.08vw + 1.82rem, 3.2rem);
 
   /* Títulos de Héroe (Display) */
   --font-size-4: clamp(3.052rem, 6.05vw + 1.84rem, 5.625rem);

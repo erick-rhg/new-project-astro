@@ -16,11 +16,12 @@ const { buttons } = Astro.props;
     display: grid;
     row-gap: var(--space-xl);
     justify-items: center;
+    align-items: center;
   }
   @media (min-width: 990px) {
     div {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
   }
 </style>
