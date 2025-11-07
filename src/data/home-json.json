@@ -19,7 +19,7 @@
                         },
                         {
                             "text": "Contáctanos",
-                            "url": "",
+                            "url": "contacto",
                             "class_name": "btn-cta"
                         }
                     ]
@@ -103,7 +103,7 @@
                     "buttons": [
                         {
                             "text":"Contáctanos",
-                            "url": "",
+                            "url": "contacto",
                             "class_name": "btn-cta",
                             "custom_button": "button-left"
                         }
