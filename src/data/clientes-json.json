@@ -1,7 +1,9 @@
 [
     {
         "component": "Section",
-        "settings": {},
+        "settings": {
+            "saltar_contenido": "main-content"
+        },
         "props": {
             "card_data": [
                 {

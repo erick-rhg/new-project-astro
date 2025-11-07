@@ -3,7 +3,8 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "custom_container_img": "servicios-grid-logos",
+            "saltar_contenido": "main-content"
         },
         "props": {
             "card_data": [

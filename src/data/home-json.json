@@ -2,6 +2,7 @@
     {
         "component": "Section",
         "settings": {
+            
         },
         "props": {
             "card_data": [
@@ -13,7 +14,7 @@
                     "buttons": [
                         {
                             "text": "Quiénes somos",
-                            "url": "",
+                            "url": "quienes-somos/historia",
                             "class_name": "btn-primary"
                         },
                         {
@@ -41,7 +42,7 @@
                     "buttons": [
                         {
                             "text": "Más información",
-                            "url": "",
+                            "url": "soluciones-y-servicios",
                             "class_name": "btn-primary"
                         }
                     ]
@@ -71,7 +72,7 @@
                     "buttons": [
                         {
                             "text": "Más información",
-                            "url": "",
+                            "url": "clientes",
                             "class_name": "btn-primary"
                         }
                     ]

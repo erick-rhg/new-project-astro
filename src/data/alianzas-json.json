@@ -1,7 +1,8 @@
 [
     {
         "component": "Section",
-        "settings": {},
+        "settings": {
+        },
         "props": {
             "card_data": [
                 {

@@ -66,8 +66,8 @@ const { images, settings } = Astro.props;
     animation: spin 5s infinite linear;
   }
 
-      .carousel_group:not(:has(> div:nth-of-type(4))){
-    animation: none;
+    .carousel_group:not(:has(> div:nth-of-type(4))){
+    animation: spin 3s infinite linear;
   }
 
   :global(.carousel_group>div) {

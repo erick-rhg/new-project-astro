@@ -8,10 +8,11 @@ const { title, subtitle , button} = Astro.props;
     <div class="inner-content banner-content">
       <h1>{title}</h1>
       <h3>{subtitle}</h3>
-      {button && <a href="" class="button-a btn-cta">{button}</a>}
+      {button && <a href="#main-content" class="button-a btn-cta">{button}</a>}
     </div>
   </div>
 </section>
+<div id="main-content"></div>
 
 <style>
   section.grid-layout {

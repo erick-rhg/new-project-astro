@@ -1,0 +1,69 @@
+---
+import PageBuilder from "./PageBuilder.astro";
+---
+
+<footer class="grid-layout">
+  <section class="full-bleed">
+    <div class="inner-content footer-content">
+      <nav class="nav-container-footer">
+        <ul class="nav-list-footer">
+          <li><a href="">Aviso Legal</a></li>
+          <li><a href="">Política de Privacidad</a></li>
+          <li><a href="">Certificaciones</a></li>
+          <li><a href="">Contacta con nosotros</a></li>
+          <li><a href="">Noticias</a></li>
+        </ul>
+        <p>© 1988- 2025 , Keytron.com · Todos los derechos reservados.</p>
+      </nav>
+      <div class="footer-links">
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<style>
+  div>a {
+    display: block;
+    width: 70px;
+    height: 30px;
+    background-color: beige;
+  }
+
+  footer {
+    background-color:#386b9e;
+    padding-block: 2rem 2rem;
+    text-align: center;
+    font-size: var(--space-xs);
+    color: white;
+  }
+
+  a{
+    color:white;
+  }
+
+  .footer-content {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  .nav-container-footer {
+    display: grid;
+    gap: var(--space-xs);
+  }
+
+  .nav-list-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-l);
+    list-style: none;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
