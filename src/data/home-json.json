@@ -37,7 +37,7 @@
                     "title": "Soluciones y servicios",
                     "subtitle": "Te ofrecemos las soluciones y servicios más avanzados y de los fabricantes más innovadores",
                     "description": "Nuestro equipo de profesionales destaca por la ilusión, esfuerzo y compromiso que ponen en todo lo que hacen. Unas cualidades que están en la base de nuestra cultura corporativa. Apostamos por el talento, la motivación y la progresión de los profesionales a través de una gestión de Recursos Humanos centrada en el desarrollo profesional y personal.",
-                    "img": "/img/home/servicios.png",
+                    "img": "img/home/servicios.png",
                     "buttons": [
                         {
                             "text": "Más información",
@@ -49,7 +49,7 @@
             ],
             "image_data": [
                 {
-                    "img": "/img/home/lagarto.png",
+                    "img": "img/home/lagarto.png",
                     "description": "",
                     "custom_img": "mobile-hide"
                 }
@@ -67,7 +67,7 @@
                     "title": "Clientes",
                     "subtitle": "Nuestro objetivo se centra en la satisfacción de nuestros clientes. Nuestro compromiso es garantizar dicha satisfacción a través de la mejora continua",
                     "description": "Llevamos más de 30 años construyendo la relación con nuestros clientes, fidelizándolos año tras año. Nuestro portfolio nos permite proporcionar soluciones específicas en diferentes sectores: Público (Administración central, Sanidad, Educación, etc.) y Privado (Industria, Ingeniería, Banca, Retail, Alimentación, etc.)",
-                    "img": "/img/home/clientes.png",
+                    "img": "img/home/clientes.png",
                     "buttons": [
                         {
                             "text": "Más información",
@@ -79,7 +79,7 @@
             ],
             "image_data": [
                 {
-                    "img": "/img/home/lagarto.png",
+                    "img": "img/home/lagarto.png",
                     "description": "",
                     "custom_img": "mobile-hide"
                 }

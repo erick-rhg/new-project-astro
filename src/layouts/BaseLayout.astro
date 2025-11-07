@@ -19,8 +19,10 @@ const { title = '', description = '', image = '', url = '' } = Astro.props;
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title || 'Keytron'} />
     <meta property="og:description" content={description || 'Keytron - Consultoría tecnológica y soluciones digitales.'} />
-    <meta property="og:image" content={image || '/social-default.png'} />
-    <link rel="canonical" href={url || '/'} />
+  <meta property="og:image" content={image || '/social-default.png'} />
+  <link rel="canonical" href={url || '/'} />
+  <!-- Base href para resolver rutas relativas correctamente en GitHub Pages (project page) -->
+  <base href="/new-project-astro/">
     <link rel="icon" href="/favicon.ico" />
   </head>
   <body>

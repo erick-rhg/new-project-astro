@@ -1,9 +1,20 @@
 ---
 const { title, subtitle, description, img } = Astro.props;
+const base = import.meta.env.BASE_URL || '/';
+
+let imgSrc = img;
+if (typeof img === 'string' && img.length) {
+  if (/^https?:\/\//i.test(img)) {
+    imgSrc = img;
+  } else {
+    imgSrc = img.startsWith('/') ? img.slice(1) : img;
+    imgSrc = `${base}${imgSrc}`;
+  }
+}
 ---
 
 <div class="card-default">
-  {img && <img src={img} alt="" />}
+  {img && <img src={imgSrc} alt="" />}
   {title && <h2>{title}</h2>}
   {subtitle && <h4>{subtitle}</h4>}
   {description && <p set:html={description}></p>}

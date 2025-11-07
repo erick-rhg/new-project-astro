@@ -26,43 +26,43 @@
                     "title": "Sistemas",
                     "subtitle": "",
                     "description": "Nos adaptamos a tus necesidades, ofreciendo optimización y maximizando el rendimiento: <span class='redText'>Servidores</span> (En la nube, Gestión, IOT),<span> Cliente / Servidor, Storage, Virtualización,</span> etc...",
-                    "img": "/img/alianzas-img/sistemas.png",
+                    "img": "img/alianzas-img/sistemas.png",
                     "buttons": ""
                 }
             ],
             "image_data": [
                 {
-                    "img": "/img/alianzas-img/logos/hp.png",
+                    "img": "img/alianzas-img/logos/hp.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/hpenter.png",
+                    "img": "img/alianzas-img/logos/hpenter.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/acronis.png",
+                    "img": "img/alianzas-img/logos/acronis.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/vmware.png",
+                    "img": "img/alianzas-img/logos/vmware.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/microsoft.png",
+                    "img": "img/alianzas-img/logos/microsoft.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/syneto.png",
+                    "img": "img/alianzas-img/logos/syneto.png",
                     "description": "",
                     "custom_img": ""
                 }
@@ -87,22 +87,22 @@
             ],
             "image_data": [
                 {
-                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/meraki.png",
+                    "img": "img/alianzas-img/logos/meraki.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/extreme.png",
+                    "img": "img/alianzas-img/logos/extreme.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/hpenter.png",
+                    "img": "img/alianzas-img/logos/hpenter.png",
                     "description": "",
                     "custom_img": ""
                 }
@@ -127,57 +127,57 @@
             ],
             "image_data": [
                 {
-                    "img": "/img/alianzas-img/logos/storm.png",
+                    "img": "img/alianzas-img/logos/storm.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/a10.jpg",
+                    "img": "img/alianzas-img/logos/a10.jpg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/forcep.png",
+                    "img": "img/alianzas-img/logos/forcep.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/extreme.png",
+                    "img": "img/alianzas-img/logos/extreme.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/mcafee.png",
+                    "img": "img/alianzas-img/logos/mcafee.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/checkp.png",
+                    "img": "img/alianzas-img/logos/checkp.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/okta.png",
+                    "img": "img/alianzas-img/logos/okta.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/meraki.png",
+                    "img": "img/alianzas-img/logos/meraki.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/sophos.png",
+                    "img": "img/alianzas-img/logos/sophos.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/yubico.png",
+                    "img": "img/alianzas-img/logos/yubico.png",
                     "description": "",
                     "custom_img": ""
                 }
@@ -202,12 +202,12 @@
             ],
             "image_data": [
                 {
-                    "img": "/img/alianzas-img/logos/veeam.png",
+                    "img": "img/alianzas-img/logos/veeam.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/hpenter.png",
+                    "img": "img/alianzas-img/logos/hpenter.png",
                     "description": "",
                     "custom_img": ""
                 }
@@ -232,22 +232,22 @@
             ],
             "image_data": [
                 {
-                    "img": "/img/alianzas-img/logos/manage.png",
+                    "img": "img/alianzas-img/logos/manage.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/extreme.png",
+                    "img": "img/alianzas-img/logos/extreme.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/viewtinet.jpg",
+                    "img": "img/alianzas-img/logos/viewtinet.jpg",
                     "description": "",
                     "custom_img": ""
                 }
@@ -272,27 +272,27 @@
             ],
             "image_data": [
                 {
-                    "img": "/img/alianzas-img/logos/excel.png",
+                    "img": "img/alianzas-img/logos/excel.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/apc.png",
+                    "img": "img/alianzas-img/logos/apc.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/panduit.png",
+                    "img": "img/alianzas-img/logos/panduit.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/delta.png",
+                    "img": "img/alianzas-img/logos/delta.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/brandrex.png",
+                    "img": "img/alianzas-img/logos/brandrex.png",
                     "description": "",
                     "custom_img": ""
                 }
@@ -317,17 +317,17 @@
             ],
             "image_data": [
                 {
-                    "img": "/img/alianzas-img/logos/yealink.png",
+                    "img": "img/alianzas-img/logos/yealink.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/microsoft.png",
+                    "img": "img/alianzas-img/logos/microsoft.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "/img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.png",
                     "description": "",
                     "custom_img": ""
                 }

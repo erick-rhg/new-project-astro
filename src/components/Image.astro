@@ -1,9 +1,22 @@
 ---
 const { img, description, subtitle, custom_img } = Astro.props;
+const base = import.meta.env.BASE_URL || '/';
+
+// Normalize image path: accept '/img/..', 'img/..' or full URLs.
+let imgSrc = img;
+if (typeof img === 'string' && img.length) {
+  if (/^https?:\/\//i.test(img)) {
+    imgSrc = img; // external
+  } else {
+    // remove leading slash to keep relative resolution and prefix with base
+    imgSrc = img.startsWith('/') ? img.slice(1) : img;
+    imgSrc = `${base}${imgSrc}`;
+  }
+}
 ---
 
 <div class:list={[custom_img]}>
-  {img && <img src={img} alt="" />}
+  {img && <img src={imgSrc} alt="" />}
   {subtitle && <h4>{subtitle}</h4>}
   {description && <p>{description}</p>}
 </div>

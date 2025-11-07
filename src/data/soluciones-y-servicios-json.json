@@ -114,7 +114,7 @@
                     "title": "Ciberseguridad",
                     "subtitle": "",
                     "description": "",
-                    "img": "/img/servicios-img/seguridad.png",
+                    "img": "img/servicios-img/seguridad.png",
                     "buttons": ""
                 }
             ],
@@ -122,41 +122,41 @@
                 {
                     "subtitle": "Soporte",
                     "description": "Soporte en todas las fases de vida de los productos de ciberseguridad.",
-                    "img": "/img/servicios-img/logos/asistencia.png"
+                    "img": "img/servicios-img/logos/asistencia.png"
                 },
                 {
                     "subtitle": "Análisis de Vulnerabilidades",
                     "description": "Análisis de vulnerabilidades empleando herramientas líderes como Nessus o Retina y aportando nuestra experiencia.",
-                    "img": "/img/servicios-img/logos/analisis.png"
+                    "img": "img/servicios-img/logos/analisis.png"
                 },
                 {
                     "subtitle": "Seguridad en la nube",
                     "description": "Solución antimalware, proxy y firewall en la nube. Nos apoyamos en herramientas de fabricantes como Kaspersky, Forcepoint, Cososys o Cisco entre otros.",
-                    "img": "/img/servicios-img/logos/remota.png"
+                    "img": "img/servicios-img/logos/remota.png"
                 },
                 {
                     "subtitle": "Consultoría",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Auditoría: Pentesting / Hacking Ético / RED TEAM",
-                    "img": "/img/servicios-img/logos/auditoria-2.png"
+                    "img": "img/servicios-img/logos/auditoria-2.png"
                 },
                 {
                     "subtitle": "Peritaje Informático Forense",
-                    "img": "/img/servicios-img/logos/peritaje.png"
+                    "img": "img/servicios-img/logos/peritaje.png"
                 },
                 {
                     "subtitle": "MSSP: Ciberseguridad Gestionada",
-                    "img": "/img/servicios-img/logos/ciberseguridad.png"
+                    "img": "img/servicios-img/logos/ciberseguridad.png"
                 },
                 {
                     "subtitle": "SOC: Security Operations Centre",
-                    "img": "/img/servicios-img/logos/centro.png"
+                    "img": "img/servicios-img/logos/centro.png"
                 },
                 {
                     "subtitle": "Compliance: ISO27001",
-                    "img": "/img/servicios-img/logos/compliance.png"
+                    "img": "img/servicios-img/logos/compliance.png"
                 }
             ]
         }
@@ -180,39 +180,39 @@
             "image_data": [
                 {
                     "subtitle": "Gestión de Incidentes / Intrusiones",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Gestión de Vulnerabilidades",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Monitorización / SIEM / IDS/IPS",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Firewall / WAF",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "DDOS",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Data Protection: DLP & IRM",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Endpoint Protection: EPR & EDR",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "SaaS Protection (GSuite, Office3365, etc.)",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Mobile Protection (iOS, Android)",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Backup y Continuidad de Negocio",
