@@ -26,14 +26,21 @@ const base = import.meta.env.BASE_URL || "/";
         <ul class="nav-list">
           <li><a href="">INICIO</a></li>
           <li class="has-submenu">
-            <a href="quienes-somos" aria-haspopup="true" aria-expanded="false">QUIENES SOMOS</a>
+            <a
+              href="quienes-somos"
+              aria-haspopup="true"
+              aria-expanded="false"
+              id="link_disable">QUIENES SOMOS</a
+            >
             <ul class="submenu">
               <li><a href="quienes-somos/historia">Historia</a></li>
               <li><a href="quienes-somos/equipo">Equipo</a></li>
-              <li><a href="quienes-somos/certificaciones">Certifiaciones</a></li>
+              <li>
+                <a href="quienes-somos/certificaciones">Certifiaciones</a>
+              </li>
             </ul>
           </li>
-          <li><a href={`${base}alianzas`}>ALIANZAS</a></li>
+          <li><a href="alianzas">ALIANZAS</a></li>
           <li><a href="soluciones-y-servicios">SOLUCIONES Y SERVICIOS</a></li>
           <li><a href="clientes">CLIENTES</a></li>
           <li><a href="contacto">CONTACTO</a></li>
@@ -58,7 +65,7 @@ const base = import.meta.env.BASE_URL || "/";
     padding-block: 10px;
     padding-inline: 40px;
     border-radius: 0 0 15px 15px;
-    border-bottom: 2px solid #e3e3e33d;;
+    border-bottom: 2px solid #e3e3e33d;
   }
 
   .logo {
@@ -239,14 +246,17 @@ const base = import.meta.env.BASE_URL || "/";
   const menuToggle = document.querySelector(".menu-toggle");
   const navWrapper = document.querySelector(".nav-wrapper");
   const hasSubmenuItems = document.querySelectorAll(".has-submenu");
+  const clickDisable = document.getElementById("link_disable");
+  const focusSubmenu = document.querySelector(".has-submenu");
 
   function openMenu() {
     if (!menuToggle || !navWrapper) return;
     menuToggle.setAttribute("aria-expanded", "true");
     navWrapper.classList.add("is-active");
-    if (menuToggle instanceof HTMLElement) menuToggle.classList.add("is-active");    
+    if (menuToggle instanceof HTMLElement)
+      menuToggle.classList.add("is-active");
     document.body.style.overflow = "hidden";
-    const firstLink = navWrapper.querySelector('a');
+    const firstLink = navWrapper.querySelector("a");
     if (firstLink instanceof HTMLElement) firstLink.focus();
   }
 
@@ -254,7 +264,8 @@ const base = import.meta.env.BASE_URL || "/";
     if (!menuToggle || !navWrapper) return;
     menuToggle.setAttribute("aria-expanded", "false");
     navWrapper.classList.remove("is-active");
-    if (menuToggle instanceof HTMLElement) menuToggle.classList.remove("is-active");
+    if (menuToggle instanceof HTMLElement)
+      menuToggle.classList.remove("is-active");
     document.body.style.overflow = "";
     if (menuToggle instanceof HTMLElement) menuToggle.focus();
   }
@@ -262,11 +273,12 @@ const base = import.meta.env.BASE_URL || "/";
   if (menuToggle && navWrapper) {
     menuToggle.addEventListener("click", () => {
       const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-      if (isExpanded) closeMenu(); else openMenu();
+      if (isExpanded) closeMenu();
+      else openMenu();
     });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && navWrapper.classList.contains('is-active')) {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && navWrapper.classList.contains("is-active")) {
         closeMenu();
       }
     });
@@ -277,29 +289,47 @@ const base = import.meta.env.BASE_URL || "/";
     const submenu = item.querySelector(".submenu");
 
     if (link && submenu) {
-      link.setAttribute('aria-expanded', 'false');
+      link.setAttribute("aria-expanded", "false");
 
       link.addEventListener("click", (e) => {
         if (window.innerWidth <= 768) {
           e.preventDefault();
           const active = item.classList.toggle("submenu-active");
-          link.setAttribute('aria-expanded', active ? 'true' : 'false');
+          link.setAttribute("aria-expanded", active ? "true" : "false");
         }
       });
 
       item.addEventListener("mouseenter", () => {
         if (window.innerWidth > 768) {
           item.classList.add("submenu-active");
-          link.setAttribute('aria-expanded', 'true');
+          link.setAttribute("aria-expanded", "true");
         }
       });
 
       item.addEventListener("mouseleave", () => {
         if (window.innerWidth > 768) {
           item.classList.remove("submenu-active");
-          link.setAttribute('aria-expanded', 'false');
+          link.setAttribute("aria-expanded", "false");
         }
       });
     }
+
+    item.addEventListener("focusin", () => {
+      if (window.innerWidth > 768) {
+        item.classList.add("submenu-active");
+        link.setAttribute("aria-expanded", "true");
+      }
+    });
+
+    item.addEventListener("focusout", (e) => {
+      if (window.innerWidth > 768 && !item.contains(e.relatedTarget)) {
+        item.classList.remove("submenu-active");
+        link.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
+
+  clickDisable?.addEventListener("click", (e) => {
+    e.preventDefault();
   });
 </script>

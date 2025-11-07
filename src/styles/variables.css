@@ -36,6 +36,7 @@
   --color-alert-orange: #fb8c00;
   --color-error-red: #e53935;
   --color-light: #fff;
+  --color-light-blue: #579fe785;
 
   /* --- 2. Escala de Fuente Fluida (Typographic Scale) --- */
   /* * Usamos clamp(MIN, PREFERIDO, MAX)
