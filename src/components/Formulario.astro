@@ -1,0 +1,87 @@
+---
+
+---
+
+<div>
+  <form action="mailto:comunicaciones@keytron.com" method="post">
+    <label for="name-id">Nombre*</label>
+    <input type="text" name="nombre_cliente" id="name-id" placeholder="Nombre" required />
+
+    <label for="email-id">Email*</label>
+    <input type="email" name="email_cliente" id="email-id" placeholder="Email" required />
+
+    <label for="number-id">Teléfono*</label>
+    <input type="tel" name="telefono_cliente" id="number-id" placeholder="Teléfono" required />
+
+    <label for="text-id">Mensaje*</label>
+    <textarea name="mensaje_cliente" id="text-id" required placeholder="Mensaje"></textarea>
+
+    <p class="form-required"> *Todos los campos son obligatorios</p>
+    <div class="form-required">
+    <input type="checkbox" id="checkbox-id">
+    <label for="checkbox-id"> He leído y acepto la política de privacidad</label>
+    </div>
+    
+
+    <button class="button-a" type="submit"> Enviar </button>
+  </form>
+</div>
+
+<style>
+  form {
+    padding: 1.5rem;
+    display: grid;
+    gap: 10px;
+    min-width: 100%;
+  }
+
+  label {
+    color: var(--color-keytron-navy);
+    font-size: var(--font-size-0);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: .3px;
+  }
+  input {
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(255 255 255 / 33%);
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+    background-color: #F0F0F0;
+  }
+
+  ::placeholder{
+    font-size: var(--font-size--1);
+  }
+
+  .button-a {
+    margin-top: 2rem;
+  }
+  textarea {
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(255 255 255 / 33%);
+    border-radius: 0.5rem;
+    resize: none;
+    height: 10rem;
+    background-color: #F0F0F0;
+  }
+
+  p.form-required{
+    margin-top: 1.5rem;
+  }
+
+  .form-required > * , .form-required {
+    font-size: var(--font-size--1);
+    margin:0;
+    font-weight: var(--font-weight-normal);
+    color: #aaaaaa;
+  }
+
+  @media (min-width: 990px) {
+    div {
+        width: 55dvw;
+        margin-inline:auto;
+    }
+  }
+</style>
+
+

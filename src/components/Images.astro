@@ -93,6 +93,7 @@ const { images, settings } = Astro.props;
     margin-inline: auto;
   }
 
+
   /*================================================ */
   @media (min-width: 990px)  {
 
@@ -138,5 +139,14 @@ const { images, settings } = Astro.props;
   flex: 0 0 18.76rem;
   font-size: var(--font-size--1);
 }
+
+  .contacto-enlaces {
+    align-items:  flex-start;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap:var(--space-l);
+    padding-top: 3rem;
+  }
   }
 </style>
