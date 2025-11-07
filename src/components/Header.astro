@@ -3,7 +3,7 @@
 ---
 
 <header class="grid-layout">
-  <nav class="full-bleed">
+  <nav class="full-bleed" aria-label="Navegación principal">
     <div class="inner-content nav-container">
       <a href="#" class="logo">
         <img src="/img/logokeytron.png" alt="Logo" />
@@ -26,7 +26,7 @@
         <ul class="nav-list">
           <li><a href="/">INICIO</a></li>
           <li class="has-submenu">
-            <a href="" aria-haspopup="true">QUIENES SOMOS</a>
+            <a href="/quienes-somos" aria-haspopup="true" aria-expanded="false">QUIENES SOMOS</a>
             <ul class="submenu">
               <li><a href="/quienes-somos/historia">Historia</a></li>
               <li><a href="/quienes-somos/equipo">Equipo</a></li>
@@ -240,12 +240,35 @@
   const navWrapper = document.querySelector(".nav-wrapper");
   const hasSubmenuItems = document.querySelectorAll(".has-submenu");
 
+  function openMenu() {
+    if (!menuToggle || !navWrapper) return;
+    menuToggle.setAttribute("aria-expanded", "true");
+    navWrapper.classList.add("is-active");
+    if (menuToggle instanceof HTMLElement) menuToggle.classList.add("is-active");    
+    document.body.style.overflow = "hidden";
+    const firstLink = navWrapper.querySelector('a');
+    if (firstLink instanceof HTMLElement) firstLink.focus();
+  }
+
+  function closeMenu() {
+    if (!menuToggle || !navWrapper) return;
+    menuToggle.setAttribute("aria-expanded", "false");
+    navWrapper.classList.remove("is-active");
+    if (menuToggle instanceof HTMLElement) menuToggle.classList.remove("is-active");
+    document.body.style.overflow = "";
+    if (menuToggle instanceof HTMLElement) menuToggle.focus();
+  }
+
   if (menuToggle && navWrapper) {
     menuToggle.addEventListener("click", () => {
       const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-      menuToggle.setAttribute("aria-expanded", isExpanded ? "false" : "true");
-      navWrapper.classList.toggle("is-active");
-      menuToggle.classList.toggle("is-active");
+      if (isExpanded) closeMenu(); else openMenu();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navWrapper.classList.contains('is-active')) {
+        closeMenu();
+      }
     });
   }
 
@@ -254,22 +277,27 @@
     const submenu = item.querySelector(".submenu");
 
     if (link && submenu) {
+      link.setAttribute('aria-expanded', 'false');
+
       link.addEventListener("click", (e) => {
         if (window.innerWidth <= 768) {
           e.preventDefault();
-          item.classList.toggle("submenu-active");
+          const active = item.classList.toggle("submenu-active");
+          link.setAttribute('aria-expanded', active ? 'true' : 'false');
         }
       });
 
       item.addEventListener("mouseenter", () => {
         if (window.innerWidth > 768) {
           item.classList.add("submenu-active");
+          link.setAttribute('aria-expanded', 'true');
         }
       });
 
       item.addEventListener("mouseleave", () => {
         if (window.innerWidth > 768) {
           item.classList.remove("submenu-active");
+          link.setAttribute('aria-expanded', 'false');
         }
       });
     }

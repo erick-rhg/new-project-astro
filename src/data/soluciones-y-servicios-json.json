@@ -41,7 +41,7 @@
                     "img": "img/servicios-img/mantenimiento.png"
                 },
                 {
-                    "description": "Otros servicios",
+                    "subtitle": "Otros servicios",
                     "img": "img/servicios-img/otros.png"
                 }
             ]
