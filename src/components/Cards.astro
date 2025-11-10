@@ -22,27 +22,33 @@ const { cards, settings } = Astro.props;
     display: grid;
     justify-content: center;
     row-gap: var(--space-xl);
-
-    background-color: #ffffff65;
+    background-color: var(--color-card);
     border-radius: 20px;
     padding-inline: 1.2rem;
     padding-block: 3rem;
-    box-shadow:
-      7px 20px 75px #bebebe,
-      -7px -7px 14px #ffffff;
+    box-shadow: var(--custom-shadow);
   }
+
   :global(.article-left .card-default) {
     justify-items: flex-start;
     text-align: left;
   }
+
   .article-left {
     justify-content: flex-start;
     padding-inline: 3rem ;
   }
+  
   @media (min-width: 990px) {
      .article-default {
       padding-inline: 3rem;
      }
+
+    .card-75-width {
+      width: 75vw;
+      max-width: 75vw;
+      margin-inline: auto;
+    }
 
   }
 </style>

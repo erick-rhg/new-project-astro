@@ -15,7 +15,7 @@
 /* html y body suelen ser los únicos con altura al 100%. */
 html,
 body {
-  height: 100%;
+  height: 100%;/*En el header (position:sticky) me da problemas*/
 }
 
 /* 4. Estilos base del body y suavizado de fuentes. */

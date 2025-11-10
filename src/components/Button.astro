@@ -9,59 +9,60 @@ const { text, url, class_name, custom_button } = Astro.props;
     width: 190px;
     padding: 8px 22px;
     cursor: pointer;
-    border-radius: 10px;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
-    font-weight: var(--font-weight-medium);
-    color: var(--color-trust-blue);
-    border-style: solid;
-    padding: 10px 20px 10px 22px;
-    border-width: 2px 2px 2px 2px;
-    border-radius: 40px 40px 40px 40px;
-    transition: all 0.3s ease-out;
-    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px;
+    background: #f1f3f6;
     box-shadow:
-      -4px -4px 22px 0px #ffffff,
-      3px 1px 6px 0px rgb(31 137 229 / 48%);
+      5px 5px 10px #a6a8aa,
+      -5px -5px 10px #ffffff;
+    color: var(--color-primary);
   }
 
   .button-a:hover {
-    color: #fff;
-    background-color: var(--color-trust-blue);
-    border: 2px solid rgba(255, 255, 255, 0.333);
+    color: var(--color-primary);
+    background-color: var(--color-primary);
+    border-radius: 40px;
+    background: #f1f3f6;
     box-shadow:
-      -2px -1px 8px 0px #ffffff,
-      2px 1px 8px 0px rgb(31 137 229 / 48%);
-    transform: translateY(-2px);
+      inset 5px 5px 10px #a6a8aa,
+      inset -5px -5px 10px #ffffff;
   }
 
   .button-a:active {
-    background-color: #2097ff;
-    border-color: #2097ff;
-    transform: translateY(0);
-    box-shadow: 0 2px 6px rgba(87, 159, 231, 0.2);
+    background-color: var(--color-background);
+    box-shadow:
+      inset 5px 5px 10px #a6a8aa,
+      inset -5px -5px 10px #ffffff;
+    color: var(--color-primary);
   }
 
   .button-a:focus-visible {
-    outline: 3px solid #2097ff;
+    outline: 3px solid #02277f;
     outline-offset: 3px;
     border-color: transparent;
+    border-radius: 40px;
+    color: var(--color-primary);
   }
 
   .btn-cta {
     color: #fff;
-    background-color: var(--color-cta);
-    border-color: rgba(179, 28, 83, 0.333);
-    box-shadow:
-      -4px -4px 22px 0px #bcbbbb14,
-      4px 1px 10px 2px rgba(28, 28, 28, 0.398);
+    background-color: var(--color-secondary);
   }
 
   .btn-cta:hover {
     color: #fff;
-    background-color: #ea0a0a;
-    border-color: rgba(179, 28, 83, 0.333);
+    background-color: var(--color-secondary);
+    box-shadow:
+      inset 7px 7px 10px #b01e19,
+      inset -7px -7px 10px #ff2c25;
+  }
+
+  .btn-cta:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 3px;
+    border-color: transparent;
   }
 
   .button-left {

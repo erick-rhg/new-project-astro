@@ -54,37 +54,53 @@
   }
 
   label {
-    color: var(--color-keytron-navy);
-    font-size: var(--font-size-0);
-    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    font-size: var(--fs-1);
+    font-weight: var(--font-weight-medium);
     letter-spacing: 0.3px;
   }
   input {
-    padding: 0.5rem 1rem;
-    border: 2px solid rgb(255 255 255 / 33%);
+    padding: 0.6rem 1.2rem;
+    border: 0;
     border-radius: 0.5rem;
     margin-bottom: 10px;
     background-color: #f0f0f0;
+    background: linear-gradient(170deg, #d9dbdddb, #ffffff4f);
+    box-shadow:
+      10px 10px 20px #e5e7ea,
+      -10px -10px 20px #fdffff;
   }
 
-  input:focus-visible, textarea:focus-visible {
-    outline: 2px solid #07398085;
+  input:focus-visible,
+  textarea:focus-visible {
+    border: 0;
+    outline: 0;
+    background: #f1f3f6;
+    box-shadow:
+      inset 5px 5px 3px #c8cacc,
+      inset -5px -5px 3px #ffffff;
   }
 
   ::placeholder {
-    font-size: var(--font-size--1);
+    font-size: var(--fs--1);
+    color: var(--color-text-secondary);
   }
 
   .button-a {
     margin-top: 2rem;
+    border: 0;
   }
   textarea {
     padding: 0.5rem 1rem;
-    border: 2px solid rgb(255 255 255 / 33%);
+    border: 0;
     border-radius: 0.5rem;
     resize: none;
     height: 10rem;
     background-color: #f0f0f0;
+    background: linear-gradient(170deg, #d9dbdddb, #ffffff4f);
+    box-shadow:
+      10px 10px 20px #e5e7ea,
+      -10px -10px 20px #fdffff;
   }
 
   p.form-required {

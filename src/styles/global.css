@@ -18,42 +18,38 @@ html {
 /* --- 2. Estilos Base del Body --- */
 body {  
   font-family: var(--font-family-body);
-  font-size: var(--font-size-0);       /* Tamaño base fluido */
+  font-size: var(--fs-0);
   line-height: var(--line-height-body);
-  color: var(--color-text-body, #333); /* Fallback por si la var no existe */
-  background-color: var(--color-background, #fff);
+  color: var(--color-text-primary); 
+  background-color: var(--color-background);
 }
 
 /* --- 3. Tipografía (Títulos y Párrafos) --- */
 
-/* Estilos comunes a todos los títulos */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
-  color: var(--color-text-heading, #111);
   
-  /* El reset quitó los márgenes, los añadimos de nuevo */
   margin-top: var(--space-xs);
   margin-bottom: var(--space-s);
 }
 
 /* Tamaños de fuente fluidos específicos */
 h1 {
-  font-size: var(--font-size-3);
+  font-size: var(--fs-3);
+  color: var(--color-primary);
 }
 
 h2 {
-  font-size: var(--font-size-2);
+  font-size: var(--fs-2);
+   color: var(--color-primary);
 }
 
 h3 {
-  font-size: var(--font-size-1);
-}
-
-h4 {
-  font-size: var(--font-size-0);
-  font-weight: var(--font-weight-medium); /* Un h4 suele ser más sutil */
+  font-size: var(--fs-1);
+   color: var(--color-subtitle);
+   font-weight: var(--font-weight-medium);
 }
 
 /* El reset quitó el margen de los párrafos, lo añadimos */
@@ -74,20 +70,18 @@ h4:last-child {
 /* --- 4. Enlaces (Links) --- */
 
 a {
-  color: var(--color-primario, #0077ff);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 3px; /* Separa el subrayado del texto */
+  text-underline-offset: 3px;
   transition: var(--transition-fast);
 }
 
 a:hover {
-  color: var(--color-primario-hover, #0056b3);
   text-decoration: none; /* Patrón común: quitar subrayado en hover */
 }
 
 /* * MUY IMPORTANTE: Estilos de Foco para Accesibilidad.
- * No quites el 'outline' a menos que lo reemplaces.
+ * No quitar el 'outline' a menos que lo reemplaces.
  */
 a:focus-visible {
   outline: 2px solid var(--color-primario, #0077ff);
@@ -101,7 +95,7 @@ a:focus-visible {
 
 ul, ol {
   padding-left: var(--space-l); /* Espacio para las viñetas/números */
-  margin-bottom: var(--space-m);
+  /* margin-bottom: var(--space-m); */
 }
 
 li {

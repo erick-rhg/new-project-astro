@@ -2,7 +2,7 @@
     {
         "component": "Section",
         "settings": {
-            
+            "custom_article": "pepito"
         },
         "props": {
             "card_data": [

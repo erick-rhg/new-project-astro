@@ -19,7 +19,8 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "special_class": "carousel"
+            "custom_article": "card-75-width",
+            "custom_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -33,32 +34,32 @@
             ],
             "image_data": [
                 {
-                    "img": "img/alianzas-img/logos/hp.png",
+                    "img": "img/alianzas-img/logos/hp.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/hpenter.png",
+                    "img": "img/alianzas-img/logos/hewlett.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/acronis.png",
+                    "img": "img/alianzas-img/logos/acronis.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/vmware.png",
+                    "img": "img/alianzas-img/logos/vmware.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/microsoft.png",
+                    "img": "img/alianzas-img/logos/microsoft.svg",
                     "description": "",
                     "custom_img": ""
                 },
@@ -74,7 +75,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "special_class": "carousel"
+            "custom_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -88,22 +89,22 @@
             ],
             "image_data": [
                 {
-                    "img": "img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/meraki.png",
+                    "img": "img/alianzas-img/logos/meraki.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/extreme.png",
+                    "img": "img/alianzas-img/logos/extreme.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/hpenter.png",
+                    "img": "img/alianzas-img/logos/hewlett.svg",
                     "description": "",
                     "custom_img": ""
                 }
@@ -114,7 +115,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "special_class": "carousel"
+            "custom_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -128,57 +129,57 @@
             ],
             "image_data": [
                 {
-                    "img": "img/alianzas-img/logos/storm.png",
+                    "img": "img/alianzas-img/logos/stormshield.png",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/a10.jpg",
+                    "img": "img/alianzas-img/logos/a10.webp",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/forcep.png",
+                    "img": "img/alianzas-img/logos/forcepoint.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/extreme.png",
+                    "img": "img/alianzas-img/logos/extreme.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/mcafee.png",
+                    "img": "img/alianzas-img/logos/mcafee.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/checkp.png",
+                    "img": "img/alianzas-img/logos/checkpoint.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/okta.png",
+                    "img": "img/alianzas-img/logos/okta.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/meraki.png",
+                    "img": "img/alianzas-img/logos/meraki.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/sophos.png",
+                    "img": "img/alianzas-img/logos/sophos.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/yubico.png",
+                    "img": "img/alianzas-img/logos/yubico.svg",
                     "description": "",
                     "custom_img": ""
                 }
@@ -189,7 +190,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "special_class": "carousel"
+            "custom_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -203,12 +204,12 @@
             ],
             "image_data": [
                 {
-                    "img": "img/alianzas-img/logos/veeam.png",
+                    "img": "img/alianzas-img/logos/veeam.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/hpenter.png",
+                    "img": "img/alianzas-img/logos/hewlett.svg",
                     "description": "",
                     "custom_img": ""
                 }
@@ -219,7 +220,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "special_class": "carousel"
+            "custom_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -233,22 +234,22 @@
             ],
             "image_data": [
                 {
-                    "img": "img/alianzas-img/logos/manage.png",
+                    "img": "img/alianzas-img/logos/manage.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/extreme.png",
+                    "img": "img/alianzas-img/logos/extreme.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/viewtinet.jpg",
+                    "img": "img/alianzas-img/logos/viewtinet.png",
                     "description": "",
                     "custom_img": ""
                 }
@@ -259,7 +260,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "special_class": "carousel"
+            "custom_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -273,17 +274,17 @@
             ],
             "image_data": [
                 {
-                    "img": "img/alianzas-img/logos/excel.png",
+                    "img": "img/alianzas-img/logos/excel.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/apc.png",
+                    "img": "img/alianzas-img/logos/apc.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/panduit.png",
+                    "img": "img/alianzas-img/logos/panduit.svg",
                     "description": "",
                     "custom_img": ""
                 },
@@ -304,7 +305,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "special_class": "carousel"
+            "custom_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -323,12 +324,12 @@
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/microsoft.png",
+                    "img": "img/alianzas-img/logos/microsoft.svg",
                     "description": "",
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/cisco.png",
+                    "img": "img/alianzas-img/logos/cisco.svg",
                     "description": "",
                     "custom_img": ""
                 }

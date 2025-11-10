@@ -20,8 +20,15 @@ if (typeof img === 'string' && img.length) {
 </div>
 
 <style>
+
+  img {
+    max-width: 150px;
+    max-height: 75px;
+  }
+
   .mobile-hide img {
-    height: 100%;
+    max-width: 100%;
+    max-height: initial;
     object-fit: contain;
   }
 
@@ -29,19 +36,13 @@ if (typeof img === 'string' && img.length) {
     display: none;
   }
 
-  h4 {
-    color: var(--color-cta);
-  }
-
   .contacto-item {
     display: grid;
     gap:var(--space-m)
   }
+
   :global(.contacto-item p) {
     text-align: center;
-  }
-  :global(.contacto-item a) {
-
   }
 
   :global(.contacto-item a) {

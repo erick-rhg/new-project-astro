@@ -52,7 +52,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "custom_container_img": "servicios-grid-3col"
         },
         "props": {
             "card_data": [
@@ -68,37 +68,37 @@
                 {
                     "subtitle": "Forcepoint NGFW",
                     "description": "Firewall perimetral de última generación con funciones de sandbox, con capacidad de clúster de hasta 16 nodos, balanceo de líneas y SD-WAN.",
-                    "img": "img/alianzas-img/logos/forcep.png"
+                    "img": "img/alianzas-img/logos/forcepoint.svg"
                 },
                 {
                     "subtitle": "Stormshield",
                     "description": "Firewall UTM con funciones de sandbox, reconocimiento de aplicaciones, antivirus perimetral, VPN IPSEC/SSL e integración con directorio activo.",
-                    "img": "img/alianzas-img/logos/storm.png"
+                    "img": "img/alianzas-img/logos/stormshield.png"
                 },
                 {
                     "subtitle": "Cisco Meraki SD-WAN",
                     "description": "Establecimiento de VPN de manera semi-automática y con firewalls gestionados en la nube.",
-                    "img": "img/alianzas-img/logos/cisco.png"
+                    "img": "img/alianzas-img/logos/meraki.svg"
                 },
                 {
                     "subtitle": "Forcepoint Web Security",
                     "description": "Seguridad proxy y filtrado Web, tanto en formato appliance como en la nube, con funciones de sandbox, DLP y antimalware avanzado.",
-                    "img": "img/alianzas-img/logos/forcep.png"
+                    "img": "img/alianzas-img/logos/forcepoint.svg"
                 },
                 {
                     "subtitle": "Check Point Sandblast Mobile",
                     "description": "Seguridad proxy y filtrado Web, tanto en formato appliance como en la nube, con funciones de sandbox, DLP y antimalware avanzado.",
-                    "img": "img/alianzas-img/logos/checkp.png"
+                    "img": "img/alianzas-img/logos/checkpoint.svg"
                 },
                 {
                     "subtitle": "Cisco Umbrella",
                     "description": "Herramienta de protección de redes y endpoints basado en DNS.",
-                    "img": "img/alianzas-img/logos/cisco.png"
+                    "img": "img/alianzas-img/logos/cisco.svg"
                 },
                 {
                     "subtitle": "Forcepoint DLP",
                     "description": "El DLP líder del mercado proporciona visibilidad y control de datos confidenciales a través de aplicaciones en la nube, almacenamiento en red, correo electrónico y web en una única consola.",
-                    "img": "img/alianzas-img/logos/forcep.png"
+                    "img": "img/alianzas-img/logos/forcepoint.svg"
                 }
             ]
         }
@@ -123,17 +123,20 @@
                 {
                     "subtitle": "Soporte",
                     "description": "Soporte en todas las fases de vida de los productos de ciberseguridad.",
-                    "img": "img/servicios-img/logos/asistencia.png"
+                    "img": "img/servicios-img/logos/asistencia.png",
+                    "custom_img": "ciberseguridad-grid-2col"
                 },
                 {
                     "subtitle": "Análisis de Vulnerabilidades",
                     "description": "Análisis de vulnerabilidades empleando herramientas líderes como Nessus o Retina y aportando nuestra experiencia.",
-                    "img": "img/servicios-img/logos/analisis.png"
+                    "img": "img/servicios-img/logos/analisis.png",
+                    "custom_img": "ciberseguridad-grid-2col"
                 },
                 {
                     "subtitle": "Seguridad en la nube",
                     "description": "Solución antimalware, proxy y firewall en la nube. Nos apoyamos en herramientas de fabricantes como Kaspersky, Forcepoint, Cososys o Cisco entre otros.",
-                    "img": "img/servicios-img/logos/remota.png"
+                    "img": "img/servicios-img/logos/remota.png",
+                    "custom_img": "ciberseguridad-grid-2col"
                 },
                 {
                     "subtitle": "Consultoría",

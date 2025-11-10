@@ -16,7 +16,7 @@ if (typeof img === 'string' && img.length) {
 <div class="card-default">
   {img && <img src={imgSrc} alt="" />}
   {title && <h2>{title}</h2>}
-  {subtitle && <h4>{subtitle}</h4>}
+  {subtitle && <h3>{subtitle}</h3>}
   {description && <p set:html={description}></p>}
 </div>
 
@@ -25,14 +25,14 @@ if (typeof img === 'string' && img.length) {
     display: grid;
     justify-items: center;
     text-align: center;
-    
-  }
-  .card-default h4 {
-    color: var(--color-cta);
   }
 
   :global(.card-default span) {
-    color:var(--color-cta);
+    color:var(--color-span);
+  }
+
+  img {
+    max-width: 500px;
   }
 
 /*   .card-default p {
