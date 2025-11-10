@@ -22,15 +22,24 @@ const { images, settings } = Astro.props;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: var(--space-xl);
+    column-gap: var(--space-l);
+    row-gap: var(--space-xxl);
     align-items: center;
   }
 
-  :global(.collection-img-default > div) {
+  :global(.collection-img-default div) {
     align-content: center;
     justify-items: center;
-    flex: 0 0 270px;
+    flex: 0 0 150px;
     text-align: center;
+  }
+
+  :global(.servicios-grid-3col div){
+    flex: 0 0 250px;
+  }
+
+  :global( div.ciberseguridad-grid-2col) {
+    flex: 0 0 350px
   }
 
   :global(.contacto-enlaces a:visited, .contacto-enlaces a) {
@@ -42,10 +51,9 @@ const { images, settings } = Astro.props;
   }
   /*================================================ */
   @media (min-width: 990px) {
-    .collection-img-default {
-      display: flex;
-      flex-wrap: wrap;
-      row-gap: var(--space-xxl);
+
+    :global(.collection-img-default div) {
+        flex: 0 0 18.76rem;
     }
 
     .servicios-grid-logos {
@@ -53,8 +61,7 @@ const { images, settings } = Astro.props;
       align-items: baseline;
     }
 
-    :global(.servicios-grid-logos div) {
-      flex: 0 0 18.76rem;
+    :global(.servicios-grid-logos div, .servicios-grid-3col div) {
       font-size: var(--fs--1);
     }
 

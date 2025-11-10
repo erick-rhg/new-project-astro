@@ -1,13 +1,13 @@
 ---
 const { img, description, subtitle, custom_img } = Astro.props;
-const base = import.meta.env.BASE_URL || '/';
+const base = import.meta.env.BASE_URL || "/";
 
 let imgSrc = img;
-if (typeof img === 'string' && img.length) {
+if (typeof img === "string" && img.length) {
   if (/^https?:\/\//i.test(img)) {
     imgSrc = img;
   } else {
-    imgSrc = img.startsWith('/') ? img.slice(1) : img;
+    imgSrc = img.startsWith("/") ? img.slice(1) : img;
     imgSrc = `${base}${imgSrc}`;
   }
 }
@@ -16,13 +16,12 @@ if (typeof img === 'string' && img.length) {
 <div class:list={[custom_img]}>
   {img && <img src={imgSrc} alt="" />}
   {subtitle && <h4>{subtitle}</h4>}
-  {description && <p set:html={description}></p>}
+  {description && <p set:html={description} />}
 </div>
 
 <style>
-
   img {
-    max-width: 150px;
+    max-width: 115px;
     max-height: 75px;
   }
 
@@ -38,7 +37,7 @@ if (typeof img === 'string' && img.length) {
 
   .contacto-item {
     display: grid;
-    gap:var(--space-m)
+    gap: var(--space-m);
   }
 
   :global(.contacto-item p) {
@@ -50,6 +49,11 @@ if (typeof img === 'string' && img.length) {
   }
 
   @media (min-width: 990px) {
+    img {
+      max-width: 150px;
+      max-height: 75px;
+    }
+
     .mobile-hide {
       display: block;
     }

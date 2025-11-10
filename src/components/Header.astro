@@ -51,11 +51,15 @@ const base = import.meta.env.BASE_URL || "/";
 </header>
 
 <style>
+  img {
+  }
+
   .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    height: 55px;
+    max-height: 55px;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,7 +78,7 @@ const base = import.meta.env.BASE_URL || "/";
   }
 
   .logo img {
-    width: 100px;
+    width: 70px;
   }
 
   .menu-toggle {
@@ -183,9 +187,14 @@ const base = import.meta.env.BASE_URL || "/";
 
   @media (min-width: 990px) {
     .nav-container {
+      min-height: 80px;
       margin-top: 15px;
       border-radius: 40px;
       border: 2px solid #e3e3e323;
+    }
+
+    .logo img {
+      width: 100px;
     }
 
     .menu-toggle {
