@@ -5,30 +5,39 @@ import PageBuilder from "./PageBuilder.astro";
 <footer class="grid-layout">
   <section class="full-bleed">
     <div class="inner-content footer-content">
-      <nav class="nav-container-footer">
+      <nav class="nav-container-footer" aria-label="Pie de página">
         <ul class="nav-list-footer">
           <li><a href="aviso-legal">Aviso Legal</a></li>
-          <li><a href="">Política de Privacidad</a></li>
+          <li><a href="politica-privacidad">Política de Privacidad</a></li>
           <li><a href="quienes-somos/certificaciones">Certificaciones</a></li>
           <li><a href="contacto">Contacta con nosotros</a></li>
         </ul>
         <p>© 1988- 2025 , Keytron.com · Todos los derechos reservados.</p>
       </nav>
-      <div class="footer-links">
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
+      <div class="footer-social">
+        <a href="https://linkedin.com" aria-label="Síguenos en LinkedIn" title="LinkedIn">LinkedIn</a>
+        <a href="https://twitter.com" aria-label="Síguenos en Twitter" title="Twitter">Twitter</a>
+        <a href="https://facebook.com" aria-label="Síguenos en Facebook" title="Facebook">Facebook</a>
       </div>
     </div>
   </section>
 </footer>
 
 <style>
-  div>a {
-    display: block;
-    width: 70px;
-    height: 30px;
-    background-color: beige;
+  .footer-social a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    text-decoration: underline;
+    color: white;
+    transition: var(--transition-fast);
+  }
+
+  .footer-social a:hover {
+    text-decoration: none;
+    opacity: 0.8;
   }
 
   footer {
@@ -61,8 +70,10 @@ import PageBuilder from "./PageBuilder.astro";
     list-style: none;
   }
 
-  .footer-links {
+  .footer-social {
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
+
 </style>

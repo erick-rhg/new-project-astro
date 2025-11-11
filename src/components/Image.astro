@@ -1,20 +1,12 @@
 ---
-const { img, description, subtitle, custom_img } = Astro.props;
-const base = import.meta.env.BASE_URL || "/";
+import { normalizeImagePath } from "@utils/imagePath";
 
-let imgSrc = img;
-if (typeof img === "string" && img.length) {
-  if (/^https?:\/\//i.test(img)) {
-    imgSrc = img;
-  } else {
-    imgSrc = img.startsWith("/") ? img.slice(1) : img;
-    imgSrc = `${base}${imgSrc}`;
-  }
-}
+const { img, description, subtitle, custom_img } = Astro.props;
+const imgSrc = normalizeImagePath(img);
 ---
 
 <div class:list={[custom_img]}>
-  {img && <img src={imgSrc} alt="" />}
+  {img && <img src={imgSrc} alt={subtitle || description || 'Imagen'} />}
   {subtitle && <h4>{subtitle}</h4>}
   {description && <p set:html={description} />}
 </div>

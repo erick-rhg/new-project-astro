@@ -5,7 +5,7 @@ const base = import.meta.env.BASE_URL || "/";
 <header class="grid-layout">
   <nav class="full-bleed" aria-label="Navegación principal">
     <div class="inner-content nav-container">
-      <a href="#" class="logo">
+      <a href="/" class="logo">
         <img src={`${base}img/logokeytron.png`} alt="Logo" />
       </a>
 
@@ -24,7 +24,7 @@ const base = import.meta.env.BASE_URL || "/";
 
       <div class="nav-wrapper" id="main-menu">
         <ul class="nav-list">
-          <li><a href="">INICIO</a></li>
+          <li><a href="/">INICIO</a></li>
           <li class="has-submenu">
             <a
               href="quienes-somos"
@@ -34,7 +34,10 @@ const base = import.meta.env.BASE_URL || "/";
             >
             <ul class="submenu">
               <li><a href="quienes-somos/historia">Historia</a></li>
-              <li><a href="quienes-somos/nuestro-compromiso">Nuestro compromiso</a></li>
+              <li>
+                <a href="quienes-somos/nuestro-compromiso"
+                  >Nuestro compromiso</a>
+              </li>
               <li>
                 <a href="quienes-somos/certificaciones">Certificaciones</a>
               </li>
@@ -51,9 +54,6 @@ const base = import.meta.env.BASE_URL || "/";
 </header>
 
 <style>
-  img {
-  }
-
   .nav-container {
     display: flex;
     justify-content: space-between;
@@ -258,7 +258,6 @@ const base = import.meta.env.BASE_URL || "/";
   const menuToggle = document.querySelector(".menu-toggle");
   const navWrapper = document.querySelector(".nav-wrapper");
   const hasSubmenuItems = document.querySelectorAll(".has-submenu");
-  const clickDisable = document.getElementById("link_disable");
   const focusSubmenu = document.querySelector(".has-submenu");
 
   function openMenu() {
@@ -304,8 +303,8 @@ const base = import.meta.env.BASE_URL || "/";
       link.setAttribute("aria-expanded", "false");
 
       link.addEventListener("click", (e) => {
+        e.preventDefault();
         if (window.innerWidth <= 768) {
-          e.preventDefault();
           const active = item.classList.toggle("submenu-active");
           link.setAttribute("aria-expanded", active ? "true" : "false");
         }
@@ -327,21 +326,22 @@ const base = import.meta.env.BASE_URL || "/";
     }
 
     item.addEventListener("focusin", () => {
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 768 && link) {
         item.classList.add("submenu-active");
         link.setAttribute("aria-expanded", "true");
       }
     });
 
     item.addEventListener("focusout", (e) => {
-      if (window.innerWidth > 768 && !item.contains(e.relatedTarget)) {
+      const focusEvent = e as FocusEvent;
+      if (
+        window.innerWidth > 768 &&
+        focusEvent.relatedTarget &&
+        !item.contains(focusEvent.relatedTarget as Node)
+      ) {
         item.classList.remove("submenu-active");
-        link.setAttribute("aria-expanded", "false");
+        if (link) link.setAttribute("aria-expanded", "false");
       }
     });
-  });
-
-  clickDisable?.addEventListener("click", (e) => {
-    e.preventDefault();
   });
 </script>

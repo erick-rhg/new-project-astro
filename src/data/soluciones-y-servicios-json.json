@@ -217,7 +217,7 @@
                 },
                 {
                     "subtitle": "Backup y Continuidad de Negocio",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -240,11 +240,11 @@
             "image_data": [
                 {
                     "subtitle": "Servicio SOC – Security Operations Center.",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Respuesta 24x7x365 a incidencias, incidentes y ataques",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -267,23 +267,23 @@
             "image_data": [
                 {
                     "subtitle": "Diseño de arquitecturas",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Auditorías",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Análisis Seguridad TIC",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Asesoramiento TIC",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Dirección de proyecto",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -306,11 +306,11 @@
             "image_data": [
                 {
                     "subtitle": "Suministro del equipamiento HW & SW",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Logística asociada",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -333,23 +333,23 @@
             "image_data": [
                 {
                     "subtitle": "Instalación del equipamiento HW&SW",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Instalaciones asociadas (cableado, energía, seguridad física…)",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Integración de soluciones",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Configuración de la solución",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Pruebas y test de aceptación",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -372,31 +372,31 @@
             "image_data": [
                 {
                     "subtitle": "Service Desk: gestión de incidcias y escalado",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Diagnosis remota de incidencias",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Reposición Hardware",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Mantenimiento preventivo",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Actualizaciones Firmware",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Contrato periódico de asistencia",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Personal especializado y certificado",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -419,7 +419,7 @@
             "image_data": [
                 {
                     "subtitle": "Outtasking",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
