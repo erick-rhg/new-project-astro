@@ -2,7 +2,6 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "pepito"
         },
         "props": {
             "card_data": [
@@ -60,7 +59,8 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-col-right"
+            "grid_section": "g2-col-right",
+            "custom_article": "article-right"
         },
         "props": {
             "card_data": [

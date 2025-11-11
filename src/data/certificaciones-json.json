@@ -1,0 +1,85 @@
+[
+    {
+        "component": "Section",
+        "settings": {
+            "saltar_contenido": "main-content",
+            "grid_section": "g2-row"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Certificaciones",
+                    "subtitle": "Cumplimos con las mejores exigencias de calidad",
+                    "description": "En Keytron desarrollamos nuestra actividad mediante el desarrollo de la gestión de la calidad, de los servicios y de la seguridad de la información, conforme a las normas UNE-EN ISO 9001, ISO/IEC 20000-1, ISO/IEC 27001. El compromiso con nuestro cliente es nuestro objetivo, y para ello ofrecemos nuestras soluciones y servicios con el cumplimiento con las mejores exigencias de calidad.",
+                    "img": "img/certificaciones-img/mano.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "img/certificaciones-img/iso9001.png",
+                    "description": "<a href='img/certificaciones-img/iso-9001.pdf'>ISO-9001</a>"
+                },
+                {
+                    "img": "img/certificaciones-img/iso20000.png",
+                    "description": "<a href='img/certificaciones-img/iso-20001.pdf'>ISO-20000</a>"
+                },
+                {
+                    "img": "img/certificaciones-img/iso27001.png",
+                    "description": "<a href='img/certificaciones-img/iso-27001.pdf'>ISO-27001</a>"
+                },
+                {
+                    "img": "img/certificaciones-img/certificado-calidad.png",
+                    "description": "<a href='img/certificaciones-img/politica-calidad.pdf'>Política SIG CAyMA</a>"
+                },
+                {
+                    "img": "img/certificaciones-img/certificado-calidad.png",
+                    "description": "<a href='img/certificaciones-img/canal-denuncias.pdf'>Canal de denuncias </a>"
+                },
+                {
+                    "img": "img/certificaciones-img/iso14001.png",
+                    "description": "<a href='img/certificaciones-img/iso14001.pdf'>ISO 14001</a>"
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "",
+                    "subtitle": "Los principios básicos de nuestra política de calidad son:",
+                    "description": "",
+                    "img": "",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "img/certificaciones-img/normas.png",
+                    "description": "Cumplir con las normas ISO, con el fin de cumplir con los requisitos de nuestros clientes, así como las disposiciones legales y reglamentarias vigentes."
+                },
+                {
+                    "img": "img/certificaciones-img/empleados.png",
+                    "description": "Lograr la implicación activa y responsable de los empleados, mediante la formación continuada y favorecer su participación en las líneas de investigación y desarrollo que nos han dado personalidad entre los Integradores de Redes."
+                },
+                {
+                    "img": "img/certificaciones-img/especialistas.png",
+                    "description": "Ofrecer una atención personalizada y altamente especializada a nuestros clientes, de tal forma que nos adecuemos a sus necesidades y ofrecerles la mejor solución posible, al menor coste y en el mejor plazo."
+                },
+                {
+                    "img": "img/certificaciones-img/estrategia.png",
+                    "description": "Integrar la mejora continua en la estrategia."
+                },
+                {
+                    "img": "img/certificaciones-img/equipo.png",
+                    "description": "Fomentar el trabajo en equipo, el compromiso, y la innovación."
+                }
+            ]
+        }
+    }
+]
