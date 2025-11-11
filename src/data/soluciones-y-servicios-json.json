@@ -51,7 +51,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-3col"
+            "custom_container_img": "soluciones-1col"
         },
         "props": {
             "card_data": [
