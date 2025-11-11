@@ -48,6 +48,16 @@ if (typeof img === "string" && img.length) {
     text-decoration: none;
   }
 
+  :global(.certificaciones-bold a) {
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: var(--fs-1);
+  }
+
+  :global(a:hover) {
+    text-decoration: underline;
+  }
+
   @media (min-width: 990px) {
     img {
       max-width: 150px;

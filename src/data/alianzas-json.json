@@ -2,6 +2,7 @@
     {
         "component": "Section",
         "settings": {
+            "is_visible": "is-visible"
         },
         "props": {
             "card_data": [
@@ -19,7 +20,9 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width"
+            "custom_article": "card-75-width",
+            "is_visible": "is-visible",
+            "custom_container_img": "alianzas-align-start"
         },
         "props": {
             "card_data": [
@@ -74,7 +77,9 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width"
+            "custom_article": "card-75-width",
+            "is_visible": "is-visible",
+            "custom_container_img": "alianzas-align-start"
         },
         "props": {
             "card_data": [
@@ -114,7 +119,9 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width"
+            "custom_article": "card-75-width",
+            "is_visible": "is-visible",
+            "custom_container_img": "alianzas-align-start"
         },
         "props": {
             "card_data": [
@@ -181,6 +188,11 @@
                     "img": "img/alianzas-img/logos/yubico.svg",
                     "description": "",
                     "custom_img": ""
+                },
+                                {
+                    "img": "img/alianzas-img/logos/iberlayer.svg",
+                    "description": "",
+                    "custom_img": ""
                 }
             ]
         }
@@ -189,7 +201,9 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width"
+            "custom_article": "card-75-width",
+            "is_visible": "is-visible",
+            "custom_container_img": "alianzas-align-start"
         },
         "props": {
             "card_data": [
@@ -219,7 +233,9 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width"
+            "custom_article": "card-75-width",
+            "is_visible": "is-visible",
+            "custom_container_img": "alianzas-align-start"
         },
         "props": {
             "card_data": [
@@ -259,7 +275,9 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width"
+            "custom_article": "card-75-width",
+            "is_visible": "is-visible",
+            "custom_container_img": "alianzas-align-start"
         },
         "props": {
             "card_data": [
@@ -293,7 +311,7 @@
                     "custom_img": ""
                 },
                 {
-                    "img": "img/alianzas-img/logos/brandrex.png",
+                    "img": "img/alianzas-img/logos/brandrex.webp",
                     "description": "",
                     "custom_img": ""
                 }
@@ -304,7 +322,9 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width"
+            "custom_article": "card-75-width",
+            "is_visible": "is-visible",
+            "custom_container_img": "alianzas-align-start"
         },
         "props": {
             "card_data": [

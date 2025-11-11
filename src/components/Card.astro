@@ -34,10 +34,11 @@ if (typeof img === 'string' && img.length) {
   img {
     max-width: 500px;
   }
-
-/*   .card-default p {
-    white-space: pre-wrap; para que respete \n en JSON
-  } */
+  
+  :global(.aviso-legal-layout p) {
+    white-space: pre-wrap; /* para que respete \n en JSON */
+  }
+   
   @media (min-width: 990px) {
 
     

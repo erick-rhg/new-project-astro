@@ -34,19 +34,14 @@
   --color-span: #b21b52; 
 
   --custom-shadow: 
-    /* Sombra oscura (abajo-derecha) */
     8px 8px 16px #d1d9e6, 
-    
-    /* Sombra clara (arriba-izquierda) */
     -8px -8px 16px #ffffff;
 
-    /*   --color-trust-blue: #1f89e5;*/
-
+   
   /* --- 2. Escala de Fuente Fluida (Typographic Scale) --- */
 /* Viewport (Ancho de pantalla) de referencia:
     Mínimo: 370px
     Máximo: 1400px
-    
     Base: 1rem = 16px
   */
 
@@ -70,9 +65,7 @@
 
 
   /* --- 3. Escala de Espaciado Fluido (Spacing Scale) --- */
-  /* * Un sistema para 'padding', 'margin', 'gap'.
-   * Usa los mismos principios de clamp()
-   */
+
 
   /* x-small (0.5rem -> 0.75rem) */
   --space-xs: clamp(0.5rem, 0.58vw + 0.38rem, 0.75rem);

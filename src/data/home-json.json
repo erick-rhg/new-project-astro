@@ -60,8 +60,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-col-right",
-            "custom_article": "article-right"
+            "grid_section": "g2-col-right"
         },
         "props": {
             "card_data": [

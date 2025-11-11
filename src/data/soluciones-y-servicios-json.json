@@ -3,7 +3,6 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos",
             "saltar_contenido": "main-content"
         },
         "props": {
@@ -106,8 +105,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -124,19 +122,19 @@
                     "subtitle": "Soporte",
                     "description": "Soporte en todas las fases de vida de los productos de ciberseguridad.",
                     "img": "img/servicios-img/logos/asistencia.png",
-                    "custom_img": "ciberseguridad-grid-2col"
+                    "custom_img": "width-350"
                 },
                 {
                     "subtitle": "Análisis de Vulnerabilidades",
                     "description": "Análisis de vulnerabilidades empleando herramientas líderes como Nessus o Retina y aportando nuestra experiencia.",
                     "img": "img/servicios-img/logos/analisis.png",
-                    "custom_img": "ciberseguridad-grid-2col"
+                    "custom_img": "width-350"
                 },
                 {
                     "subtitle": "Seguridad en la nube",
                     "description": "Solución antimalware, proxy y firewall en la nube. Nos apoyamos en herramientas de fabricantes como Kaspersky, Forcepoint, Cososys o Cisco entre otros.",
                     "img": "img/servicios-img/logos/remota.png",
-                    "custom_img": "ciberseguridad-grid-2col"
+                    "custom_img": "width-350"
                 },
                 {
                     "subtitle": "Consultoría",
@@ -168,8 +166,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -228,8 +225,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -256,8 +252,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -296,8 +291,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -324,8 +318,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -364,8 +357,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -412,8 +404,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [

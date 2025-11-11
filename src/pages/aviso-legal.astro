@@ -1,0 +1,22 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import HeroBanner from "@components/HeroBanner.astro";
+import PageBuilder from "@components/PageBuilder.astro";
+import dataJson from "@data/aviso-legal-json.json";
+---
+
+<BaseLayout title="Certificaciones - Keytron S.A." skip="quienes-somos/certificaciones">
+  <HeroBanner
+    title="Certificaciones"
+    subtitle="Calidad conforme a las normas"
+  />
+
+  <PageBuilder dataJson={dataJson} />
+</BaseLayout>
+
+<style>
+
+    :global(main.grid-layout) {
+        row-gap: 1rem;
+    }
+</style>

@@ -17,28 +17,39 @@
             ],
             "image_data": [
                 {
-                    "img": "img/certificaciones-img/iso9001.png",
-                    "description": "<a href='img/certificaciones-img/iso-9001.pdf'>ISO-9001</a>"
+                    "img": "",
+                    "description": "<a href='img/certificaciones-img/iso-9001.pdf'>ISO - 9001</a>",
+                    "custom_img": "certificaciones-bold"
                 },
                 {
-                    "img": "img/certificaciones-img/iso20000.png",
-                    "description": "<a href='img/certificaciones-img/iso-20001.pdf'>ISO-20000</a>"
+                    "img": "",
+                    "description": "<a href='img/certificaciones-img/iso-20001.pdf'>ISO - 20000</a>",
+                    "custom_img": "certificaciones-bold"
                 },
                 {
-                    "img": "img/certificaciones-img/iso27001.png",
-                    "description": "<a href='img/certificaciones-img/iso-27001.pdf'>ISO-27001</a>"
+                    "img": "",
+                    "description": "<a href='img/certificaciones-img/iso-27001.pdf'>ISO - 27001</a>",
+                    "custom_img": "certificaciones-bold"
                 },
                 {
-                    "img": "img/certificaciones-img/certificado-calidad.png",
-                    "description": "<a href='img/certificaciones-img/politica-calidad.pdf'>Política SIG CAyMA</a>"
+                    "img": "",
+                    "description": "<a href='img/certificaciones-img/iso14001.pdf'>ISO - 14001</a>",
+                    "custom_img": "certificaciones-bold"
                 },
                 {
-                    "img": "img/certificaciones-img/certificado-calidad.png",
-                    "description": "<a href='img/certificaciones-img/canal-denuncias.pdf'>Canal de denuncias </a>"
+                    "img": "",
+                    "description": "<a href='img/certificaciones-img/politica-calidad.pdf'>Política SIG CAyMA</a>",
+                    "custom_img": "certificaciones-bold"
                 },
                 {
-                    "img": "img/certificaciones-img/iso14001.png",
-                    "description": "<a href='img/certificaciones-img/iso14001.pdf'>ISO 14001</a>"
+                    "img": "",
+                    "description": "<a href='img/certificaciones-img/canal-denuncias.pdf'>Canal de denuncias </a>",
+                    "custom_img": "certificaciones-bold"
+                },
+                {
+                    "img": "",
+                    "description": "<a href='img/certificaciones-img/ENS.pdf'>ENS </a>",
+                    "custom_img": "certificaciones-bold"
                 }
             ]
         }

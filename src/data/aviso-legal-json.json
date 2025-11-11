@@ -1,0 +1,104 @@
+[
+    {
+        "component": "Section",
+        "settings": {
+            "custom_article": "aviso-legal-layout"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Información de carácter legal",
+                    "subtitle": "",
+                    "description": "Bienvenido a la página web de Keytron S.A. El propósito de esta página web es informar acerca de los servicios que ofrecemos. Por favor, lea la siguiente información cuidadosamente antes de utilizar esta página web. El uso de esta publicación digital y de sus contenidos está sujeto a ciertos términos y condiciones. Estas condiciones generales se regulan bajo las leyes españolas. \n\n En caso de cualquier controversia que pudiera ocasionarse en relación con la aplicación e interpretación de estas leyes, tanto Keytron S.A. como el usuario aceptarán expresamente someterse a la jurisdicción de los Juzgados y Tribunales de Madrid (España), renunciando a cualquier otra jurisdicción de cualquier otro país o nación.",
+                    "img": "",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "custom_article": "aviso-legal-layout"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "",
+                    "subtitle": "1. Copyright y marcas registradas",
+                    "description": "Keytron S.A. es la propietaria legal de todos los derechos del software de esta página web, así como de los derechos sobre la propiedad industrial e intelectual de sus contenidos, exceptuando los derechos sobre productos y servicios que no pertenecen a esta compañía, cuyas marcas comerciales hayan sido registradas por cuenta de sus respectivos propietarios. Estos serán reconocidos como tales por Keytron S.A. \n\nEsta página web puede contener referencias a las marcas comerciales registradas por Keytron S.A. La utilización de dichas marcas sin autorización previa por parte de Keytron S.A. queda rigurosamente prohibida. Cualquier otra referencia a otras marcas registradas será responsabilidad y privilegio de sus respectivos propietarios.",
+                    "img": "img/aviso-legal-img/marca.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "custom_article": "aviso-legal-layout"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "",
+                    "subtitle": "2. Advertencia legal",
+                    "description": "La información contenida en esta página web se proporciona sin garantías de ningún tipo, explícitas o implícitas, y podrá ser cambiada o actualizada sin previo aviso.\n\nLa información proporcionada a Keytron S.A. por medio de esta página web no será considerada confidencial a menos que esto se contemplé como tal en un apartado específico que haga referencia a la naturaleza de confidencialidad de dichos datos. Cualquier otra información enviada a Keytron S.A. a través de la página web podrá ser utilizada, reproducida, transformada, transmitida o difundida por Keytron S.A. si esta lo considera adecuado.\n\nKeytron S.A. no aceptará responsabilidad ninguna sobre los contenidos incluidos por terceras partes en los hipervínculos que aparezcan en su página web. La aparición de un hipervínculo no implica la existencia de relación alguna entre Keytron S.A. y el propietario de la página web en la que aparezca, ni tampoco la aceptación o la aprobación por parte de Keytron S.A. de los contenidos o servicios ofrecidos en la misma y que sean accesibles al público.\n\nTodas y cada una de las alteraciones, cambios, modificaciones o adaptaciones a esta página web o a cualquier información que esta contenga, quedan expresamente prohibidas.\n\nKeytron S.A. no aceptará responsabilidad por el daño ocasional sobre el software o el hardware del usuario que pueda derivarse del acceso a su página web o por el uso de la información o aplicaciones que se contengan en la misma. Así pues, no aceptará ninguna responsabilidad por no garantizar la disponibilidad o el acceso de modo continuo a la página web, o sobre la posibilidad de la existencia de errores en la misma.\n\nEl usuario será considerado responsable de cualquier daño de cualquier tipo que pueda sufrir debido a Keytron S.A. como resultado del incumplimiento de cualquiera de las obligaciones implícitas en las presentes condiciones. El usuario acepta de modo voluntario las implicaciones que el uso de los contenidos de esta página web pueda ocasionarle bajo su única y exclusiva responsabilidad.",
+                    "img": "img/aviso-legal-img/advertencia.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "custom_article": "aviso-legal-layout"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "",
+                    "subtitle": "3. Naturaleza confidencial de los datos",
+                    "description": "Keytron S.A. se compromete a respetar la naturaleza confidencial de cualquier dato proporcionado por los usuarios de esta página web, de acuerdo con lo regulado en la Ley Orgánica 3/2018, de 5 de diciembre, que regula la protección de datos de naturaleza personal.\n\nLa información enviada a Keytron S.A. mediante esta web con el propósito de selección de personal se mantendrá bajo estricta confidencialidad y será tratada de acuerdo con la legislación europea o nacional, según competa, que legisle sobre temas de privacidad de la información. Enviar tal información implica autorizar a que Keytron S.A. pueda utilizarla para sus propósitos, y transferirla a cualquier compañía asociada a ella, donde será tratada bajo los mismos principios de confidencialidad.\n\nSi desea actualizar su información con carácter personal, por favor, contacte con nuestro Departamento de Recursos Humanos. Keytron S.A. podrá en ciertos casos almacenar esta información de acuerdo a propósitos de carácter estadístico. Esta web utiliza las herramientas de análisis de Google para estudiar el comportamiento y perfil de sus visitantes.\n\nEsta página web utiliza Google Analytics, un servicio analítico de web prestado por Google, Inc., una compañía de Delaware cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos (“Google”). Google Analytics utiliza “cookies”, que son archivos de texto ubicados en su ordenador, para ayudar al website a analizar el uso que hacen los usuarios del sitio web. La información que genera la cookie acerca de su uso del website (incluyendo su dirección IP) será directamente transmitida y archivada por Google en los servidores de Estados Unidos. Google usará esta información por cuenta nuestra con el propósito de seguir la pista de su uso del website, recopilando informes de la actividad del website y prestando otros servicios relacionados con la actividad del website y el uso de Internet. Google podrá transmitir dicha información a terceros cuando así se lo requiera la legislación, o cuando dichos terceros procesen la información por cuenta de Google. Google no asociará su dirección IP con ningún otro dato del que disponga Google. Puede Usted rechazar el tratamiento de los datos o la información rechazando el uso de cookies mediante la selección de la configuración apropiada de su navegador, sin embargo, debe Usted saber que si lo hace puede ser que no pueda usar la plena funcionabilidad de este website. Al utilizar este website Usted consiente el tratamiento de información acerca de Usted por Google en la forma y para los fines arriba indicados.",
+                    "img": "img/aviso-legal-img/confidencial.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "custom_article": "aviso-legal-layout"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "",
+                    "subtitle": "4. Política de Cookies",
+                    "description": "Cookie es un fichero que se descarga en su ordenador al acceder a determinadas páginas web. Las cookies permiten a una página web, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo y, dependiendo de la información que contengan y de la forma en que utilice su equipo, pueden utilizarse para reconocer al usuario. El navegador del usuario memoriza cookies en el disco duro solamente durante la sesión actual ocupando un espacio de memoria mínimo y no perjudicando al ordenador. Las cookies no contienen ninguna clase de información personal específica, y la mayoría de las mismas se borran del disco duro al finalizar la sesión de navegador (las denominadas cookies de sesión).\n\nLa mayoría de los navegadores aceptan como estándar a las cookies y, con independencia de las mismas, permiten o impiden en los ajustes de seguridad las cookies temporales o memorizadas. Sin su expreso consentimiento —mediante la activación de las cookies en su navegador— Keytron S.A., no enlazará en las cookies los datos memorizados.",
+                    "img": "img/aviso-legal-img/cookies.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "custom_article": "aviso-legal-layout"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "",
+                    "subtitle": "¿Qué tipos de cookies utiliza esta página web?",
+                    "description": "En particular, este sitio Web utiliza Google Analytics, un servicio analítico de web prestado por Google, Inc. con domicilio en los Estados Unidos con sede central en 1600 Amphitheatre Parkway, Mountain View, California 94043. Para la prestación de estos servicios, estos utilizan cookies que recopilan la información, incluida la dirección IP del usuario, que será transmitida, tratada y almacenada por Google en los términos fijados en la Web Google.com. Incluyendo la posible transmisión de dicha información a terceros por razones de exigencia legal o cuando dichos terceros procesen la información por cuenta de Google. El Usuario acepta expresamente, por la utilización de este Site, el tratamiento de la información recabada en la forma y con los fines anteriormente mencionados. Y asimismo reconoce conocer la posibilidad de rechazar el tratamiento de tales datos o información rechazando el uso de Cookies mediante la selección de la configuración apropiada a tal fin en su navegador. Si bien esta opción de bloqueo de Cookies en su navegador puede no permitirle el uso pleno de todas las funcionalidades del Website. Puede usted permitir, bloquear o eliminar las cookies instaladas en su equipo mediante la configuración de las opciones del navegador instalado en su ordenador:",
+                    "img": "",
+                    "buttons": ""
+                }
+            ]
+        }
+    }
+]
