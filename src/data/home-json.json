@@ -42,7 +42,8 @@
                         {
                             "text": "Más información",
                             "url": "soluciones-y-servicios",
-                            "class_name": "btn-primary"
+                            "class_name": "btn-primary",
+                            "arial_label": "Conoce más sobre nuestras soluciones y servicios"
                         }
                     ]
                 }
@@ -73,7 +74,8 @@
                         {
                             "text": "Más información",
                             "url": "clientes",
-                            "class_name": "btn-primary"
+                            "class_name": "btn-primary",
+                            "arial-label": "Conoce más sobre nuestros clientes"
                         }
                     ]
                 }

@@ -1,8 +1,8 @@
 ---
-const { text, url, class_name, custom_button } = Astro.props;
+const { text, url, class_name, custom_button, arial_label } = Astro.props;
 ---
 
-<a class:list={["button-a", class_name, custom_button]} href={url}>{text}</a>
+<a class:list={["button-a", class_name, custom_button]} href={url} aria-label={arial_label}>{text}</a>
 
 <style is:global>
   .button-a {
