@@ -27,6 +27,10 @@ const { cards, settings } = Astro.props;
     padding-inline: 1.2rem;
     padding-block: 3rem;
     box-shadow: var(--custom-shadow);
+
+    animation: aparecer-deslizando linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
   }
 
   :global(.article-left .card-default) {
@@ -38,6 +42,17 @@ const { cards, settings } = Astro.props;
     justify-content: flex-start;
     padding-inline: 3rem ;
   }
+
+  @keyframes aparecer-deslizando {
+  from {
+    opacity: .8;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
   
   @media (min-width: 990px) {
      .article-default {

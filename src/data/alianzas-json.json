@@ -19,7 +19,6 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width",
             "custom_article": "card-75-width"
         },
         "props": {
