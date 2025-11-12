@@ -8,7 +8,7 @@
             "card_data": [
                 {
                     "title": "Alianzas",
-                    "subtitle": "Nos adaptamos a tus necesidades",
+                    "subtitle": "Nos adaptamos a todas tus necesidades",
                     "description": "<strong>Keytron</strong> apuestaz por fabricantes de primer nivel para cada una de las soluciones de su portfolio. Nos adaptamos a tus necesidades y requisitos ofreciéndote la mejor solución.",
                     "img": "img/alianzas-img/alianzas.png",
                     "buttons": ""
@@ -210,7 +210,7 @@
                 {
                     "title": "Storage",
                     "subtitle": "",
-                    "description": "Ofrecemos soluciones de almacenamiento que se adaptan a tus requisitos: <span>Almacenamiento bajo demanda, Backup,</span> etc...",
+                    "description": "Ofrecemos soluciones de almacenamiento que se adaptan a tus requisitos: <span> Backup, Almacenamiento bajo demanda,</span> etc...",
                     "img": "img/alianzas-img/storage.png",
                     "buttons": ""
                 }
