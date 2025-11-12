@@ -18,17 +18,17 @@
             "image_data": [
                 {
                     "img": "",
-                    "description": "<a href='img/certificaciones-img/iso-9001.pdf'>ISO - 9001</a>",
+                    "description": "<a href='img/certificaciones-img/iso9001.pdf'>ISO - 9001</a>",
                     "custom_img": "certificaciones-bold"
                 },
                 {
                     "img": "",
-                    "description": "<a href='img/certificaciones-img/iso-20001.pdf'>ISO - 20000</a>",
+                    "description": "<a href='img/certificaciones-img/iso20001.pdf'>ISO - 20001</a>",
                     "custom_img": "certificaciones-bold"
                 },
                 {
                     "img": "",
-                    "description": "<a href='img/certificaciones-img/iso-27001.pdf'>ISO - 27001</a>",
+                    "description": "<a href='img/certificaciones-img/iso27001.pdf'>ISO - 27001</a>",
                     "custom_img": "certificaciones-bold"
                 },
                 {

@@ -28,7 +28,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-col-left"
+            "grid_section": "grid-col-left"
         },
         "props": {
             "card_data": [
@@ -59,7 +59,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-col-right"
+            "grid_section": "grid-col-right"
         },
         "props": {
             "card_data": [
@@ -91,7 +91,7 @@
         "component": "Section",
         "settings": {
             "layout_class": "full-bleed",
-            "custom_article": "article-left"
+            "custom_container_article": "article-left"
         },
         "props": {
             "card_data": [

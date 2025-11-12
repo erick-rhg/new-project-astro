@@ -19,7 +19,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-col-right"
+            "grid_section": "grid-col-right"
         },
         "props": {
             "card_data": [

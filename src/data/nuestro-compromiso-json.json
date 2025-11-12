@@ -2,7 +2,7 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "card-75-width"
+            "custom_container_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -19,7 +19,7 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "card-75-width"
+            "custom_container_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -37,7 +37,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_article": "card-75-width"
+            "custom_container_article": "card-75-width"
         },
         "props": {
             "card_data": [

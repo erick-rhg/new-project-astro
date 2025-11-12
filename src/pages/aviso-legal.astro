@@ -5,7 +5,11 @@ import PageBuilder from "@components/PageBuilder.astro";
 import dataJson from "@data/aviso-legal-json.json";
 ---
 
-<BaseLayout title="Aviso Legal - Keytron S.A." skip="quienes-somos/Aviso Legal">
+<BaseLayout
+  title="Aviso Legal - Keytron S.A."
+  skip="quienes-somos/Aviso Legal"
+  url="http://localhost:4321/new-project-astro/aviso-legal"
+>
   <HeroBanner title="Aviso Legal" subtitle="Información de carácter legal" />
 
   <PageBuilder dataJson={dataJson} />

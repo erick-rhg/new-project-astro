@@ -38,7 +38,8 @@ Conceptos clave:
 
 - Renderizado guiado por datos: los JSON describen qué componente y con qué props debe renderizarse cada bloque de página.
 - Componentes reutilizables: bloques pequeños y predecibles con props documentadas.
-- Gestión de rutas de imágenes con `BASE_URL`: la utilidad `normalizeImagePath` centraliza el prefijado para que las imágenes funcionen en sub-rutas (p. ej. GitHub Pages).
+- #### ¡IMPORTANTE! 
+    **Gestión de rutas de imágenes** con `BASE_URL`: la utilidad `normalizeImagePath` centraliza el prefijado para que las imágenes funcionen en sub-rutas (p. ej. GitHub Pages).
 
 ---
 

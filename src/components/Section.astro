@@ -13,8 +13,8 @@ const fullBleed = settings?.layout_class === "full-bleed";
 </div>
 
 <style>
-  .g2-col-left,
-  .g2-col-right,
+  .grid-col-left,
+  .grid-col-right,
   .g2-row {
     display: grid;
   }
@@ -25,18 +25,18 @@ const fullBleed = settings?.layout_class === "full-bleed";
   }
 
   @media (min-width: 990px) {
-    .g2-col-left,
-    .g2-col-right {
+    .grid-col-left,
+    .grid-col-right {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 3rem;
     }
 
-    :global(.g2-col-right .article-default) {
+    :global(.grid-col-right .article-default) {
       order: 1;
     }
 
-    :global(.g2-col-left .card-default, .g2-col-right .card-default) {
+    :global(.grid-col-left .card-default, .grid-col-right .card-default) {
       width: auto;
     }
   }

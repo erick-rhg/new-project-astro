@@ -2,7 +2,7 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "aviso-legal-layout"
+            "custom_container_article": "aviso-legal-layout"
         },
         "props": {
             "card_data": [
@@ -19,7 +19,7 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "aviso-legal-layout"
+            "custom_container_article": "aviso-legal-layout"
         },
         "props": {
             "card_data": [
@@ -36,7 +36,7 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "aviso-legal-layout"
+            "custom_container_article": "aviso-legal-layout"
         },
         "props": {
             "card_data": [
@@ -53,7 +53,7 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "aviso-legal-layout"
+            "custom_container_article": "aviso-legal-layout"
         },
         "props": {
             "card_data": [
@@ -70,7 +70,7 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "aviso-legal-layout"
+            "custom_container_article": "aviso-legal-layout"
         },
         "props": {
             "card_data": [
@@ -87,7 +87,7 @@
     {
         "component": "Section",
         "settings": {
-            "custom_article": "aviso-legal-layout"
+            "custom_container_article": "aviso-legal-layout"
         },
         "props": {
             "card_data": [

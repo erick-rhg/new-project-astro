@@ -4,7 +4,7 @@ import Buttons from "@components/Buttons.astro";
 const { cards, settings } = Astro.props;
 ---
 
-<article class:list={["article-default", settings?.custom_article]}>
+<article class:list={["article-default", settings?.custom_container_article]}>
   {
     cards.map((cardItem) => {
       return (
