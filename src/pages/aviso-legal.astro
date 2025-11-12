@@ -6,17 +6,13 @@ import dataJson from "@data/aviso-legal-json.json";
 ---
 
 <BaseLayout title="Aviso Legal - Keytron S.A." skip="quienes-somos/Aviso Legal">
-  <HeroBanner
-    title="Aviso Legal"
-    subtitle="Información de carácter legal"
-  />
+  <HeroBanner title="Aviso Legal" subtitle="Información de carácter legal" />
 
   <PageBuilder dataJson={dataJson} />
 </BaseLayout>
 
 <style>
-
-    :global(main.grid-layout) {
-        row-gap: 1rem;
-    }
+  :global(main.grid-layout) {
+    row-gap: 1rem;
+  }
 </style>

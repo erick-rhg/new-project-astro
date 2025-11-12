@@ -5,11 +5,11 @@ import PageBuilder from "@components/PageBuilder.astro";
 import dataJson from "@data/nuestro-compromiso-json.json";
 ---
 
-<BaseLayout title="Nuestro compromiso - Keytron S.A." skip="quienes-somos/nuestro-compromiso">
-  <HeroBanner
-    title="Nuestro compromiso"
-    subtitle="Nuestra garantía de éxito"
-  />
+<BaseLayout
+  title="Nuestro compromiso - Keytron S.A."
+  skip="quienes-somos/nuestro-compromiso"
+>
+  <HeroBanner title="Nuestro compromiso" subtitle="Nuestra garantía de éxito" />
 
   <PageBuilder dataJson={dataJson} />
 </BaseLayout>

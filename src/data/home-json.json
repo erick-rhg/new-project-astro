@@ -1,8 +1,7 @@
 [
     {
         "component": "Section",
-        "settings": {
-        },
+        "settings": {},
         "props": {
             "card_data": [
                 {
@@ -103,7 +102,7 @@
                     "img": "",
                     "buttons": [
                         {
-                            "text":"Contáctanos",
+                            "text": "Contáctanos",
                             "url": "contacto",
                             "class_name": "btn-cta",
                             "custom_button": "button-left"

@@ -4,7 +4,7 @@ import HeroBanner from "@components/HeroBanner.astro";
 import PageBuilder from "@components/PageBuilder.astro";
 import Mapa from "@components/Mapa.astro";
 import Formulario from "@components/Formulario.astro";
-import dataJson from "@data/contacto-json.json"
+import dataJson from "@data/contacto-json.json";
 ---
 
 <BaseLayout title="Contacto - Keytron S.A.">
@@ -13,6 +13,6 @@ import dataJson from "@data/contacto-json.json"
     subtitle="Queremos dar solución a tus necesidades"
   />
   <PageBuilder dataJson={dataJson} />
-  <Formulario></Formulario>
-<Mapa></Mapa>
+  <Formulario />
+  <Mapa />
 </BaseLayout>

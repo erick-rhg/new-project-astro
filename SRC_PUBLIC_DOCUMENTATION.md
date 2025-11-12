@@ -226,6 +226,3 @@ Estructura típica de cada `card` (campos usados en el proyecto):
 - `description`: texto o HTML (se inyecta con `set:html`)
 - `img`: ruta relativa (`img/...`) o URL externa
 - `buttons`: array de objetos `{ text, url, class_name, arial_label, custom_button }`
-
--
-- `description` fields may contain HTML and are injected with `set:html`.

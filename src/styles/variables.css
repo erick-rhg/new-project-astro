@@ -2,26 +2,23 @@
  * ============================================
  * ARCHIVO DE VARIABLES GLOBALES
  * ============================================
- * Definimos un sistema fluido para tipografía
- * y espaciado usando clamp().
  * Las medidas en 'rem' están basadas en 1rem = 16px.
  * ============================================
  */
 
 :root {
-  /* --- 1. Fuentes (Tipografía) --- */
-  /* Define las familias de fuentes */
+  /* --- Fuentes (Tipografía) --- */
   --font-family-body: "Lato", sans-serif;
-  --font-family-heading: "Montserrat", sans-serif; /* O una fuente personalizada */
+  --font-family-heading: "Montserrat", sans-serif; 
 
-  /* Define los pesos de fuente */
+  /* pesos de fuente */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  /* Define las alturas de línea (unitless) */
-  --line-height-body: 1.65; /* Para texto de párrafo */
-  --line-height-heading: 1.2; /* Para títulos */
+  /*alturas de línea */
+  --line-height-body: 1.65; 
+  --line-height-heading: 1.2; 
 
   /*Define colores base*/
   --color-primary: #02277f; /*h1 y botones comunes*/
@@ -38,7 +35,7 @@
     -8px -8px 16px #ffffff;
 
    
-  /* --- 2. Escala de Fuente Fluida (Typographic Scale) --- */
+  /* ---Escala de Fuente Fluida--- */
 /* Viewport (Ancho de pantalla) de referencia:
     Mínimo: 370px
     Máximo: 1400px
@@ -64,7 +61,7 @@
   --fs-4: clamp(2.5rem, calc(1.781rem + 3.107vw), 4.5rem);
 
 
-  /* --- 3. Escala de Espaciado Fluido (Spacing Scale) --- */
+  /* ---Escala de Espaciado Fluido (Spacing Scale) --- */
 
 
   /* x-small (0.5rem -> 0.75rem) */
@@ -88,7 +85,7 @@
   /* (Opcional) Espaciado de sección (4rem -> 8rem) */
   --space-section: clamp(4rem, 9.28vw + 2.08rem, 8rem);
 
-  /* --- 4. Maquetación (Layout) --- */
+  /* ---Maquetación (Layout) --- */
 
   /* Ancho máximo de la columna de contenido */
   --content-max-width: 1200px;
@@ -96,7 +93,7 @@
   /* Márgenes laterales (gutter) mínimos en móvil */
   --page-gutter-min: var(--space-m, 1rem); /* 1rem o 1.5rem suele ser bueno */
 
-  /* --- 5. Misceláneos --- */
+  /* ---Misceláneos --- */
 
   /* Transiciones */
   --transition-fast: all 0.2s ease-out;

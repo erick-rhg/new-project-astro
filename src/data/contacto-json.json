@@ -22,12 +22,12 @@
                     "description": "Teléfono:<a href='tel:+34916626171'> +34 91 662 61 71</a> <br> Fax: <a href='tel:+34916625910'>+34 91 662 59 10</a>",
                     "custom_img": "contacto-item"
                 },
-                                {
+                {
                     "img": "img/contacto-img/mapa.png",
                     "description": "<a href='https://maps.app.goo.gl/h4C4QmqLk9Z9Kz3e9'>C/ Guzmán el Bueno 16, Edificio Digiespace<br>28108 Alcobendas (Madrid)España (EU)</a>",
                     "custom_img": "contacto-item"
                 },
-                                {
+                {
                     "img": "img/contacto-img/email.png",
                     "description": "Correo eletrónico: <br><a href='mailto:comunicaciones@keytron.com'>comunicaciones@keytron.com</a>",
                     "custom_img": "contacto-item"

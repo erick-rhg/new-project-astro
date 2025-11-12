@@ -15,7 +15,10 @@ const components = {
     }
 
     return (
-      <section id={data.settings?.saltar_contenido} class:list={[data.settings?.layout_class]}>
+      <section
+        id={data.settings?.saltar_contenido}
+        class:list={[data.settings?.layout_class]}
+      >
         {" "}
         {/* grid-content */}
         <Component {...data.props} settings={data.settings} />

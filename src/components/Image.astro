@@ -6,7 +6,7 @@ const imgSrc = normalizeImagePath(img);
 ---
 
 <div class:list={[custom_img]}>
-  {img && <img src={imgSrc} alt={subtitle || description || 'Imagen'} />}
+  {img && <img src={imgSrc} alt={subtitle || description || "Imagen"} />}
   {subtitle && <h4>{subtitle}</h4>}
   {description && <p set:html={description} />}
 </div>
