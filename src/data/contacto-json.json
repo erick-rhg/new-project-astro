@@ -1,0 +1,38 @@
+[
+    {
+        "component": "Section",
+        "settings": {
+            "saltar_contenido": "main-content",
+            "grid_section": "g2-row",
+            "custom_container_img": "contacto-enlaces"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "¿En qué podemos ayudarte?",
+                    "subtitle": "Si deseas solicitar más información acerca de nuestra empresa y sus servicios, por favor, rellena el siguiente formulario. Todos tus datos serán utilizados únicamente para responder a tus preguntas. Toda la información personal será procesada conforme a nuestra política de privacidad.",
+                    "description": "",
+                    "img": "img/contacto-img/chat.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "img/contacto-img/telefono.png",
+                    "description": "Teléfono:<a href='tel:+34916626171'> +34 91 662 61 71</a> <br> Fax: <a href='tel:+34916625910'>+34 91 662 59 10</a>",
+                    "custom_img": "contacto-item"
+                },
+                {
+                    "img": "img/contacto-img/mapa.png",
+                    "description": "<a href='https://maps.app.goo.gl/h4C4QmqLk9Z9Kz3e9'>C/ Guzmán el Bueno 16, Edificio Digiespace<br>28108 Alcobendas (Madrid)España (EU)</a>",
+                    "custom_img": "contacto-item"
+                },
+                {
+                    "img": "img/contacto-img/email.png",
+                    "description": "Correo eletrónico: <br><a href='mailto:comunicaciones@keytron.com'>comunicaciones@keytron.com</a>",
+                    "custom_img": "contacto-item"
+                }
+            ]
+        }
+    }
+]

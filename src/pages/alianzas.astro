@@ -5,7 +5,11 @@ import PageBuilder from "@components/PageBuilder.astro";
 import dataJson from "@data/alianzas-json.json";
 ---
 
-<BaseLayout title="Alianzas - Keytron S.A.">
+<BaseLayout
+  title="Alianzas - Keytron S.A."
+  skip="alianzas"
+  url="https://erick-rhg.github.io/new-project-astro/alianzas/"
+>
   <HeroBanner
     title="Alianzas"
     subtitle="Apostamos por fabricantes de primer nivel"
@@ -13,12 +17,3 @@ import dataJson from "@data/alianzas-json.json";
 
   <PageBuilder dataJson={dataJson} />
 </BaseLayout>
-
-<style is:global>
-  @media (min-width: 990px) {
-    .article-default {
-      width: 75vw;
-      margin-inline: auto;
-    }
-  }
-</style>

@@ -1,14 +1,16 @@
 [
     {
         "component": "Section",
-        "settings": {},
+        "settings": {
+            "saltar_contenido": "main-content"
+        },
         "props": {
             "card_data": [
                 {
                     "title": "Clientes",
                     "subtitle": "Nuestro objetivo se centra en la satisfacción de nuestros clientes, nuestro compromiso es garantizar dicha satisfacción a través de la mejora continua",
                     "description": "<strong>Llevamos más de 28 años</strong> construyendo la relación con nuestros clientes, fidelizandolos año tras año. Nuestro portfolio nos permite proporcionar soluciones específicas en diferentes sectores: <span>Público</span> (Administración central, Sanidad, Educación…),<span> Privado</span> (Industria, Ingeniería, Banca, Retail, Alimentación…), <span>Operadores de telefonía móvil, fija y virtuales…</span>",
-                    "img": "/img/home/clientes.png",
+                    "img": "img/home/clientes.png",
                     "buttons": ""
                 }
             ]
@@ -17,7 +19,8 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row"
+            "grid_section": "g2-row",
+            "custom_container_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -52,7 +55,8 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row"
+            "grid_section": "g2-row",
+            "custom_container_article": "card-75-width"
         },
         "props": {
             "card_data": [
@@ -95,7 +99,8 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row"
+            "grid_section": "g2-row",
+            "custom_container_article": "card-75-width"
         },
         "props": {
             "card_data": [

@@ -2,66 +2,55 @@
  * ============================================
  * ARCHIVO GLOBAL DE ESTILOS
  * ============================================
- * Establece los estilos base para la tipografía
- * y los elementos comunes.
- * * IMPORTANTE: Asume que 'reset.css' y 'variables.css'
- * ya han sido cargados.
- * ============================================
  */
 
-/* --- 1. Ajustes Suaves de Scroll --- */
+/* --- Ajustes Suaves de Scroll --- */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--space-l, 2rem); /* Opcional: para anclas */
+  scroll-padding-top: var(--space-l, 2rem); 
 }
 
-/* --- 2. Estilos Base del Body --- */
+/* --- Estilos Base del Body --- */
 body {  
   font-family: var(--font-family-body);
-  font-size: var(--font-size-0);       /* Tamaño base fluido */
+  font-size: var(--fs-0);
   line-height: var(--line-height-body);
-  color: var(--color-text-body, #333); /* Fallback por si la var no existe */
-  background-color: var(--color-background, #fff);
+  color: var(--color-text-primary); 
+  background-color: var(--color-background);
 }
 
-/* --- 3. Tipografía (Títulos y Párrafos) --- */
+/* --- Tipografía--- */
 
-/* Estilos comunes a todos los títulos */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-heading);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
-  color: var(--color-text-heading, #111);
   
-  /* El reset quitó los márgenes, los añadimos de nuevo */
   margin-top: var(--space-xs);
   margin-bottom: var(--space-s);
 }
 
 /* Tamaños de fuente fluidos específicos */
 h1 {
-  font-size: var(--font-size-3);
+  font-size: var(--fs-3);
+  color: var(--color-primary);
 }
 
 h2 {
-  font-size: var(--font-size-2);
+  font-size: var(--fs-2);
+   color: var(--color-primary);
 }
 
 h3 {
-  font-size: var(--font-size-1);
+  font-size: var(--fs-1);
+   color: var(--color-subtitle);
+   font-weight: var(--font-weight-medium);
 }
 
-h4 {
-  font-size: var(--font-size-0);
-  font-weight: var(--font-weight-medium); /* Un h4 suele ser más sutil */
-}
-
-/* El reset quitó el margen de los párrafos, lo añadimos */
 p {
   margin-bottom: var(--space-s);
 }
 
-/* Asegurarnos de que el último elemento no añada margen extra */
 p:last-child,
 h1:last-child,
 h2:last-child,
@@ -70,38 +59,28 @@ h4:last-child {
   margin-bottom: 0;
 }
 
-
-/* --- 4. Enlaces (Links) --- */
+/* --- Enlaces (Links) --- */
 
 a {
-  color: var(--color-primario, #0077ff);
   text-decoration: underline;
   text-decoration-thickness: 1px;
-  text-underline-offset: 3px; /* Separa el subrayado del texto */
+  text-underline-offset: 3px;
   transition: var(--transition-fast);
 }
 
 a:hover {
-  color: var(--color-primario-hover, #0056b3);
-  text-decoration: none; /* Patrón común: quitar subrayado en hover */
+  text-decoration: none; 
 }
 
-/* * MUY IMPORTANTE: Estilos de Foco para Accesibilidad.
- * No quites el 'outline' a menos que lo reemplaces.
- */
+/* estilos de Foco para Accesibilidad. */
 a:focus-visible {
   outline: 2px solid var(--color-primario, #0077ff);
   outline-offset: 2px;
   border-radius: var(--border-radius-small);
 }
 
-
-/* --- 5. Listas (UL / OL) --- */
-/* El reset quitó el padding, lo devolvemos */
-
 ul, ol {
-  padding-left: var(--space-l); /* Espacio para las viñetas/números */
-  margin-bottom: var(--space-m);
+  padding-left: var(--space-l); 
 }
 
 li {
@@ -115,7 +94,7 @@ li {
   grid-template-columns: 
     [full-start] minmax(var(--page-gutter-min), 1fr) 
     [content-start] minmax(0, var(--content-max-width)) [content-end] 
-    minmax(var(--page-gutter-min), 1fr) [full-end]; /* <-- ¡Arreglado! */
+    minmax(var(--page-gutter-min), 1fr) [full-end]; 
 
     row-gap:var(--space-section);
 }

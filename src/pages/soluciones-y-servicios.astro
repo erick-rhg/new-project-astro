@@ -5,7 +5,11 @@ import PageBuilder from "@components/PageBuilder.astro";
 import dataJson from "@data/soluciones-y-servicios-json.json";
 ---
 
-<BaseLayout title="Soluciones y servicios  - Keytron S.A.">
+<BaseLayout
+  title="Soluciones y servicios  - Keytron S.A."
+  skip="soluciones-y-servicios"
+  url="http://localhost:4321/new-project-astro/soluciones-y-servicios"
+>
   <HeroBanner
     title="Soluciones y servicios"
     subtitle="Orientados a tus necesidades reales"
@@ -13,12 +17,3 @@ import dataJson from "@data/soluciones-y-servicios-json.json";
 
   <PageBuilder dataJson={dataJson} />
 </BaseLayout>
-
-<style is:global>
-  @media (min-width: 990px) {
-    .article-default {
-      width: 75vw;
-      margin-inline: auto;
-    }
-  }
-</style>

@@ -1,0 +1,81 @@
+[
+    {
+        "component": "Section",
+        "settings": {
+            "custom_container_article": "card-75-width"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Misión",
+                    "subtitle": "Nuestro compromiso como garantía de éxito",
+                    "description": "Nuestra principal misión es ofrecer soluciones, servicios y productos de comunicaciones y seguridad innovadores y competitivos.",
+                    "img": "img/nuestro-compromiso-img/diana.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "custom_container_article": "card-75-width"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Visión",
+                    "subtitle": "Mejora continua como vehículo para ser un referente",
+                    "description": "Ser un referente como integrador de soluciones y servicios de comunicaciones y ciberseguridad de alto valor añadido.",
+                    "img": "img/nuestro-compromiso-img/vision.png",
+                    "buttons": ""
+                }
+            ]
+        }
+    },
+    {
+        "component": "Section",
+        "settings": {
+            "grid_section": "g2-row",
+            "custom_container_article": "card-75-width"
+        },
+        "props": {
+            "card_data": [
+                {
+                    "title": "Valores",
+                    "subtitle": "Nuestra empresa está formada por profesionales. Nuestro éxito se debe a ellos",
+                    "description": "En Keytron enfocamos nuestro crecimiento en el compromiso con el cliente. Para conseguirlo, nos basamos en nuestros valores: experiencia, flexibilidad, confianza e innovación y un equipo humano altamente profesional.",
+                    "img": "img/nuestro-compromiso-img/valores.png",
+                    "buttons": ""
+                }
+            ],
+            "image_data": [
+                {
+                    "img": "img/nuestro-compromiso-img/experiencia.png",
+                    "subtitle": "Experiencia",
+                    "description": "Más de 30 años en el sector nos avalan."
+                },
+                {
+                    "img": "img/nuestro-compromiso-img/flexibilidad.png",
+                    "subtitle": "Flexibilidad",
+                    "description": "Damos soluciones ad-hoc."
+                },
+                {
+                    "img": "img/nuestro-compromiso-img/confianza.png",
+                    "subtitle": "Confianza",
+                    "description": "Nuestros clientes confían en nosotros."
+                },
+                {
+                    "img": "img/nuestro-compromiso-img/profesionalidad.png",
+                    "subtitle": "Profesionalidad",
+                    "description": "Nuestro éxito se debe a nuestro equipo."
+                },
+                {
+                    "img": "img/nuestro-compromiso-img/innovacion.png",
+                    "subtitle": "Innovación",
+                    "description": "Estamos a la vanguardia de las últimas novedades."
+                }
+            ]
+        }
+    }
+]

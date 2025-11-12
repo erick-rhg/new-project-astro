@@ -1,0 +1,21 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import HeroBanner from "@components/HeroBanner.astro";
+import PageBuilder from "@components/PageBuilder.astro";
+import Mapa from "@components/Mapa.astro";
+import Formulario from "@components/Formulario.astro";
+import dataJson from "@data/contacto-json.json";
+---
+
+<BaseLayout
+  title="Contacto - Keytron S.A."
+  url="http://localhost:4321/new-project-astro/contacto"
+>
+  <HeroBanner
+    title="Contacto"
+    subtitle="Queremos dar solución a tus necesidades"
+  />
+  <PageBuilder dataJson={dataJson} />
+  <Formulario />
+  <Mapa />
+</BaseLayout>

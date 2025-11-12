@@ -1,17 +1,28 @@
 ---
-const { title, subtitle , button} = Astro.props;
+const { title, subtitle, button } = Astro.props;
 ---
 
 <section class="grid-layout">
   <div class="full-bleed">
-    <img src="/img/bannerHome.svg" alt="" class="banner-img" />
+    <img
+      src="img/bannerHome.svg"
+      alt={title || "Banner principal"}
+      class="banner-img"
+    />
     <div class="inner-content banner-content">
       <h1>{title}</h1>
       <h3>{subtitle}</h3>
-      {button && <a href="" class="button-a btn-cta">{button}</a>}
+      {
+        button && (
+          <a href="#main-content" class="button-a btn-cta">
+            {button}
+          </a>
+        )
+      }
     </div>
   </div>
 </section>
+<div id="main-content"></div>
 
 <style>
   section.grid-layout {
@@ -38,17 +49,8 @@ const { title, subtitle , button} = Astro.props;
     border-radius: 20px;
     padding: 20px;
     box-shadow:
-      7px 7px 14px #bebebe,
-      -7px -7px 14px #ffffff;
-  }
-
-  h1 {
-    font-size: var(--font-size-3);
-    color: var(--color-primario-hover);
-  }
-
-  h3 {
-    color: var(--color-cta);
+      8px 8px 16px #cdc9c9,
+      -8px -8px 16px #ffffff;
   }
 
   .btn-cta {
@@ -59,12 +61,7 @@ const { title, subtitle , button} = Astro.props;
     overflow: hidden;
   }
 
-  .btn-cta:hover {
-    color: #fff;
-    background-color: #fd0101;
-    border-color: #b31c5355;
-  }
-  .button-a::before {
+  .btn-cta::before {
     content: "";
     width: 0;
     height: 3em;
@@ -72,17 +69,13 @@ const { title, subtitle , button} = Astro.props;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(
-      to right,
-      #d2cdce34 0%,
-      rgba(242, 92, 92, 0.809) 100%
-    );
+    background-image: linear-gradient(to right, #d4d4d41f 0%, #fc0800 100%);
     transition: 0.5s ease;
     display: block;
     z-index: -1;
   }
 
-  .button-a:hover::before {
+  .btn-cta:hover::before {
     height: 3em;
     width: 225px;
   }
@@ -90,10 +83,6 @@ const { title, subtitle , button} = Astro.props;
   @media (min-width: 990px) {
     .banner-content {
       padding: 50px;
-    }
-
-    h1 {
-      font-size: var(--font-size-3);
     }
   }
 </style>

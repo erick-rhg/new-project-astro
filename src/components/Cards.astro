@@ -4,7 +4,7 @@ import Buttons from "@components/Buttons.astro";
 const { cards, settings } = Astro.props;
 ---
 
-<article class:list={["article-default", settings?.custom_article]}>
+<article class:list={["article-default", settings?.custom_container_article]}>
   {
     cards.map((cardItem) => {
       return (
@@ -22,27 +22,115 @@ const { cards, settings } = Astro.props;
     display: grid;
     justify-content: center;
     row-gap: var(--space-xl);
-
-    background-color: #ffffff65;
+    background-color: var(--color-card);
     border-radius: 20px;
     padding-inline: 1.2rem;
     padding-block: 3rem;
-    box-shadow:
-      7px 20px 75px #bebebe,
-      -7px -7px 14px #ffffff;
+    box-shadow: var(--custom-shadow);
+
+    opacity: 0.8;
+    transform: translateX(-60%);
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out;
   }
+
+  article.article-right {
+    opacity: 0.8;
+    transform: translateX(100%);
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out;
+  }
+
+  .article-default.is-visible {
+    animation: aparecer-deslizando 0.3s linear forwards;
+  }
+
+  .article-right.is-visible {
+    animation: aparecer-derecha 0.3s linear forwards;
+  }
+
   :global(.article-left .card-default) {
     justify-items: flex-start;
     text-align: left;
   }
+
   .article-left {
     justify-content: flex-start;
-    padding-inline: 3rem ;
+    padding-inline: 3rem;
   }
-  @media (min-width: 990px) {
-     .article-default {
-      padding-inline: 3rem;
-     }
 
+  @keyframes aparecer-derecha {
+    from {
+      opacity: 0.8;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes aparecer-deslizando {
+    from {
+      opacity: 0.8;
+      transform: translateX(-60%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .aviso-legal-layout {
+    all: unset;
+    text-align: initial;
+  }
+
+  :global(article.aviso-legal-layout > div > p) {
+    text-align: initial;
+  }
+
+  @media (min-width: 990px) {
+    .article-default {
+      padding-inline: 3rem;
+    }
+
+    .card-75-width {
+      width: 75vw;
+      max-width: 75vw;
+      margin-inline: auto;
+    }
   }
 </style>
+
+<script>
+  function animationFunction() {
+    const articlesToAnimate = document.querySelectorAll(
+      ".article-default, .article-right"
+    );
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    articlesToAnimate.forEach((article) => {
+      observer.observe(article);
+    });
+  }
+
+  animationFunction();
+
+  document.addEventListener("astro:page-load", animationFunction);
+</script>

@@ -1,12 +1,12 @@
 ---
-
+const base = import.meta.env.BASE_URL || "/";
 ---
 
 <header class="grid-layout">
   <nav class="full-bleed" aria-label="Navegación principal">
     <div class="inner-content nav-container">
-      <a href="#" class="logo">
-        <img src="/img/logokeytron.png" alt="Logo" />
+      <a href="" class="logo">
+        <img src={`${base}img/logokeytron.png`} alt="Logo" />
       </a>
 
       <button
@@ -24,19 +24,29 @@
 
       <div class="nav-wrapper" id="main-menu">
         <ul class="nav-list">
-          <li><a href="/">INICIO</a></li>
+          <li><a href="">INICIO</a></li>
           <li class="has-submenu">
-            <a href="/quienes-somos" aria-haspopup="true" aria-expanded="false">QUIENES SOMOS</a>
+            <a
+              href="quienes-somos"
+              aria-haspopup="true"
+              aria-expanded="false"
+              id="link_disable">QUIENES SOMOS</a
+            >
             <ul class="submenu">
-              <li><a href="/quienes-somos/historia">Historia</a></li>
-              <li><a href="/quienes-somos/equipo">Equipo</a></li>
-              <li><a href="/quienes-somos/certificaciones">Certifiaciones</a></li>
+              <li><a href="quienes-somos/historia">Historia</a></li>
+              <li>
+                <a href="quienes-somos/nuestro-compromiso">Nuestro compromiso</a
+                >
+              </li>
+              <li>
+                <a href="quienes-somos/certificaciones">Certificaciones</a>
+              </li>
             </ul>
           </li>
-          <li><a href="/alianzas">ALIANZAS</a></li>
-          <li><a href="/soluciones-y-servicios">SOLUCIONES Y SERVICIOS</a></li>
-          <li><a href="/clientes">CLIENTES</a></li>
-          <li><a href="/contacto">CONTACTO</a></li>
+          <li><a href="alianzas">ALIANZAS</a></li>
+          <li><a href="soluciones-y-servicios">SOLUCIONES Y SERVICIOS</a></li>
+          <li><a href="clientes">CLIENTES</a></li>
+          <li><a href="contacto">CONTACTO</a></li>
         </ul>
       </div>
     </div>
@@ -48,7 +58,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 80px;
+    height: 55px;
+    max-height: 55px;
     position: fixed;
     top: 0;
     left: 0;
@@ -58,7 +69,7 @@
     padding-block: 10px;
     padding-inline: 40px;
     border-radius: 0 0 15px 15px;
-    border-bottom: 2px solid #e3e3e33d;;
+    border-bottom: 2px solid #e3e3e33d;
   }
 
   .logo {
@@ -67,7 +78,7 @@
   }
 
   .logo img {
-    width: 100px;
+    width: 70px;
   }
 
   .menu-toggle {
@@ -95,7 +106,7 @@
   .hamburger-line {
     width: 100%;
     height: 2px;
-    background-color: var(--color-text-heading);
+    background-color: var(--color-primary);
     transition: var(--transition-medium);
   }
 
@@ -117,7 +128,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.98);
+    background-color: var(--color-background);
     padding-top: 80px;
     transform: translateX(100%);
     transition: transform 0.3s ease-in-out;
@@ -141,15 +152,15 @@
     display: block;
     text-decoration: none;
     font-weight: var(--font-weight-bold);
-    color: var(--color-keytron-navy);
+    color: var(--color-primary);
     padding: var(--space-s);
     border-radius: var(--border-radius-small);
     transition: var(--transition-fast);
-    font-size: var(--font-size-1);
+    font-size: var(--fs-2);
   }
 
   .nav-list a:hover {
-    background-color: #579fe785;
+    background-color: #d5e8f8;
   }
 
   .submenu {
@@ -157,13 +168,17 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: rgba(255, 255, 255, 0.956);
+    background-color: #d5e8f8;
     border-radius: var(--border-radius-small);
   }
 
   .submenu a {
     padding-left: var(--space-l);
-    font-size: 0.95em;
+    font-size: var(--fs-1);
+  }
+
+  .submenu a:hover {
+    background-color: #aed5f4;
   }
 
   .has-submenu.submenu-active .submenu {
@@ -172,9 +187,14 @@
 
   @media (min-width: 990px) {
     .nav-container {
-      margin-top: 15px;
+      min-height: 80px;
+      margin-top: 5px;
       border-radius: 40px;
       border: 2px solid #e3e3e323;
+    }
+
+    .logo img {
+      width: 100px;
     }
 
     .menu-toggle {
@@ -198,7 +218,7 @@
     }
 
     .nav-list a {
-      font-size: var(--font-size--1);
+      font-size: var(--fs--1);
       padding: var(--space-xs);
     }
 
@@ -214,7 +234,6 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       border-radius: 0 0 10px 10px;
       padding: var(--space-xs);
-      background-color: #579fe7c3;
     }
 
     .has-submenu.submenu-active .submenu {
@@ -239,14 +258,16 @@
   const menuToggle = document.querySelector(".menu-toggle");
   const navWrapper = document.querySelector(".nav-wrapper");
   const hasSubmenuItems = document.querySelectorAll(".has-submenu");
+  const focusSubmenu = document.querySelector(".has-submenu");
 
   function openMenu() {
     if (!menuToggle || !navWrapper) return;
     menuToggle.setAttribute("aria-expanded", "true");
     navWrapper.classList.add("is-active");
-    if (menuToggle instanceof HTMLElement) menuToggle.classList.add("is-active");    
+    if (menuToggle instanceof HTMLElement)
+      menuToggle.classList.add("is-active");
     document.body.style.overflow = "hidden";
-    const firstLink = navWrapper.querySelector('a');
+    const firstLink = navWrapper.querySelector("a");
     if (firstLink instanceof HTMLElement) firstLink.focus();
   }
 
@@ -254,7 +275,8 @@
     if (!menuToggle || !navWrapper) return;
     menuToggle.setAttribute("aria-expanded", "false");
     navWrapper.classList.remove("is-active");
-    if (menuToggle instanceof HTMLElement) menuToggle.classList.remove("is-active");
+    if (menuToggle instanceof HTMLElement)
+      menuToggle.classList.remove("is-active");
     document.body.style.overflow = "";
     if (menuToggle instanceof HTMLElement) menuToggle.focus();
   }
@@ -262,11 +284,12 @@
   if (menuToggle && navWrapper) {
     menuToggle.addEventListener("click", () => {
       const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
-      if (isExpanded) closeMenu(); else openMenu();
+      if (isExpanded) closeMenu();
+      else openMenu();
     });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && navWrapper.classList.contains('is-active')) {
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && navWrapper.classList.contains("is-active")) {
         closeMenu();
       }
     });
@@ -277,29 +300,48 @@
     const submenu = item.querySelector(".submenu");
 
     if (link && submenu) {
-      link.setAttribute('aria-expanded', 'false');
+      link.setAttribute("aria-expanded", "false");
 
       link.addEventListener("click", (e) => {
+        e.preventDefault();
         if (window.innerWidth <= 768) {
-          e.preventDefault();
           const active = item.classList.toggle("submenu-active");
-          link.setAttribute('aria-expanded', active ? 'true' : 'false');
+          link.setAttribute("aria-expanded", active ? "true" : "false");
         }
       });
 
       item.addEventListener("mouseenter", () => {
         if (window.innerWidth > 768) {
           item.classList.add("submenu-active");
-          link.setAttribute('aria-expanded', 'true');
+          link.setAttribute("aria-expanded", "true");
         }
       });
 
       item.addEventListener("mouseleave", () => {
         if (window.innerWidth > 768) {
           item.classList.remove("submenu-active");
-          link.setAttribute('aria-expanded', 'false');
+          link.setAttribute("aria-expanded", "false");
         }
       });
     }
+
+    item.addEventListener("focusin", () => {
+      if (window.innerWidth > 768 && link) {
+        item.classList.add("submenu-active");
+        link.setAttribute("aria-expanded", "true");
+      }
+    });
+
+    item.addEventListener("focusout", (e) => {
+      const focusEvent = e as FocusEvent;
+      if (
+        window.innerWidth > 768 &&
+        focusEvent.relatedTarget &&
+        !item.contains(focusEvent.relatedTarget as Node)
+      ) {
+        item.classList.remove("submenu-active");
+        if (link) link.setAttribute("aria-expanded", "false");
+      }
+    });
   });
 </script>

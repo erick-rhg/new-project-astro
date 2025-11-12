@@ -1,34 +1,36 @@
 ---
+import { normalizeImagePath } from "@utils/imagePath";
+
 const { title, subtitle, description, img } = Astro.props;
+const imgSrc = normalizeImagePath(img);
 ---
 
 <div class="card-default">
-  {img && <img src={img} alt="" />}
+  {img && <img src={imgSrc} alt={title || subtitle || "Imagen de contenido"} />}
   {title && <h2>{title}</h2>}
-  {subtitle && <h4>{subtitle}</h4>}
-  {description && <p set:html={description}></p>}
+  {subtitle && <h3>{subtitle}</h3>}
+  {description && <p set:html={description} />}
 </div>
 
 <style>
   .card-default {
     display: grid;
     justify-items: center;
-    text-align: center;
-    
-  }
-  .card-default h4 {
-    color: var(--color-cta);
   }
 
   :global(.card-default span) {
-    color:var(--color-cta);
+    color: var(--color-span);
   }
 
-/*   .card-default p {
-    white-space: pre-wrap; para que respete \n en JSON
-  } */
-  @media (min-width: 990px) {
+  img {
+    width: 140px;
+    max-width: 180px;
+  }
 
-    
+  :global(.aviso-legal-layout p) {
+    white-space: pre-wrap; /* para que respete \n en JSON */
+  }
+
+  @media (min-width: 990px) {
   }
 </style>

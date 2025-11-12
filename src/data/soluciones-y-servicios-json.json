@@ -3,7 +3,7 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "saltar_contenido": "main-content"
         },
         "props": {
             "card_data": [
@@ -51,12 +51,12 @@
         "component": "Section",
         "settings": {
             "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "custom_container_img": "soluciones-1col"
         },
         "props": {
             "card_data": [
                 {
-                    "title": "Soluciones de Ciberseguridad",
+                    "title": "Soluciones",
                     "subtitle": "Productos Destacados",
                     "description": "",
                     "img": "img/servicios-img/seguridad.png",
@@ -67,37 +67,37 @@
                 {
                     "subtitle": "Forcepoint NGFW",
                     "description": "Firewall perimetral de última generación con funciones de sandbox, con capacidad de clúster de hasta 16 nodos, balanceo de líneas y SD-WAN.",
-                    "img": "img/alianzas-img/logos/forcep.png"
+                    "img": "img/alianzas-img/logos/forcepoint.svg"
                 },
                 {
                     "subtitle": "Stormshield",
                     "description": "Firewall UTM con funciones de sandbox, reconocimiento de aplicaciones, antivirus perimetral, VPN IPSEC/SSL e integración con directorio activo.",
-                    "img": "img/alianzas-img/logos/storm.png"
+                    "img": "img/alianzas-img/logos/stormshield.png"
                 },
                 {
                     "subtitle": "Cisco Meraki SD-WAN",
                     "description": "Establecimiento de VPN de manera semi-automática y con firewalls gestionados en la nube.",
-                    "img": "img/alianzas-img/logos/cisco.png"
+                    "img": "img/alianzas-img/logos/meraki.svg"
                 },
                 {
                     "subtitle": "Forcepoint Web Security",
                     "description": "Seguridad proxy y filtrado Web, tanto en formato appliance como en la nube, con funciones de sandbox, DLP y antimalware avanzado.",
-                    "img": "img/alianzas-img/logos/forcep.png"
+                    "img": "img/alianzas-img/logos/forcepoint.svg"
                 },
                 {
                     "subtitle": "Check Point Sandblast Mobile",
                     "description": "Seguridad proxy y filtrado Web, tanto en formato appliance como en la nube, con funciones de sandbox, DLP y antimalware avanzado.",
-                    "img": "img/alianzas-img/logos/checkp.png"
+                    "img": "img/alianzas-img/logos/checkpoint.svg"
                 },
                 {
                     "subtitle": "Cisco Umbrella",
                     "description": "Herramienta de protección de redes y endpoints basado en DNS.",
-                    "img": "img/alianzas-img/logos/cisco.png"
+                    "img": "img/alianzas-img/logos/cisco.svg"
                 },
                 {
                     "subtitle": "Forcepoint DLP",
                     "description": "El DLP líder del mercado proporciona visibilidad y control de datos confidenciales a través de aplicaciones en la nube, almacenamiento en red, correo electrónico y web en una única consola.",
-                    "img": "img/alianzas-img/logos/forcep.png"
+                    "img": "img/alianzas-img/logos/forcepoint.svg"
                 }
             ]
         }
@@ -105,8 +105,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -114,7 +113,7 @@
                     "title": "Ciberseguridad",
                     "subtitle": "",
                     "description": "",
-                    "img": "/img/servicios-img/seguridad.png",
+                    "img": "img/servicios-img/seguridad.png",
                     "buttons": ""
                 }
             ],
@@ -122,41 +121,44 @@
                 {
                     "subtitle": "Soporte",
                     "description": "Soporte en todas las fases de vida de los productos de ciberseguridad.",
-                    "img": "/img/servicios-img/logos/asistencia.png"
+                    "img": "img/servicios-img/logos/asistencia.png",
+                    "custom_img": "width-350"
                 },
                 {
                     "subtitle": "Análisis de Vulnerabilidades",
                     "description": "Análisis de vulnerabilidades empleando herramientas líderes como Nessus o Retina y aportando nuestra experiencia.",
-                    "img": "/img/servicios-img/logos/analisis.png"
+                    "img": "img/servicios-img/logos/analisis.png",
+                    "custom_img": "width-350"
                 },
                 {
                     "subtitle": "Seguridad en la nube",
                     "description": "Solución antimalware, proxy y firewall en la nube. Nos apoyamos en herramientas de fabricantes como Kaspersky, Forcepoint, Cososys o Cisco entre otros.",
-                    "img": "/img/servicios-img/logos/remota.png"
+                    "img": "img/servicios-img/logos/remota.png",
+                    "custom_img": "width-350"
                 },
                 {
                     "subtitle": "Consultoría",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Auditoría: Pentesting / Hacking Ético / RED TEAM",
-                    "img": "/img/servicios-img/logos/auditoria-2.png"
+                    "img": "img/servicios-img/logos/auditoria-2.png"
                 },
                 {
                     "subtitle": "Peritaje Informático Forense",
-                    "img": "/img/servicios-img/logos/peritaje.png"
+                    "img": "img/servicios-img/logos/peritaje.png"
                 },
                 {
                     "subtitle": "MSSP: Ciberseguridad Gestionada",
-                    "img": "/img/servicios-img/logos/ciberseguridad.png"
+                    "img": "img/servicios-img/logos/ciberseguridad.png"
                 },
                 {
                     "subtitle": "SOC: Security Operations Centre",
-                    "img": "/img/servicios-img/logos/centro.png"
+                    "img": "img/servicios-img/logos/centro.png"
                 },
                 {
                     "subtitle": "Compliance: ISO27001",
-                    "img": "/img/servicios-img/logos/compliance.png"
+                    "img": "img/servicios-img/logos/compliance.png"
                 }
             ]
         }
@@ -164,8 +166,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -180,43 +181,43 @@
             "image_data": [
                 {
                     "subtitle": "Gestión de Incidentes / Intrusiones",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Gestión de Vulnerabilidades",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Monitorización / SIEM / IDS/IPS",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Firewall / WAF",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "DDOS",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Data Protection: DLP & IRM",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Endpoint Protection: EPR & EDR",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "SaaS Protection (GSuite, Office3365, etc.)",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Mobile Protection (iOS, Android)",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Backup y Continuidad de Negocio",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -224,8 +225,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -240,11 +240,11 @@
             "image_data": [
                 {
                     "subtitle": "Servicio SOC – Security Operations Center.",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Respuesta 24x7x365 a incidencias, incidentes y ataques",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -252,8 +252,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -268,23 +267,23 @@
             "image_data": [
                 {
                     "subtitle": "Diseño de arquitecturas",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Auditorías",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Análisis Seguridad TIC",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Asesoramiento TIC",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Dirección de proyecto",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -292,8 +291,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -308,11 +306,11 @@
             "image_data": [
                 {
                     "subtitle": "Suministro del equipamiento HW & SW",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Logística asociada",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -320,8 +318,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -336,23 +333,23 @@
             "image_data": [
                 {
                     "subtitle": "Instalación del equipamiento HW&SW",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Instalaciones asociadas (cableado, energía, seguridad física…)",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Integración de soluciones",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Configuración de la solución",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Pruebas y test de aceptación",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -360,8 +357,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -376,31 +372,31 @@
             "image_data": [
                 {
                     "subtitle": "Service Desk: gestión de incidcias y escalado",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Diagnosis remota de incidencias",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Reposición Hardware",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Mantenimiento preventivo",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Actualizaciones Firmware",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Contrato periódico de asistencia",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 },
                 {
                     "subtitle": "Personal especializado y certificado",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }
@@ -408,8 +404,7 @@
     {
         "component": "Section",
         "settings": {
-            "grid_section": "g2-row",
-            "custom_container_img": "servicios-grid-logos"
+            "grid_section": "g2-row"
         },
         "props": {
             "card_data": [
@@ -424,7 +419,7 @@
             "image_data": [
                 {
                     "subtitle": "Outtasking",
-                    "img": "/img/servicios-img/logos/consultoria.png"
+                    "img": "img/servicios-img/logos/consultoria.png"
                 }
             ]
         }

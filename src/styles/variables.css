@@ -2,71 +2,67 @@
  * ============================================
  * ARCHIVO DE VARIABLES GLOBALES
  * ============================================
- * Definimos un sistema fluido para tipografía
- * y espaciado usando clamp().
  * Las medidas en 'rem' están basadas en 1rem = 16px.
  * ============================================
  */
 
 :root {
-  /* --- 1. Fuentes (Tipografía) --- */
-  /* Define las familias de fuentes */
-  --font-family-body: 'Lato', sans-serif;
-  --font-family-heading: 'Montserrat', sans-serif; /* O una fuente personalizada */
+  /* --- Fuentes (Tipografía) --- */
+  --font-family-body: "Lato", sans-serif;
+  --font-family-heading: "Montserrat", sans-serif; 
 
-  /* Define los pesos de fuente */
+  /* pesos de fuente */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
 
-  /* Define las alturas de línea (unitless) */
-  --line-height-body: 1.65; /* Para texto de párrafo */
-  --line-height-heading: 1.2; /* Para títulos */
+  /*alturas de línea */
+  --line-height-body: 1.65; 
+  --line-height-heading: 1.2; 
 
   /*Define colores base*/
-  --color-text-body: #333333; /* (Gris oscuro, no negro puro) */
-  --color-text-heading: #111111; /* (Casi negro) */
-  --color-background: #ffffff; /* (Blanco) */
-  --color-primario-hover: #0056b3; /* (Un tono más oscuro) */
-  --color-keytron-navy: #0a2b4c;
-  --color-trust-blue: #1f89e5;
-  --color-neutral-gray: #f5f7fa;
-  --color-light-border: #e0e0e0;
-  --color-cta: #b21b52;
-  --color-alert-orange: #fb8c00;
-  --color-error-red: #e53935;
-  --color-light: #fff;
+  --color-primary: #02277f; /*h1 y botones comunes*/
+  --color-secondary: #dc251f; /*Botones cta*/
+  --color-background: #F1F3F6; /* Fondo principal y para card*/
+  --color-text-primary: #4B5563;
+  --color-text-secondary: #6B7280;
+  --color-subtitle: #1A2B4D;
+  --color-light: #FFFFFF;
+  --color-span: #b21b52; 
 
-  /* --- 2. Escala de Fuente Fluida (Typographic Scale) --- */
-  /* * Usamos clamp(MIN, PREFERIDO, MAX)
-   * MIN = Tamaño en móvil (ej. 320px)
-   * MAX = Tamaño en desktop (ej. 1440px)
-   */
+  --custom-shadow: 
+    8px 8px 16px #d1d9e6, 
+    -8px -8px 16px #ffffff;
 
-  /* --- Escala de Fuente Fluida (Ajustada a ~1000px) --- */
+   
+  /* ---Escala de Fuente Fluida--- */
+/* Viewport (Ancho de pantalla) de referencia:
+    Mínimo: 370px
+    Máximo: 1400px
+    Base: 1rem = 16px
+  */
 
-  /* Texto pequeño (ej. 'legal', 'caption') */
-  --font-size--1: clamp(0.875rem, 0.15vw + 0.84rem, 0.9375rem);
+  /** Texto Muy Pequeño (14px -> 16px) */
+  --fs--1: clamp(0.875rem, calc(0.830rem + 0.194vw), 1rem);
 
-  /* Texto base (Párrafos) */
-  --font-size-0: clamp(1rem, 0.29vw + 0.94rem, 1.125rem);
+  /** Texto Base (16px -> 18px) */
+  --fs-0: clamp(1rem, calc(0.955rem + 0.194vw), 1.125rem);
 
-  /* Títulos pequeños (ej. H3, H4) */
-  --font-size-1: clamp(1.25rem, 0.59vw + 1.13rem, 1.5rem);
+  /** Mediano H3 (20px -> 24px) */
+  --fs-1: clamp(1.25rem, calc(1.160rem + 0.388vw), 1.5rem);
 
-  /* Títulos medianos (ej. H2) */
-  --font-size-2: clamp(1.563rem, 1.62vw + 1.24rem, 2.25rem);
+  /** Subtítulo H2 (24px -> 32px) */
+  --fs-2: clamp(1.5rem, calc(1.320rem + 0.777vw), 2rem);
 
-  /* Títulos grandes (ej. H1) */
-  --font-size-3: clamp(2.112rem, 3.08vw + 1.82rem, 3.2rem);
+  /** Título H1 (32px -> 48px) */
+  --fs-3: clamp(2rem, calc(1.641rem + 1.553vw), 3rem);
+  
+  /** Texto Muy Grande (Display) (40px -> 72px) */
+  --fs-4: clamp(2.5rem, calc(1.781rem + 3.107vw), 4.5rem);
 
-  /* Títulos de Héroe (Display) */
-  --font-size-4: clamp(3.052rem, 6.05vw + 1.84rem, 5.625rem);
 
-  /* --- 3. Escala de Espaciado Fluido (Spacing Scale) --- */
-  /* * Un sistema para 'padding', 'margin', 'gap'.
-   * Usa los mismos principios de clamp()
-   */
+  /* ---Escala de Espaciado Fluido (Spacing Scale) --- */
+
 
   /* x-small (0.5rem -> 0.75rem) */
   --space-xs: clamp(0.5rem, 0.58vw + 0.38rem, 0.75rem);
@@ -89,7 +85,7 @@
   /* (Opcional) Espaciado de sección (4rem -> 8rem) */
   --space-section: clamp(4rem, 9.28vw + 2.08rem, 8rem);
 
-  /* --- 4. Maquetación (Layout) --- */
+  /* ---Maquetación (Layout) --- */
 
   /* Ancho máximo de la columna de contenido */
   --content-max-width: 1200px;
@@ -97,13 +93,7 @@
   /* Márgenes laterales (gutter) mínimos en móvil */
   --page-gutter-min: var(--space-m, 1rem); /* 1rem o 1.5rem suele ser bueno */
 
-  /* --- 5. Misceláneos --- */
-
-  /* Radio de borde */
-  --border-radius-small: 4px;
-  --border-radius-medium: 8px;
-  --border-radius-large: 16px;
-  --border-radius-circle: 50%;
+  /* ---Misceláneos --- */
 
   /* Transiciones */
   --transition-fast: all 0.2s ease-out;

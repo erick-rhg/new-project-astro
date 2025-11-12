@@ -1,0 +1,19 @@
+---
+import BaseLayout from "@layouts/BaseLayout.astro";
+import HeroBanner from "@components/HeroBanner.astro";
+import PageBuilder from "@components/PageBuilder.astro";
+import dataJson from "@data/certificaciones-json.json";
+---
+
+<BaseLayout
+  title="Certificaciones - Keytron S.A."
+  skip="quienes-somos/certificaciones"
+  url="http://localhost:4321/new-project-astro/quienes-somos/certificaciones"
+>
+  <HeroBanner
+    title="Certificaciones"
+    subtitle="Calidad conforme a las normas"
+  />
+
+  <PageBuilder dataJson={dataJson} />
+</BaseLayout>

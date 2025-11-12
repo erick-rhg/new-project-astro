@@ -1,0 +1,136 @@
+---
+
+---
+
+<div>
+  <form action="mailto:comunicaciones@keytron.com" method="post">
+    <label for="name-id">Nombre*</label>
+    <input
+      type="text"
+      name="nombre_cliente"
+      id="name-id"
+      placeholder="Nombre"
+      required
+      autocomplete="off"
+    />
+
+    <label for="email-id">Email*</label>
+    <input
+      type="email"
+      name="email_cliente"
+      id="email-id"
+      placeholder="Email"
+      required
+      autocomplete="off"
+    />
+
+    <label for="number-id">Teléfono*</label>
+    <input
+      type="tel"
+      name="telefono_cliente"
+      id="number-id"
+      placeholder="Teléfono"
+      required
+      autocomplete="off"
+    />
+
+    <label for="text-id">Mensaje*</label>
+    <textarea
+      name="mensaje_cliente"
+      id="text-id"
+      required
+      placeholder="Mensaje"
+      autocomplete="off"></textarea>
+
+    <p class="form-required">*Todos los campos son obligatorios</p>
+    <div class="form-required">
+      <input type="checkbox" id="checkbox-id" required />
+      <a href="#">He leído y acepto la política de privacidad</a>
+    </div>
+
+    <button class="button-a" type="submit"> Enviar </button>
+  </form>
+</div>
+
+<style>
+  form {
+    padding: 1.5rem;
+    display: grid;
+    gap: 10px;
+    min-width: 100%;
+  }
+
+  label {
+    color: var(--color-primary);
+    font-size: var(--fs-1);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.3px;
+  }
+  input {
+    padding: 0.6rem 1.2rem;
+    border: 0;
+    border-radius: 0.5rem;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    background: linear-gradient(170deg, #d9dbdddb, #ffffff4f);
+    box-shadow:
+      10px 10px 20px #e5e7ea,
+      -10px -10px 20px #fdffff;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    border: 0;
+    outline: 0;
+    background: #f1f3f6;
+    box-shadow:
+      inset 5px 5px 3px #c8cacc,
+      inset -5px -5px 3px #ffffff;
+  }
+
+  ::placeholder {
+    font-size: var(--fs--1);
+    color: var(--color-text-secondary);
+  }
+
+  .button-a {
+    margin-top: 2rem;
+    border: 0;
+  }
+  textarea {
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 0.5rem;
+    resize: none;
+    height: 10rem;
+    background-color: #f0f0f0;
+    background: linear-gradient(170deg, #d9dbdddb, #ffffff4f);
+    box-shadow:
+      10px 10px 20px #e5e7ea,
+      -10px -10px 20px #fdffff;
+  }
+
+  p.form-required {
+    margin-top: 1.5rem;
+  }
+
+  .form-required > *,
+  .form-required {
+    font-size: var(--font-size--1);
+    margin: 0;
+    font-weight: var(--font-weight-normal);
+    color: #aaaaaa;
+    text-decoration: none;
+  }
+
+  .form-required a:hover {
+    text-decoration: underline;
+  }
+
+  @media (min-width: 990px) {
+    div {
+      width: 55dvw;
+      margin-inline: auto;
+    }
+  }
+</style>

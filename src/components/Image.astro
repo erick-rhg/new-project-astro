@@ -1,16 +1,25 @@
 ---
+import { normalizeImagePath } from "@utils/imagePath";
+
 const { img, description, subtitle, custom_img } = Astro.props;
+const imgSrc = normalizeImagePath(img);
 ---
 
 <div class:list={[custom_img]}>
-  {img && <img src={img} alt="" />}
+  {img && <img src={imgSrc} alt={subtitle || description || "Imagen"} />}
   {subtitle && <h4>{subtitle}</h4>}
-  {description && <p>{description}</p>}
+  {description && <p set:html={description} />}
 </div>
 
 <style>
+  img {
+    max-width: 115px;
+    max-height: 75px;
+  }
+
   .mobile-hide img {
-    height: 100%;
+    max-width: 100%;
+    max-height: initial;
     object-fit: contain;
   }
 
@@ -18,13 +27,45 @@ const { img, description, subtitle, custom_img } = Astro.props;
     display: none;
   }
 
-  h4 {
-    color: var(--color-cta);
+  .contacto-item {
+    display: grid;
+    gap: var(--space-m);
+  }
+
+  :global(.contacto-item p) {
+    text-align: center;
+  }
+
+  :global(.contacto-item a) {
+    text-decoration: none;
+  }
+
+  :global(.certificaciones-bold a) {
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: var(--fs-1);
+  }
+
+  :global(a:hover) {
+    text-decoration: underline;
   }
 
   @media (min-width: 990px) {
+    img {
+      max-width: 150px;
+      max-height: 75px;
+    }
+
     .mobile-hide {
       display: block;
+      flex: 1;
+      height: 100%;
+    }
+
+    .mobile-hide img {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
     }
   }
 </style>
